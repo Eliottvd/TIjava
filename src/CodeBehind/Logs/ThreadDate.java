@@ -8,9 +8,7 @@ package CodeBehind.Logs;
 import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
-import javax.swing.JDialog;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 
 /**
  *

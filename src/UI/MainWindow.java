@@ -10,12 +10,15 @@ import CodeBehind.Logs.AfficherLogDialog;
 import CodeBehind.Logs.FichierLog;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.TrayIcon;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import jdk.jshell.spi.ExecutionControl;
 
 /**
  *
@@ -98,6 +101,7 @@ public class MainWindow extends javax.swing.JFrame {
         jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Image processing");
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
                 formWindowClosing(evt);
@@ -213,7 +217,7 @@ public class MainWindow extends javax.swing.JFrame {
                         .addComponent(jLabelBefore, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(30, 30, 30)
                         .addComponent(jBtnAfter2Before)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 67, Short.MAX_VALUE)
                         .addComponent(jLabelAfter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jBtnZoom)
@@ -229,13 +233,10 @@ public class MainWindow extends javax.swing.JFrame {
                                     .addComponent(jBtnNeg))
                                 .addGap(18, 18, 18)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jSliderTreshold, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 107, Short.MAX_VALUE))
+                                    .addComponent(jSliderTreshold, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(23, 23, 23)
-                                        .addComponent(jBtnTreshold, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                        .addComponent(jBtnTreshold, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                     .addComponent(jBtnLaplacianFilter, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
@@ -377,11 +378,13 @@ public class MainWindow extends javax.swing.JFrame {
 
     private void jBtnGaussianFilterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnGaussianFilterActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(this, "Not working yet", "Warning", JOptionPane.WARNING_MESSAGE);
         setImgAfter(_iMod.FiltreGaussien(_imgBefore, 0.3));
     }//GEN-LAST:event_jBtnGaussianFilterActionPerformed
 
     private void jBtnLaplacianFilterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnLaplacianFilterActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(this, "Not implemented yet", "Warning", JOptionPane.WARNING_MESSAGE);
     }//GEN-LAST:event_jBtnLaplacianFilterActionPerformed
 
     private void setImgAfter(BufferedImage img)
