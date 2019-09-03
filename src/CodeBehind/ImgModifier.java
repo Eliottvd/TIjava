@@ -112,6 +112,39 @@ public class ImgModifier {
         return ImgOut;
     }
     
+    public BufferedImage MultiTreshold(BufferedImage ImgIn, int[] tab)
+    {
+        BufferedImage ImgOut = copyImage(ImgIn);
+        int p; 
+        int x, y, avg, a, r, g, b;
+
+        for(x = 0; x < ImgIn.getWidth();x++)
+        {
+            for(y = 0; y < ImgIn.getHeight() ; y++)
+            {
+                p = ImgIn.getRGB(x,y); //Extraire la valeur du pixel (x;y)
+  
+                a = (p>>24)&0xff;      //Séparer la valeur (int -> 4 bytes)
+                r = (p>>16)&0xff; 
+                g = (p>>8)&0xff; 
+                b = p&0xff; 
+                 
+                avg = (r+g+b)/3;  //calculer la moyenne 
+  
+                //set the pixel value 
+                if(avg >= tab[0] && avg <= tab[1])
+                    p = (tab[2]<<24) | (tab[2]<<16) | (tab[2]<<8) | tab[2]; 
+                else if(avg >= tab[3] && avg <= tab[4])
+                    p = (tab[5]<<24) | (tab[5]<<16) | (tab[5]<<8) | tab[5]; 
+                else if(avg >= tab[6] && avg <= tab[7])
+                    p = (tab[8]<<24) | (tab[8]<<16) | (tab[8]<<8) | tab[8]; 
+                ImgOut.setRGB(x, y, p); 
+            }
+        }
+        
+        return ImgOut;
+    }
+    
     public BufferedImage FiltreMedian(BufferedImage ImgIn)
     {
         BufferedImage ImgOut = copyImage(ImgIn);

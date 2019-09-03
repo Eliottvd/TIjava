@@ -46,15 +46,16 @@ public class MainWindow extends javax.swing.JFrame {
         BufferedImage img = null; 
         File f = null; 
   
-        //read image 
+         
         try
         { 
-            f = new File("C:\\Users\\Eliott\\Desktop\\test.jpg"); 
+            f = new File("C:\\Users\\Eliott\\Desktop\\xxxx.jpg"); 
             img = ImageIO.read(f); 
         } 
         catch(IOException e) 
         { 
-            System.out.println(e); 
+            JOptionPane.showMessageDialog(this, "Fail to open the file", "Error", JOptionPane.ERROR_MESSAGE);
+            dispose();
         } 
         _fLog.addLog("Reading Image");
         
@@ -96,6 +97,7 @@ public class MainWindow extends javax.swing.JFrame {
         jBtnMediumFilter = new javax.swing.JButton();
         jBtnGaussianFilter = new javax.swing.JButton();
         jBtnLaplacianFilter = new javax.swing.JButton();
+        jBtnMultiTreshold = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenuAffLog = new javax.swing.JMenu();
         jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
@@ -187,6 +189,13 @@ public class MainWindow extends javax.swing.JFrame {
             }
         });
 
+        jBtnMultiTreshold.setText("Multi-Treshold");
+        jBtnMultiTreshold.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnMultiTresholdActionPerformed(evt);
+            }
+        });
+
         jMenuAffLog.setText("Option");
         jMenuAffLog.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -218,7 +227,8 @@ public class MainWindow extends javax.swing.JFrame {
                         .addGap(30, 30, 30)
                         .addComponent(jBtnAfter2Before)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 67, Short.MAX_VALUE)
-                        .addComponent(jLabelAfter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jLabelAfter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(14, 14, 14))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jBtnZoom)
                         .addGap(141, 141, 141)
@@ -236,13 +246,13 @@ public class MainWindow extends javax.swing.JFrame {
                                     .addComponent(jSliderTreshold, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(23, 23, 23)
-                                        .addComponent(jBtnTreshold, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(jBtnLaplacianFilter, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                                    .addComponent(jBtnGaussianFilter, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGap(0, 0, Short.MAX_VALUE)))))
-                .addGap(37, 37, 37))
+                                        .addComponent(jBtnTreshold, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jBtnMultiTreshold))))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(jBtnLaplacianFilter, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                                .addComponent(jBtnGaussianFilter, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
+                .addGap(23, 23, 23))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -259,7 +269,9 @@ public class MainWindow extends javax.swing.JFrame {
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(jBtnGreyscale)
                                 .addComponent(jBtnMedianFilter))
-                            .addComponent(jBtnTreshold, javax.swing.GroupLayout.Alignment.TRAILING))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jBtnTreshold)
+                                .addComponent(jBtnMultiTreshold)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -387,6 +399,23 @@ public class MainWindow extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(this, "Not implemented yet", "Warning", JOptionPane.WARNING_MESSAGE);
     }//GEN-LAST:event_jBtnLaplacianFilterActionPerformed
 
+    private void jBtnMultiTresholdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnMultiTresholdActionPerformed
+        // TODO add your handling code here:
+        int[] tab = new int[9];
+        MTresholdDialog mtd = new MTresholdDialog(this, true, tab);
+        mtd.setVisible(true);
+        System.out.println(tab[0]);
+        System.out.println(tab[1]);
+        System.out.println(tab[2]);
+        System.out.println(tab[3]);
+        System.out.println(tab[4]);
+        System.out.println(tab[5]);
+        System.out.println(tab[6]);
+        System.out.println(tab[7]);
+        System.out.println(tab[8]);
+        setImgAfter(_iMod.MultiTreshold(_imgBefore, tab));
+    }//GEN-LAST:event_jBtnMultiTresholdActionPerformed
+
     private void setImgAfter(BufferedImage img)
     {
         _imgAfter = img;
@@ -441,6 +470,7 @@ public class MainWindow extends javax.swing.JFrame {
     private javax.swing.JButton jBtnGreyscale;
     private javax.swing.JButton jBtnLaplacianFilter;
     private javax.swing.JButton jBtnMediumFilter;
+    private javax.swing.JButton jBtnMultiTreshold;
     private javax.swing.JButton jBtnNeg;
     private javax.swing.JToggleButton jBtnTreshold;
     private javax.swing.JButton jBtnZoom;
