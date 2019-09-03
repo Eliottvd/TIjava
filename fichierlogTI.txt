@@ -1,0 +1,2136 @@
+12/08/2019 19:10:27 > --NOUVELLE SESSION
+12/08/2019 19:10:29 > --FIN DE LA SESSION
+12/08/2019 19:10:29 > 
+12/08/2019 19:10:29 > 
+12/08/2019 19:11:58 > --NOUVELLE SESSION
+12/08/2019 19:12:07 > --FIN DE LA SESSION
+12/08/2019 19:12:07 > 
+12/08/2019 19:12:07 > 
+12/08/2019 19:12:14 > --NOUVELLE SESSION
+12/08/2019 19:12:32 > --FIN DE LA SESSION
+12/08/2019 19:12:32 > 
+12/08/2019 19:12:32 > 
+12/08/2019 19:13:17 > --NOUVELLE SESSION
+12/08/2019 19:13:43 > --FIN DE LA SESSION
+12/08/2019 19:13:43 > 
+12/08/2019 19:13:43 > 
+12/08/2019 19:17:21 > --NOUVELLE SESSION
+12/08/2019 19:17:29 > --FIN DE LA SESSION
+12/08/2019 19:17:29 > 
+12/08/2019 19:17:29 > 
+12/08/2019 19:22:34 > --NOUVELLE SESSION
+12/08/2019 19:23:17 > --FIN DE LA SESSION
+12/08/2019 19:23:17 > 
+12/08/2019 19:23:17 > 
+12/08/2019 19:23:58 > --NOUVELLE SESSION
+12/08/2019 19:24:19 > --FIN DE LA SESSION
+12/08/2019 19:24:19 > 
+12/08/2019 19:24:19 > 
+14/08/2019 22:24:59 > --NOUVELLE SESSION
+14/08/2019 22:25:08 > --FIN DE LA SESSION
+14/08/2019 22:25:08 > 
+14/08/2019 22:25:08 > 
+14/08/2019 22:26:39 > --NOUVELLE SESSION
+14/08/2019 22:26:43 > --FIN DE LA SESSION
+14/08/2019 22:26:44 > 
+14/08/2019 22:26:44 > 
+14/08/2019 22:27:23 > --NOUVELLE SESSION
+14/08/2019 22:27:26 > --FIN DE LA SESSION
+14/08/2019 22:27:26 > 
+14/08/2019 22:27:27 > 
+14/08/2019 22:27:44 > --NOUVELLE SESSION
+14/08/2019 22:27:48 > --FIN DE LA SESSION
+14/08/2019 22:27:48 > 
+14/08/2019 22:27:48 > 
+14/08/2019 22:34:21 > --NOUVELLE SESSION
+14/08/2019 22:34:31 > --FIN DE LA SESSION
+14/08/2019 22:34:31 > 
+14/08/2019 22:34:31 > 
+14/08/2019 22:35:18 > --NOUVELLE SESSION
+14/08/2019 22:35:33 > --FIN DE LA SESSION
+14/08/2019 22:35:33 > 
+14/08/2019 22:35:33 > 
+14/08/2019 22:36:01 > --NOUVELLE SESSION
+14/08/2019 22:36:10 > --FIN DE LA SESSION
+14/08/2019 22:36:10 > 
+14/08/2019 22:36:10 > 
+14/08/2019 22:42:29 > --NOUVELLE SESSION
+14/08/2019 22:44:02 > --FIN DE LA SESSION
+14/08/2019 22:44:02 > 
+14/08/2019 22:44:02 > 
+14/08/2019 22:45:50 > --NOUVELLE SESSION
+14/08/2019 22:45:56 > --FIN DE LA SESSION
+14/08/2019 22:45:56 > 
+14/08/2019 22:45:56 > 
+14/08/2019 22:46:11 > --NOUVELLE SESSION
+15/08/2019 16:27:20 > --FIN DE LA SESSION
+15/08/2019 16:27:20 > 
+15/08/2019 16:27:20 > 
+16/08/2019 16:59:03 > --NOUVELLE SESSION
+16/08/2019 16:59:09 > --FIN DE LA SESSION
+16/08/2019 16:59:09 > 
+16/08/2019 16:59:10 > 
+16/08/2019 16:59:21 > --NOUVELLE SESSION
+16/08/2019 16:59:26 > --FIN DE LA SESSION
+16/08/2019 16:59:26 > 
+16/08/2019 16:59:26 > 
+16/08/2019 16:59:32 > --NOUVELLE SESSION
+16/08/2019 16:59:37 > --FIN DE LA SESSION
+16/08/2019 16:59:37 > 
+16/08/2019 16:59:37 > 
+16/08/2019 16:59:39 > --NOUVELLE SESSION
+16/08/2019 16:59:48 > --FIN DE LA SESSION
+16/08/2019 16:59:48 > 
+16/08/2019 16:59:48 > 
+17/08/2019 00:05:49 > --NOUVELLE SESSION
+17/08/2019 00:05:53 > --FIN DE LA SESSION
+17/08/2019 00:05:53 > 
+17/08/2019 00:05:53 > 
+17/08/2019 00:12:34 > --NOUVELLE SESSION
+17/08/2019 00:12:42 > --FIN DE LA SESSION
+17/08/2019 00:12:42 > 
+17/08/2019 00:12:42 > 
+17/08/2019 00:17:29 > --NOUVELLE SESSION
+17/08/2019 00:19:37 > --FIN DE LA SESSION
+17/08/2019 00:19:37 > 
+17/08/2019 00:19:37 > 
+17/08/2019 00:29:13 > --NOUVELLE SESSION
+17/08/2019 00:30:04 > --NOUVELLE SESSION
+17/08/2019 00:30:05 > Reading Image
+17/08/2019 00:30:05 > Image before changed
+17/08/2019 00:30:07 > Swapping before and after
+17/08/2019 00:30:08 > Can't swap : no after image
+17/08/2019 00:30:11 > Image after changed
+17/08/2019 00:30:11 > Image to greyscales
+17/08/2019 00:30:12 > Swapping before and after
+17/08/2019 00:30:12 > Image after changed
+17/08/2019 00:30:12 > Image before changed
+17/08/2019 00:31:00 > Image after changed
+17/08/2019 00:31:00 > Image to greyscales
+17/08/2019 00:31:00 > Swapping before and after
+17/08/2019 00:31:00 > Image after changed
+17/08/2019 00:31:00 > Image before changed
+17/08/2019 00:31:02 > Image after changed
+17/08/2019 00:31:02 > Image to greyscales
+17/08/2019 00:31:03 > --FIN DE LA SESSION
+17/08/2019 00:31:03 > 
+17/08/2019 00:31:03 > 
+17/08/2019 00:31:40 > --NOUVELLE SESSION
+17/08/2019 00:31:42 > Reading Image
+17/08/2019 00:31:42 > Image before changed
+17/08/2019 00:31:44 > Image after changed
+17/08/2019 00:31:44 > Image to greyscale
+17/08/2019 00:31:45 > Swapping before and after
+17/08/2019 00:31:45 > Image after changed
+17/08/2019 00:31:45 > Image before changed
+17/08/2019 00:31:46 > --FIN DE LA SESSION
+17/08/2019 00:31:46 > 
+17/08/2019 00:31:46 > 
+17/08/2019 00:34:49 > --NOUVELLE SESSION
+17/08/2019 00:34:50 > Reading Image
+17/08/2019 00:34:50 > Image before changed
+17/08/2019 00:34:50 > --FIN DE LA SESSION
+17/08/2019 00:34:51 > 
+17/08/2019 00:34:51 > 
+17/08/2019 00:35:32 > --NOUVELLE SESSION
+17/08/2019 00:35:34 > Reading Image
+17/08/2019 00:35:34 > Image before changed
+17/08/2019 00:35:35 > Image after changed
+17/08/2019 00:35:35 > Image to greyscale
+17/08/2019 00:35:37 > Image after changed
+17/08/2019 00:35:37 > Image to greyscale
+17/08/2019 00:35:37 > Image after changed
+17/08/2019 00:35:37 > Image to greyscale
+17/08/2019 00:35:38 > Swapping before and after
+17/08/2019 00:35:38 > Image after changed
+17/08/2019 00:35:38 > Image before changed
+17/08/2019 00:35:39 > Image after changed
+17/08/2019 00:35:39 > Image to greyscale
+17/08/2019 00:35:41 > Image after changed
+17/08/2019 00:35:41 > Image to greyscale
+17/08/2019 00:35:42 > Image after changed
+17/08/2019 00:35:42 > Image to greyscale
+17/08/2019 00:35:44 > Image after changed
+17/08/2019 00:35:44 > Image to greyscale
+17/08/2019 00:35:45 > Image after changed
+17/08/2019 00:35:45 > Image to greyscale
+17/08/2019 00:35:47 > Swapping before and after
+17/08/2019 00:35:47 > Image after changed
+17/08/2019 00:35:47 > Image before changed
+17/08/2019 00:35:48 > Image after changed
+17/08/2019 00:35:48 > Image to greyscale
+17/08/2019 00:35:49 > Image after changed
+17/08/2019 00:35:49 > Image to greyscale
+17/08/2019 00:35:52 > Swapping before and after
+17/08/2019 00:35:52 > Image after changed
+17/08/2019 00:35:52 > Image before changed
+17/08/2019 00:35:53 > Image after changed
+17/08/2019 00:35:53 > Image to greyscale
+17/08/2019 00:35:54 > Image after changed
+17/08/2019 00:35:54 > Image to greyscale
+17/08/2019 00:35:55 > Image after changed
+17/08/2019 00:35:55 > Image to greyscale
+17/08/2019 00:35:55 > Image after changed
+17/08/2019 00:35:55 > Image to greyscale
+17/08/2019 00:35:56 > Image after changed
+17/08/2019 00:35:56 > Image to greyscale
+17/08/2019 00:35:57 > Image after changed
+17/08/2019 00:35:57 > Image to greyscale
+17/08/2019 00:35:57 > Image after changed
+17/08/2019 00:35:57 > Image to greyscale
+17/08/2019 00:35:57 > Image after changed
+17/08/2019 00:35:57 > Image to greyscale
+17/08/2019 00:35:57 > Image after changed
+17/08/2019 00:35:57 > Image to greyscale
+17/08/2019 00:35:58 > Image after changed
+17/08/2019 00:35:58 > Image to greyscale
+17/08/2019 00:35:58 > Image after changed
+17/08/2019 00:35:58 > Image to greyscale
+17/08/2019 00:35:59 > Image after changed
+17/08/2019 00:35:59 > Image to greyscale
+17/08/2019 00:36:00 > Swapping before and after
+17/08/2019 00:36:00 > Image after changed
+17/08/2019 00:36:00 > Image before changed
+17/08/2019 00:36:00 > Image after changed
+17/08/2019 00:36:00 > Image to greyscale
+17/08/2019 00:36:01 > Image after changed
+17/08/2019 00:36:01 > Image to greyscale
+17/08/2019 00:36:11 > --FIN DE LA SESSION
+17/08/2019 00:36:11 > 
+17/08/2019 00:36:11 > 
+17/08/2019 00:36:23 > --NOUVELLE SESSION
+17/08/2019 00:36:24 > Reading Image
+17/08/2019 00:36:24 > Image before changed
+17/08/2019 00:36:49 > --FIN DE LA SESSION
+17/08/2019 00:36:49 > 
+17/08/2019 00:36:49 > 
+17/08/2019 00:43:36 > --NOUVELLE SESSION
+17/08/2019 00:43:37 > Reading Image
+17/08/2019 00:43:37 > Image before changed
+17/08/2019 00:43:38 > Image after changed
+17/08/2019 00:43:38 > Binary Treshold
+17/08/2019 00:43:51 > Swapping before and after
+17/08/2019 00:43:51 > Image after changed
+17/08/2019 00:43:51 > Image before changed
+17/08/2019 00:43:52 > Image after changed
+17/08/2019 00:43:52 > Image to greyscale
+17/08/2019 00:43:54 > --FIN DE LA SESSION
+17/08/2019 00:43:54 > 
+17/08/2019 00:43:54 > 
+17/08/2019 00:48:03 > --NOUVELLE SESSION
+17/08/2019 00:48:04 > Reading Image
+17/08/2019 00:48:04 > Image before changed
+17/08/2019 00:48:14 > --FIN DE LA SESSION
+17/08/2019 00:48:14 > 
+17/08/2019 00:48:14 > 
+17/08/2019 00:48:36 > --NOUVELLE SESSION
+17/08/2019 00:48:37 > Reading Image
+17/08/2019 00:48:37 > Image before changed
+17/08/2019 00:49:01 > --FIN DE LA SESSION
+17/08/2019 00:49:01 > 
+17/08/2019 00:49:01 > 
+17/08/2019 00:49:15 > --NOUVELLE SESSION
+17/08/2019 00:49:16 > Reading Image
+17/08/2019 00:49:16 > Image before changed
+17/08/2019 00:49:23 > --FIN DE LA SESSION
+17/08/2019 00:49:23 > 
+17/08/2019 00:49:23 > 
+17/08/2019 00:53:53 > --NOUVELLE SESSION
+17/08/2019 00:53:54 > Reading Image
+17/08/2019 00:53:54 > Image before changed
+17/08/2019 00:53:57 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:53:59 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:00 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:01 > Image after changed
+17/08/2019 00:54:02 > Image after changed
+17/08/2019 00:54:02 > Image after changed
+17/08/2019 00:54:02 > Image after changed
+17/08/2019 00:54:02 > Image after changed
+17/08/2019 00:54:02 > Image after changed
+17/08/2019 00:54:02 > Image after changed
+17/08/2019 00:54:02 > Image after changed
+17/08/2019 00:54:02 > Image after changed
+17/08/2019 00:54:02 > Image after changed
+17/08/2019 00:54:02 > Image after changed
+17/08/2019 00:54:02 > Image after changed
+17/08/2019 00:54:02 > Image after changed
+17/08/2019 00:54:02 > Image after changed
+17/08/2019 00:54:02 > Image after changed
+17/08/2019 00:54:02 > Image after changed
+17/08/2019 00:54:02 > Image after changed
+17/08/2019 00:54:02 > Image after changed
+17/08/2019 00:54:02 > Image after changed
+17/08/2019 00:54:02 > Image after changed
+17/08/2019 00:54:02 > Image after changed
+17/08/2019 00:54:02 > Image after changed
+17/08/2019 00:54:02 > Image after changed
+17/08/2019 00:54:02 > Image after changed
+17/08/2019 00:54:02 > Image after changed
+17/08/2019 00:54:02 > Image after changed
+17/08/2019 00:54:02 > Image after changed
+17/08/2019 00:54:02 > Image after changed
+17/08/2019 00:54:02 > Image after changed
+17/08/2019 00:54:02 > Image after changed
+17/08/2019 00:54:02 > Image after changed
+17/08/2019 00:54:02 > Image after changed
+17/08/2019 00:54:02 > Image after changed
+17/08/2019 00:54:02 > Image after changed
+17/08/2019 00:54:02 > Image after changed
+17/08/2019 00:54:02 > Image after changed
+17/08/2019 00:54:02 > Image after changed
+17/08/2019 00:54:02 > Image after changed
+17/08/2019 00:54:02 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:03 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:04 > Image after changed
+17/08/2019 00:54:05 > Image after changed
+17/08/2019 00:54:05 > Image after changed
+17/08/2019 00:54:05 > Image after changed
+17/08/2019 00:54:05 > Image after changed
+17/08/2019 00:54:05 > Image after changed
+17/08/2019 00:54:05 > Image after changed
+17/08/2019 00:54:05 > Image after changed
+17/08/2019 00:54:05 > Image after changed
+17/08/2019 00:54:05 > Image after changed
+17/08/2019 00:54:05 > Image after changed
+17/08/2019 00:54:05 > Image after changed
+17/08/2019 00:54:05 > Image after changed
+17/08/2019 00:54:05 > Image after changed
+17/08/2019 00:54:05 > Image after changed
+17/08/2019 00:54:05 > Image after changed
+17/08/2019 00:54:05 > Image after changed
+17/08/2019 00:54:05 > Image after changed
+17/08/2019 00:54:05 > Image after changed
+17/08/2019 00:54:05 > Image after changed
+17/08/2019 00:54:05 > Image after changed
+17/08/2019 00:54:05 > Image after changed
+17/08/2019 00:54:05 > Image after changed
+17/08/2019 00:54:05 > Image after changed
+17/08/2019 00:54:05 > Image after changed
+17/08/2019 00:54:05 > Image after changed
+17/08/2019 00:54:05 > Image after changed
+17/08/2019 00:54:05 > Image after changed
+17/08/2019 00:54:05 > Image after changed
+17/08/2019 00:54:18 > --FIN DE LA SESSION
+17/08/2019 00:54:18 > 
+17/08/2019 00:54:18 > 
+17/08/2019 00:56:58 > --NOUVELLE SESSION
+17/08/2019 00:57:00 > Reading Image
+17/08/2019 00:57:00 > Image before changed
+17/08/2019 00:57:08 > Swapping before and after
+17/08/2019 00:57:09 > Can't swap : no after image
+17/08/2019 00:57:11 > Image after changed
+17/08/2019 00:57:11 > Image to greyscale
+17/08/2019 00:57:16 > Image after changed
+17/08/2019 00:57:17 > Image after changed
+17/08/2019 00:57:17 > Image after changed
+17/08/2019 00:57:17 > Image after changed
+17/08/2019 00:57:17 > Image after changed
+17/08/2019 00:57:17 > Image after changed
+17/08/2019 00:57:17 > Image after changed
+17/08/2019 00:57:17 > Image after changed
+17/08/2019 00:57:17 > Image after changed
+17/08/2019 00:57:17 > Image after changed
+17/08/2019 00:57:17 > Image after changed
+17/08/2019 00:57:18 > Image after changed
+17/08/2019 00:57:18 > Image after changed
+17/08/2019 00:57:18 > Image after changed
+17/08/2019 00:57:18 > Image after changed
+17/08/2019 00:57:18 > Image after changed
+17/08/2019 00:57:18 > Image after changed
+17/08/2019 00:57:18 > Image after changed
+17/08/2019 00:57:18 > Image after changed
+17/08/2019 00:57:18 > Image after changed
+17/08/2019 00:57:18 > Image after changed
+17/08/2019 00:57:18 > Image after changed
+17/08/2019 00:57:18 > Image after changed
+17/08/2019 00:57:18 > Image after changed
+17/08/2019 00:57:18 > Image after changed
+17/08/2019 00:57:18 > Image after changed
+17/08/2019 00:57:18 > Image after changed
+17/08/2019 00:57:18 > Image after changed
+17/08/2019 00:57:18 > Image after changed
+17/08/2019 00:57:18 > Image after changed
+17/08/2019 00:57:18 > Image after changed
+17/08/2019 00:57:18 > Image after changed
+17/08/2019 00:57:18 > Image after changed
+17/08/2019 00:57:18 > Image after changed
+17/08/2019 00:57:18 > Image after changed
+17/08/2019 00:57:18 > Image after changed
+17/08/2019 00:57:18 > Image after changed
+17/08/2019 00:57:18 > Image after changed
+17/08/2019 00:57:18 > Image after changed
+17/08/2019 00:57:18 > Image after changed
+17/08/2019 00:57:20 > Image after changed
+17/08/2019 00:57:20 > Image after changed
+17/08/2019 00:57:20 > Image after changed
+17/08/2019 00:57:20 > Image after changed
+17/08/2019 00:57:20 > Image after changed
+17/08/2019 00:57:20 > Image after changed
+17/08/2019 00:57:20 > Image after changed
+17/08/2019 00:57:20 > Image after changed
+17/08/2019 00:57:20 > Image after changed
+17/08/2019 00:57:20 > Image after changed
+17/08/2019 00:57:20 > Image after changed
+17/08/2019 00:57:20 > Image after changed
+17/08/2019 00:57:20 > Image after changed
+17/08/2019 00:57:20 > Image after changed
+17/08/2019 00:57:20 > Image after changed
+17/08/2019 00:57:20 > Image after changed
+17/08/2019 00:57:20 > Image after changed
+17/08/2019 00:57:20 > Image after changed
+17/08/2019 00:57:20 > Image after changed
+17/08/2019 00:57:20 > Image after changed
+17/08/2019 00:57:20 > Image after changed
+17/08/2019 00:57:20 > Image after changed
+17/08/2019 00:57:20 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:21 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:22 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:23 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:24 > Image after changed
+17/08/2019 00:57:25 > Image after changed
+17/08/2019 00:57:46 > --FIN DE LA SESSION
+17/08/2019 00:57:46 > 
+17/08/2019 00:57:46 > 
+17/08/2019 01:26:06 > --NOUVELLE SESSION
+17/08/2019 01:26:07 > Reading Image
+17/08/2019 01:26:07 > Image before changed
+17/08/2019 01:26:12 > --FIN DE LA SESSION
+17/08/2019 01:26:12 > 
+17/08/2019 01:26:12 > 
+17/08/2019 01:26:33 > --NOUVELLE SESSION
+17/08/2019 01:26:35 > Reading Image
+17/08/2019 01:26:35 > Image before changed
+17/08/2019 01:26:36 > Image after changed
+17/08/2019 01:26:36 > Median Filter
+17/08/2019 01:26:39 > --FIN DE LA SESSION
+17/08/2019 01:26:39 > 
+17/08/2019 01:26:39 > 
+17/08/2019 01:26:40 > --NOUVELLE SESSION
+17/08/2019 01:26:41 > Reading Image
+17/08/2019 01:26:41 > Image before changed
+17/08/2019 01:26:43 > Image after changed
+17/08/2019 01:26:43 > Image to greyscale
+17/08/2019 01:26:44 > Swapping before and after
+17/08/2019 01:26:44 > Image after changed
+17/08/2019 01:26:44 > Image before changed
+17/08/2019 01:26:47 > Image after changed
+17/08/2019 01:26:47 > Median Filter
+17/08/2019 01:27:03 > --FIN DE LA SESSION
+17/08/2019 01:27:03 > 
+17/08/2019 01:27:03 > 
+17/08/2019 02:11:18 > --NOUVELLE SESSION
+17/08/2019 02:11:19 > Reading Image
+17/08/2019 02:11:19 > Image before changed
+17/08/2019 02:11:21 > Image after changed
+17/08/2019 02:11:21 > Median Filter
+17/08/2019 02:11:23 > Image after changed
+17/08/2019 02:11:23 > Image to greyscale
+17/08/2019 02:11:24 > Image after changed
+17/08/2019 02:11:24 > Median Filter
+17/08/2019 02:11:28 > Image after changed
+17/08/2019 02:11:28 > Image to greyscale
+17/08/2019 02:11:32 > Image after changed
+17/08/2019 02:11:32 > Median Filter
+17/08/2019 02:11:33 > Image after changed
+17/08/2019 02:11:33 > Image to greyscale
+17/08/2019 02:11:34 > Image after changed
+17/08/2019 02:11:34 > Median Filter
+17/08/2019 02:11:34 > Image after changed
+17/08/2019 02:11:34 > Image to greyscale
+17/08/2019 02:11:35 > Image after changed
+17/08/2019 02:11:35 > Median Filter
+17/08/2019 02:11:35 > Image after changed
+17/08/2019 02:11:35 > Image to greyscale
+17/08/2019 02:11:36 > Image after changed
+17/08/2019 02:11:36 > Median Filter
+17/08/2019 02:11:37 > Image after changed
+17/08/2019 02:11:37 > Image to greyscale
+17/08/2019 02:11:37 > Image after changed
+17/08/2019 02:11:37 > Median Filter
+17/08/2019 02:11:38 > Image after changed
+17/08/2019 02:11:38 > Image to greyscale
+17/08/2019 02:11:39 > Image after changed
+17/08/2019 02:11:39 > Median Filter
+17/08/2019 02:11:40 > Image after changed
+17/08/2019 02:11:40 > Image to greyscale
+17/08/2019 02:11:40 > Image after changed
+17/08/2019 02:11:40 > Median Filter
+17/08/2019 02:11:41 > Image after changed
+17/08/2019 02:11:41 > Image to greyscale
+17/08/2019 02:11:42 > Swapping before and after
+17/08/2019 02:11:42 > Image after changed
+17/08/2019 02:11:42 > Image before changed
+17/08/2019 02:11:43 > Image after changed
+17/08/2019 02:11:43 > Median Filter
+17/08/2019 02:11:45 > Image after changed
+17/08/2019 02:11:45 > Median Filter
+17/08/2019 02:11:46 > Image after changed
+17/08/2019 02:11:46 > Median Filter
+17/08/2019 02:11:46 > Image after changed
+17/08/2019 02:11:46 > Median Filter
+17/08/2019 02:11:46 > Image after changed
+17/08/2019 02:11:46 > Median Filter
+17/08/2019 02:11:47 > Swapping before and after
+17/08/2019 02:11:47 > Image after changed
+17/08/2019 02:11:47 > Image before changed
+17/08/2019 02:11:48 > Swapping before and after
+17/08/2019 02:11:48 > Image after changed
+17/08/2019 02:11:48 > Image before changed
+17/08/2019 02:11:48 > Swapping before and after
+17/08/2019 02:11:48 > Image after changed
+17/08/2019 02:11:48 > Image before changed
+17/08/2019 02:11:49 > Swapping before and after
+17/08/2019 02:11:49 > Image after changed
+17/08/2019 02:11:49 > Image before changed
+17/08/2019 02:11:49 > Swapping before and after
+17/08/2019 02:11:49 > Image after changed
+17/08/2019 02:11:49 > Image before changed
+17/08/2019 02:11:49 > Swapping before and after
+17/08/2019 02:11:49 > Image after changed
+17/08/2019 02:11:49 > Image before changed
+17/08/2019 02:11:50 > Swapping before and after
+17/08/2019 02:11:50 > Image after changed
+17/08/2019 02:11:50 > Image before changed
+17/08/2019 02:11:50 > Swapping before and after
+17/08/2019 02:11:50 > Image after changed
+17/08/2019 02:11:50 > Image before changed
+17/08/2019 02:11:50 > Swapping before and after
+17/08/2019 02:11:50 > Image after changed
+17/08/2019 02:11:50 > Image before changed
+17/08/2019 02:11:51 > Swapping before and after
+17/08/2019 02:11:51 > Image after changed
+17/08/2019 02:11:51 > Image before changed
+17/08/2019 02:11:51 > Swapping before and after
+17/08/2019 02:11:51 > Image after changed
+17/08/2019 02:11:51 > Image before changed
+17/08/2019 02:11:51 > Swapping before and after
+17/08/2019 02:11:51 > Image after changed
+17/08/2019 02:11:51 > Image before changed
+17/08/2019 02:11:52 > Swapping before and after
+17/08/2019 02:11:52 > Image after changed
+17/08/2019 02:11:52 > Image before changed
+17/08/2019 02:11:52 > Swapping before and after
+17/08/2019 02:11:52 > Image after changed
+17/08/2019 02:11:52 > Image before changed
+17/08/2019 02:11:52 > Swapping before and after
+17/08/2019 02:11:53 > Image after changed
+17/08/2019 02:11:53 > Image before changed
+17/08/2019 02:11:53 > Swapping before and after
+17/08/2019 02:11:53 > Image after changed
+17/08/2019 02:11:53 > Image before changed
+17/08/2019 02:11:53 > Swapping before and after
+17/08/2019 02:11:53 > Image after changed
+17/08/2019 02:11:53 > Image before changed
+17/08/2019 02:11:53 > Swapping before and after
+17/08/2019 02:11:53 > Image after changed
+17/08/2019 02:11:53 > Image before changed
+17/08/2019 02:11:54 > Swapping before and after
+17/08/2019 02:11:54 > Image after changed
+17/08/2019 02:11:54 > Image before changed
+17/08/2019 02:11:54 > Swapping before and after
+17/08/2019 02:11:54 > Image after changed
+17/08/2019 02:11:54 > Image before changed
+17/08/2019 02:11:55 > Swapping before and after
+17/08/2019 02:11:55 > Image after changed
+17/08/2019 02:11:55 > Image before changed
+17/08/2019 02:11:55 > Swapping before and after
+17/08/2019 02:11:55 > Image after changed
+17/08/2019 02:11:55 > Image before changed
+17/08/2019 02:11:55 > Swapping before and after
+17/08/2019 02:11:55 > Image after changed
+17/08/2019 02:11:55 > Image before changed
+17/08/2019 02:11:55 > Swapping before and after
+17/08/2019 02:11:55 > Image after changed
+17/08/2019 02:11:55 > Image before changed
+17/08/2019 02:11:56 > Swapping before and after
+17/08/2019 02:11:56 > Image after changed
+17/08/2019 02:11:56 > Image before changed
+17/08/2019 02:11:56 > Swapping before and after
+17/08/2019 02:11:56 > Image after changed
+17/08/2019 02:11:56 > Image before changed
+17/08/2019 02:11:56 > Swapping before and after
+17/08/2019 02:11:56 > Image after changed
+17/08/2019 02:11:56 > Image before changed
+17/08/2019 02:11:57 > Swapping before and after
+17/08/2019 02:11:57 > Image after changed
+17/08/2019 02:11:57 > Image before changed
+17/08/2019 02:11:57 > --FIN DE LA SESSION
+17/08/2019 02:11:57 > 
+17/08/2019 02:11:57 > 
+17/08/2019 02:23:52 > --NOUVELLE SESSION
+17/08/2019 02:23:53 > Reading Image
+17/08/2019 02:23:53 > Image before changed
+17/08/2019 02:23:54 > Image after changed
+17/08/2019 02:23:54 > Image to greyscale
+17/08/2019 02:23:57 > Image after changed
+17/08/2019 02:23:57 > Image after changed
+17/08/2019 02:23:57 > Image after changed
+17/08/2019 02:23:57 > Image after changed
+17/08/2019 02:23:57 > Image after changed
+17/08/2019 02:23:57 > Image after changed
+17/08/2019 02:23:57 > Image after changed
+17/08/2019 02:23:57 > Image after changed
+17/08/2019 02:23:57 > Image after changed
+17/08/2019 02:23:57 > Image after changed
+17/08/2019 02:23:57 > Image after changed
+17/08/2019 02:23:57 > Image after changed
+17/08/2019 02:23:57 > Image after changed
+17/08/2019 02:23:57 > Image after changed
+17/08/2019 02:23:57 > Image after changed
+17/08/2019 02:23:57 > Image after changed
+17/08/2019 02:23:57 > Image after changed
+17/08/2019 02:23:57 > Image after changed
+17/08/2019 02:23:57 > Image after changed
+17/08/2019 02:23:57 > Image after changed
+17/08/2019 02:23:57 > Image after changed
+17/08/2019 02:23:57 > Image after changed
+17/08/2019 02:23:57 > Image after changed
+17/08/2019 02:23:59 > Image after changed
+17/08/2019 02:23:59 > Image after changed
+17/08/2019 02:23:59 > Image after changed
+17/08/2019 02:23:59 > Image after changed
+17/08/2019 02:23:59 > Image after changed
+17/08/2019 02:23:59 > Image after changed
+17/08/2019 02:23:59 > Image after changed
+17/08/2019 02:23:59 > Image after changed
+17/08/2019 02:23:59 > Image after changed
+17/08/2019 02:23:59 > Image after changed
+17/08/2019 02:23:59 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:00 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:01 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:02 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:03 > Image after changed
+17/08/2019 02:24:04 > Image after changed
+17/08/2019 02:24:04 > Image after changed
+17/08/2019 02:24:04 > Image after changed
+17/08/2019 02:24:04 > Image after changed
+17/08/2019 02:24:04 > Image after changed
+17/08/2019 02:24:04 > Image after changed
+17/08/2019 02:24:04 > Image after changed
+17/08/2019 02:24:04 > Image after changed
+17/08/2019 02:24:04 > Image after changed
+17/08/2019 02:24:04 > Image after changed
+17/08/2019 02:24:04 > Image after changed
+17/08/2019 02:24:04 > Image after changed
+17/08/2019 02:24:04 > Image after changed
+17/08/2019 02:24:04 > Image after changed
+17/08/2019 02:24:04 > Image after changed
+17/08/2019 02:24:04 > Image after changed
+17/08/2019 02:24:04 > Image after changed
+17/08/2019 02:24:04 > Image after changed
+17/08/2019 02:24:04 > Image after changed
+17/08/2019 02:24:04 > Image after changed
+17/08/2019 02:24:04 > Image after changed
+17/08/2019 02:24:04 > Image after changed
+17/08/2019 02:24:04 > Image after changed
+17/08/2019 02:24:04 > Image after changed
+17/08/2019 02:24:04 > Image after changed
+17/08/2019 02:24:04 > Image after changed
+17/08/2019 02:24:04 > Image after changed
+17/08/2019 02:24:04 > Image after changed
+17/08/2019 02:24:04 > Image after changed
+17/08/2019 02:24:04 > Image after changed
+17/08/2019 02:24:04 > Image after changed
+17/08/2019 02:24:05 > Image after changed
+17/08/2019 02:24:05 > Image after changed
+17/08/2019 02:24:05 > Image after changed
+17/08/2019 02:24:05 > Image after changed
+17/08/2019 02:24:05 > Image after changed
+17/08/2019 02:24:05 > Image after changed
+17/08/2019 02:24:05 > Image after changed
+17/08/2019 02:24:05 > Image after changed
+17/08/2019 02:24:05 > Image after changed
+17/08/2019 02:24:05 > Image after changed
+17/08/2019 02:24:06 > Image after changed
+17/08/2019 02:24:06 > Image to greyscale
+17/08/2019 02:24:09 > Image after changed
+17/08/2019 02:24:09 > Image after changed
+17/08/2019 02:24:09 > Image after changed
+17/08/2019 02:24:09 > Image after changed
+17/08/2019 02:24:09 > Image after changed
+17/08/2019 02:24:09 > Image after changed
+17/08/2019 02:24:09 > Image after changed
+17/08/2019 02:24:09 > Image after changed
+17/08/2019 02:24:09 > Image after changed
+17/08/2019 02:24:09 > Image after changed
+17/08/2019 02:24:09 > Image after changed
+17/08/2019 02:24:09 > Image after changed
+17/08/2019 02:24:09 > Image after changed
+17/08/2019 02:24:09 > Image after changed
+17/08/2019 02:24:09 > Image after changed
+17/08/2019 02:24:09 > Image after changed
+17/08/2019 02:24:09 > Image after changed
+17/08/2019 02:24:09 > Image after changed
+17/08/2019 02:24:09 > Image after changed
+17/08/2019 02:24:09 > Image after changed
+17/08/2019 02:24:09 > Image after changed
+17/08/2019 02:24:09 > Image after changed
+17/08/2019 02:24:09 > Image after changed
+17/08/2019 02:24:09 > Image after changed
+17/08/2019 02:24:09 > Image after changed
+17/08/2019 02:24:09 > Image after changed
+17/08/2019 02:24:09 > Image after changed
+17/08/2019 02:24:09 > Image after changed
+17/08/2019 02:24:09 > Image after changed
+17/08/2019 02:24:09 > Image after changed
+17/08/2019 02:24:09 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:10 > Image after changed
+17/08/2019 02:24:11 > Image after changed
+17/08/2019 02:24:11 > Image after changed
+17/08/2019 02:24:11 > Image after changed
+17/08/2019 02:24:11 > Image after changed
+17/08/2019 02:24:11 > Image after changed
+17/08/2019 02:24:11 > Image after changed
+17/08/2019 02:24:11 > Image after changed
+17/08/2019 02:24:11 > Image after changed
+17/08/2019 02:24:11 > Image after changed
+17/08/2019 02:24:13 > Image after changed
+17/08/2019 02:24:13 > Image to greyscale
+17/08/2019 02:25:21 > Swapping before and after
+17/08/2019 02:25:21 > Image after changed
+17/08/2019 02:25:21 > Image before changed
+17/08/2019 02:25:22 > Swapping before and after
+17/08/2019 02:25:22 > Image after changed
+17/08/2019 02:25:22 > Image before changed
+17/08/2019 02:25:23 > --FIN DE LA SESSION
+17/08/2019 02:25:23 > 
+17/08/2019 02:25:23 > 
+17/08/2019 14:26:36 > --NOUVELLE SESSION
+17/08/2019 14:26:37 > Reading Image
+17/08/2019 14:26:37 > Image before changed
+17/08/2019 14:26:39 > Image after changed
+17/08/2019 14:26:39 > Median Filter
+17/08/2019 14:26:41 > --FIN DE LA SESSION
+17/08/2019 14:26:41 > 
+17/08/2019 14:26:41 > 
+17/08/2019 14:34:28 > --NOUVELLE SESSION
+17/08/2019 14:34:29 > Reading Image
+17/08/2019 14:34:29 > Image before changed
+17/08/2019 14:34:37 > Image after changed
+17/08/2019 14:34:37 > Median Filter
+17/08/2019 14:34:39 > --FIN DE LA SESSION
+17/08/2019 14:34:39 > 
+17/08/2019 14:34:39 > 
+25/08/2019 12:39:26 > --NOUVELLE SESSION
+25/08/2019 12:39:28 > Reading Image
+25/08/2019 12:39:28 > Image before changed
+25/08/2019 12:39:57 > Image after changed
+25/08/2019 12:39:57 > Median Filter
+25/08/2019 12:39:58 > Image after changed
+25/08/2019 12:39:58 > Image to greyscale
+25/08/2019 12:40:02 > Image after changed
+25/08/2019 12:40:04 > Image after changed
+25/08/2019 12:40:04 > Image after changed
+25/08/2019 12:40:04 > Image after changed
+25/08/2019 12:40:04 > Image after changed
+25/08/2019 12:40:04 > Image after changed
+25/08/2019 12:40:04 > Image after changed
+25/08/2019 12:40:04 > Image after changed
+25/08/2019 12:40:04 > Image after changed
+25/08/2019 12:40:04 > Image after changed
+25/08/2019 12:40:04 > Image after changed
+25/08/2019 12:40:04 > Image after changed
+25/08/2019 12:40:04 > Image after changed
+25/08/2019 12:40:04 > Image after changed
+25/08/2019 12:40:04 > Image after changed
+25/08/2019 12:40:04 > Image after changed
+25/08/2019 12:40:04 > Image after changed
+25/08/2019 12:40:04 > Image after changed
+25/08/2019 12:40:04 > Image after changed
+25/08/2019 12:40:04 > Image after changed
+25/08/2019 12:40:04 > Image after changed
+25/08/2019 12:40:04 > Image after changed
+25/08/2019 12:40:04 > Image after changed
+25/08/2019 12:40:04 > Image after changed
+25/08/2019 12:40:04 > Image after changed
+25/08/2019 12:40:04 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:05 > Image after changed
+25/08/2019 12:40:06 > Image after changed
+25/08/2019 12:40:06 > Image after changed
+25/08/2019 12:40:06 > Image after changed
+25/08/2019 12:40:06 > Image after changed
+25/08/2019 12:40:06 > Image after changed
+25/08/2019 12:40:06 > Image after changed
+25/08/2019 12:40:06 > Image after changed
+25/08/2019 12:40:06 > Image after changed
+25/08/2019 12:40:06 > Image after changed
+25/08/2019 12:40:06 > Image after changed
+25/08/2019 12:40:06 > Image after changed
+25/08/2019 12:40:06 > Image after changed
+25/08/2019 12:40:06 > Image after changed
+25/08/2019 12:40:06 > Image after changed
+25/08/2019 12:40:06 > Image after changed
+25/08/2019 12:40:06 > Image after changed
+25/08/2019 12:40:06 > Image after changed
+25/08/2019 12:40:06 > Image after changed
+25/08/2019 12:40:06 > Image after changed
+25/08/2019 12:40:06 > Image after changed
+25/08/2019 12:40:06 > Image after changed
+25/08/2019 12:40:06 > Image after changed
+25/08/2019 12:40:06 > Image after changed
+25/08/2019 12:40:06 > Image after changed
+25/08/2019 12:40:06 > Image after changed
+25/08/2019 12:40:06 > Image after changed
+25/08/2019 12:40:06 > Image after changed
+25/08/2019 12:40:08 > Image after changed
+25/08/2019 12:40:08 > Image to greyscale
+25/08/2019 12:40:24 > Image after changed
+25/08/2019 12:40:24 > Image to greyscale
+25/08/2019 12:40:25 > Image after changed
+25/08/2019 12:40:25 > Image to greyscale
+25/08/2019 12:40:29 > Swapping before and after
+25/08/2019 12:40:29 > Image after changed
+25/08/2019 12:40:29 > Image before changed
+25/08/2019 12:40:32 > --FIN DE LA SESSION
+25/08/2019 12:40:32 > 
+25/08/2019 12:40:32 > 
+25/08/2019 19:17:12 > --NOUVELLE SESSION
+25/08/2019 19:17:14 > Reading Image
+25/08/2019 19:17:14 > Image before changed
+25/08/2019 19:17:18 > Image after changed
+25/08/2019 19:17:18 > Median Filter
+25/08/2019 19:17:20 > Swapping before and after
+25/08/2019 19:17:20 > Image after changed
+25/08/2019 19:17:20 > Image before changed
+25/08/2019 19:17:21 > Image after changed
+25/08/2019 19:17:21 > Image to greyscale
+25/08/2019 19:17:22 > Image after changed
+25/08/2019 19:17:24 > Image after changed
+25/08/2019 19:17:24 > Image after changed
+25/08/2019 19:17:24 > Image after changed
+25/08/2019 19:17:24 > Image after changed
+25/08/2019 19:17:24 > Image after changed
+25/08/2019 19:17:24 > Image after changed
+25/08/2019 19:17:24 > Image after changed
+25/08/2019 19:17:24 > Image after changed
+25/08/2019 19:17:24 > Image after changed
+25/08/2019 19:17:24 > Image after changed
+25/08/2019 19:17:24 > Image after changed
+25/08/2019 19:17:24 > Image after changed
+25/08/2019 19:17:24 > Image after changed
+25/08/2019 19:17:24 > Image after changed
+25/08/2019 19:17:24 > Image after changed
+25/08/2019 19:17:24 > Image after changed
+25/08/2019 19:17:24 > Image after changed
+25/08/2019 19:17:24 > Image after changed
+25/08/2019 19:17:25 > Image after changed
+25/08/2019 19:17:25 > Image after changed
+25/08/2019 19:17:25 > Image after changed
+25/08/2019 19:17:25 > Image after changed
+25/08/2019 19:17:25 > Image after changed
+25/08/2019 19:17:25 > Image after changed
+25/08/2019 19:17:25 > Image after changed
+25/08/2019 19:17:25 > Image after changed
+25/08/2019 19:17:25 > Image after changed
+25/08/2019 19:17:25 > Image after changed
+25/08/2019 19:17:25 > Image after changed
+25/08/2019 19:17:25 > Image after changed
+25/08/2019 19:17:25 > Image after changed
+25/08/2019 19:17:25 > Image after changed
+25/08/2019 19:17:25 > Image after changed
+25/08/2019 19:17:25 > Image after changed
+25/08/2019 19:17:25 > Image after changed
+25/08/2019 19:17:25 > Image after changed
+25/08/2019 19:17:25 > Image after changed
+25/08/2019 19:17:25 > Image after changed
+25/08/2019 19:17:26 > Image after changed
+25/08/2019 19:17:26 > Image after changed
+25/08/2019 19:17:26 > Image after changed
+25/08/2019 19:17:26 > Image after changed
+25/08/2019 19:17:26 > Image after changed
+25/08/2019 19:17:26 > Image after changed
+25/08/2019 19:17:26 > Image after changed
+25/08/2019 19:17:26 > Image after changed
+25/08/2019 19:17:26 > Image after changed
+25/08/2019 19:17:26 > Image after changed
+25/08/2019 19:17:26 > Image after changed
+25/08/2019 19:17:26 > Image after changed
+25/08/2019 19:17:26 > Image after changed
+25/08/2019 19:17:26 > Image after changed
+25/08/2019 19:17:26 > Image after changed
+25/08/2019 19:17:26 > Image after changed
+25/08/2019 19:17:26 > Image after changed
+25/08/2019 19:17:26 > Image after changed
+25/08/2019 19:17:26 > Image after changed
+25/08/2019 19:17:26 > Image after changed
+25/08/2019 19:17:27 > Image after changed
+25/08/2019 19:17:27 > Image after changed
+25/08/2019 19:17:27 > Image after changed
+25/08/2019 19:17:27 > Image after changed
+25/08/2019 19:17:27 > Image after changed
+25/08/2019 19:17:27 > Image after changed
+25/08/2019 19:17:27 > Image after changed
+25/08/2019 19:17:27 > Image after changed
+25/08/2019 19:17:27 > Image after changed
+25/08/2019 19:17:27 > Image after changed
+25/08/2019 19:17:27 > Image after changed
+25/08/2019 19:17:27 > Image after changed
+25/08/2019 19:17:27 > Image after changed
+25/08/2019 19:17:27 > Image after changed
+25/08/2019 19:17:27 > Image after changed
+25/08/2019 19:17:27 > Image after changed
+25/08/2019 19:17:27 > Image after changed
+25/08/2019 19:17:27 > Image after changed
+25/08/2019 19:17:27 > Image after changed
+25/08/2019 19:17:28 > Image after changed
+25/08/2019 19:17:28 > Image to greyscale
+25/08/2019 19:17:31 > Image after changed
+25/08/2019 19:17:31 > Image after changed
+25/08/2019 19:17:31 > Image after changed
+25/08/2019 19:17:31 > Image after changed
+25/08/2019 19:17:31 > Image after changed
+25/08/2019 19:17:31 > Image after changed
+25/08/2019 19:17:31 > Image after changed
+25/08/2019 19:17:31 > Image after changed
+25/08/2019 19:17:31 > Image after changed
+25/08/2019 19:17:31 > Image after changed
+25/08/2019 19:17:32 > Image after changed
+25/08/2019 19:17:32 > Image after changed
+25/08/2019 19:17:32 > Image after changed
+25/08/2019 19:17:32 > Image after changed
+25/08/2019 19:17:32 > Image after changed
+25/08/2019 19:17:32 > Image after changed
+25/08/2019 19:17:32 > Image after changed
+25/08/2019 19:17:32 > Image after changed
+25/08/2019 19:17:32 > Image after changed
+25/08/2019 19:17:32 > Image after changed
+25/08/2019 19:17:32 > Image after changed
+25/08/2019 19:17:32 > Image after changed
+25/08/2019 19:17:32 > Image after changed
+25/08/2019 19:17:32 > Image after changed
+25/08/2019 19:17:32 > Image after changed
+25/08/2019 19:17:32 > Image after changed
+25/08/2019 19:17:32 > Image after changed
+25/08/2019 19:17:32 > Image after changed
+25/08/2019 19:17:32 > Image after changed
+25/08/2019 19:17:32 > Image after changed
+25/08/2019 19:17:32 > Image after changed
+25/08/2019 19:17:32 > Image after changed
+25/08/2019 19:17:32 > Image after changed
+25/08/2019 19:17:32 > Image after changed
+25/08/2019 19:17:32 > Image after changed
+25/08/2019 19:17:32 > Image after changed
+25/08/2019 19:17:32 > Image after changed
+25/08/2019 19:17:32 > Image after changed
+25/08/2019 19:17:32 > Image after changed
+25/08/2019 19:17:32 > Image after changed
+25/08/2019 19:17:33 > Image after changed
+25/08/2019 19:17:33 > Image after changed
+25/08/2019 19:17:33 > Image after changed
+25/08/2019 19:17:33 > Image after changed
+25/08/2019 19:17:33 > Image after changed
+25/08/2019 19:17:33 > Image after changed
+25/08/2019 19:17:33 > Image after changed
+25/08/2019 19:17:34 > Image after changed
+25/08/2019 19:17:34 > Image to greyscale
+25/08/2019 19:17:35 > Swapping before and after
+25/08/2019 19:17:35 > Image after changed
+25/08/2019 19:17:35 > Image before changed
+25/08/2019 19:17:36 > Image after changed
+25/08/2019 19:17:36 > Image after changed
+25/08/2019 19:17:36 > Image after changed
+25/08/2019 19:17:36 > Image after changed
+25/08/2019 19:17:36 > Image after changed
+25/08/2019 19:17:36 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:37 > Image after changed
+25/08/2019 19:17:38 > Image after changed
+25/08/2019 19:17:38 > Image after changed
+25/08/2019 19:17:38 > Image after changed
+25/08/2019 19:17:38 > Image after changed
+25/08/2019 19:17:38 > Image after changed
+25/08/2019 19:17:38 > Image after changed
+25/08/2019 19:17:38 > Image after changed
+25/08/2019 19:17:38 > Image after changed
+25/08/2019 19:17:38 > Image after changed
+25/08/2019 19:17:38 > Image after changed
+25/08/2019 19:17:38 > Image after changed
+25/08/2019 19:17:38 > Image after changed
+25/08/2019 19:17:38 > Image after changed
+25/08/2019 19:17:38 > Image after changed
+25/08/2019 19:17:38 > Image after changed
+25/08/2019 19:17:38 > Image after changed
+25/08/2019 19:17:38 > Image after changed
+25/08/2019 19:17:38 > Image after changed
+25/08/2019 19:17:38 > Image after changed
+25/08/2019 19:17:38 > Image after changed
+25/08/2019 19:17:38 > Image after changed
+25/08/2019 19:17:38 > Image after changed
+25/08/2019 19:17:38 > Image after changed
+25/08/2019 19:17:38 > Image after changed
+25/08/2019 19:17:38 > Image after changed
+25/08/2019 19:17:38 > Image after changed
+25/08/2019 19:17:38 > Image after changed
+25/08/2019 19:17:38 > Image after changed
+25/08/2019 19:17:38 > Image after changed
+25/08/2019 19:17:38 > Image after changed
+25/08/2019 19:17:38 > Image after changed
+25/08/2019 19:17:38 > Image after changed
+25/08/2019 19:17:39 > --FIN DE LA SESSION
+25/08/2019 19:17:39 > 
+25/08/2019 19:17:39 > 
+28/08/2019 16:25:58 > --NOUVELLE SESSION
+28/08/2019 16:25:59 > Reading Image
+28/08/2019 16:25:59 > Image before changed
+28/08/2019 16:26:03 > Image after changed
+28/08/2019 16:26:03 > Image to greyscale
+28/08/2019 16:26:10 > --FIN DE LA SESSION
+28/08/2019 16:26:10 > 
+28/08/2019 16:26:10 > 
+28/08/2019 16:26:54 > --NOUVELLE SESSION
+28/08/2019 16:26:55 > Reading Image
+28/08/2019 16:26:55 > Image before changed
+28/08/2019 16:26:56 > Image before changed
+28/08/2019 16:26:58 > Image before changed
+28/08/2019 16:26:59 > Image before changed
+28/08/2019 16:26:59 > Image before changed
+28/08/2019 16:27:00 > Image before changed
+28/08/2019 16:27:02 > --FIN DE LA SESSION
+28/08/2019 16:27:02 > 
+28/08/2019 16:27:02 > 
+03/09/2019 14:52:34 > --NOUVELLE SESSION
+03/09/2019 14:52:36 > Reading Image
+03/09/2019 14:52:36 > Image before changed
+03/09/2019 14:52:38 > Image after changed
+03/09/2019 14:52:38 > Median Filter
+03/09/2019 14:52:39 > Image before changed
+03/09/2019 14:52:40 > Image before changed
+03/09/2019 14:52:41 > Image after changed
+03/09/2019 14:52:41 > Image to greyscale
+03/09/2019 14:52:43 > Image after changed
+03/09/2019 14:52:43 > Image to greyscale
+03/09/2019 14:52:45 > Image after changed
+03/09/2019 14:52:46 > Image after changed
+03/09/2019 14:52:46 > Image after changed
+03/09/2019 14:52:46 > Image after changed
+03/09/2019 14:52:46 > Image after changed
+03/09/2019 14:52:47 > Image after changed
+03/09/2019 14:52:47 > Image after changed
+03/09/2019 14:52:47 > Image after changed
+03/09/2019 14:52:47 > Image after changed
+03/09/2019 14:52:47 > Image after changed
+03/09/2019 14:52:48 > Image after changed
+03/09/2019 14:52:48 > Image after changed
+03/09/2019 14:52:48 > Image after changed
+03/09/2019 14:52:48 > Image after changed
+03/09/2019 14:52:48 > Image after changed
+03/09/2019 14:52:48 > Image after changed
+03/09/2019 14:52:48 > Image after changed
+03/09/2019 14:52:49 > Image after changed
+03/09/2019 14:52:49 > Image after changed
+03/09/2019 14:52:49 > Image after changed
+03/09/2019 14:52:49 > Image after changed
+03/09/2019 14:52:49 > Image after changed
+03/09/2019 14:52:50 > Swapping before and after
+03/09/2019 14:52:50 > Image after changed
+03/09/2019 14:52:50 > Image before changed
+03/09/2019 14:52:52 > Image after changed
+03/09/2019 14:52:52 > Image to greyscale
+03/09/2019 14:52:58 > Image after changed
+03/09/2019 14:52:58 > Image after changed
+03/09/2019 14:52:58 > Image after changed
+03/09/2019 14:52:58 > Image after changed
+03/09/2019 14:52:58 > Image after changed
+03/09/2019 14:52:58 > Image after changed
+03/09/2019 14:52:58 > Image after changed
+03/09/2019 14:52:59 > Image after changed
+03/09/2019 14:52:59 > Image after changed
+03/09/2019 14:52:59 > Image after changed
+03/09/2019 14:52:59 > Image after changed
+03/09/2019 14:52:59 > Image after changed
+03/09/2019 14:52:59 > Image after changed
+03/09/2019 14:52:59 > Image after changed
+03/09/2019 14:52:59 > Image after changed
+03/09/2019 14:53:00 > Image after changed
+03/09/2019 14:53:00 > Image after changed
+03/09/2019 14:53:00 > Image after changed
+03/09/2019 14:53:00 > Image after changed
+03/09/2019 14:53:00 > Image after changed
+03/09/2019 14:53:00 > Image after changed
+03/09/2019 14:53:00 > Image after changed
+03/09/2019 14:53:00 > Image after changed
+03/09/2019 14:53:00 > Image after changed
+03/09/2019 14:53:01 > Image after changed
+03/09/2019 14:53:01 > Image after changed
+03/09/2019 14:53:01 > Image after changed
+03/09/2019 14:53:01 > Image after changed
+03/09/2019 14:53:01 > Image after changed
+03/09/2019 14:53:01 > Image after changed
+03/09/2019 14:53:01 > Image after changed
+03/09/2019 14:53:02 > Image after changed
+03/09/2019 14:53:02 > Image after changed
+03/09/2019 14:53:02 > Image after changed
+03/09/2019 14:53:02 > Image after changed
+03/09/2019 14:53:02 > Image after changed
+03/09/2019 14:53:02 > Image after changed
+03/09/2019 14:53:03 > Image after changed
+03/09/2019 14:53:03 > Image after changed
+03/09/2019 14:53:04 > Image after changed
+03/09/2019 14:53:04 > Image to greyscale
+03/09/2019 14:53:05 > Image after changed
+03/09/2019 14:53:05 > Image to greyscale
+03/09/2019 14:53:06 > Swapping before and after
+03/09/2019 14:53:06 > Image after changed
+03/09/2019 14:53:06 > Image before changed
+03/09/2019 14:53:07 > Image after changed
+03/09/2019 14:53:07 > Image to greyscale
+03/09/2019 14:53:08 > Image after changed
+03/09/2019 14:53:08 > Image to greyscale
+03/09/2019 14:53:08 > Image after changed
+03/09/2019 14:53:08 > Image to greyscale
+03/09/2019 14:53:08 > Image after changed
+03/09/2019 14:53:08 > Image to greyscale
+03/09/2019 14:53:09 > Image after changed
+03/09/2019 14:53:09 > Image to greyscale
+03/09/2019 14:53:11 > Swapping before and after
+03/09/2019 14:53:11 > Image after changed
+03/09/2019 14:53:11 > Image before changed
+03/09/2019 14:53:11 > Swapping before and after
+03/09/2019 14:53:11 > Image after changed
+03/09/2019 14:53:11 > Image before changed
+03/09/2019 14:53:12 > Swapping before and after
+03/09/2019 14:53:12 > Image after changed
+03/09/2019 14:53:12 > Image before changed
+03/09/2019 14:53:12 > Swapping before and after
+03/09/2019 14:53:12 > Image after changed
+03/09/2019 14:53:12 > Image before changed
+03/09/2019 14:53:12 > Swapping before and after
+03/09/2019 14:53:12 > Image after changed
+03/09/2019 14:53:12 > Image before changed
+03/09/2019 14:53:14 > Image after changed
+03/09/2019 14:53:14 > Median Filter
+03/09/2019 14:53:15 > Image after changed
+03/09/2019 14:53:15 > Image to greyscale
+03/09/2019 14:53:16 > Image after changed
+03/09/2019 14:53:16 > Median Filter
+03/09/2019 14:53:16 > Image after changed
+03/09/2019 14:53:16 > Image to greyscale
+03/09/2019 14:53:16 > Image after changed
+03/09/2019 14:53:16 > Median Filter
+03/09/2019 14:53:17 > Image after changed
+03/09/2019 14:53:17 > Image to greyscale
+03/09/2019 14:53:17 > Image after changed
+03/09/2019 14:53:17 > Median Filter
+03/09/2019 14:53:18 > Image after changed
+03/09/2019 14:53:18 > Image to greyscale
+03/09/2019 14:53:18 > Image after changed
+03/09/2019 14:53:18 > Median Filter
+03/09/2019 14:53:18 > Image after changed
+03/09/2019 14:53:18 > Image to greyscale
+03/09/2019 14:53:19 > Image after changed
+03/09/2019 14:53:19 > Median Filter
+03/09/2019 14:53:19 > Image after changed
+03/09/2019 14:53:19 > Image to greyscale
+03/09/2019 14:53:20 > Image after changed
+03/09/2019 14:53:20 > Median Filter
+03/09/2019 14:53:21 > --FIN DE LA SESSION
+03/09/2019 14:53:21 > 
+03/09/2019 14:53:21 > 
+03/09/2019 14:56:24 > --NOUVELLE SESSION
+03/09/2019 14:56:26 > Reading Image
+03/09/2019 14:56:26 > Image before changed
+03/09/2019 14:56:36 > Image after changed
+03/09/2019 14:56:36 > Image to greyscale
+03/09/2019 14:56:37 > Swapping before and after
+03/09/2019 14:56:37 > Image after changed
+03/09/2019 14:56:37 > Image before changed
+03/09/2019 14:56:39 > Image after changed
+03/09/2019 14:56:39 > Image to greyscale
+03/09/2019 14:56:40 > Image after changed
+03/09/2019 14:56:40 > Image to greyscale
+03/09/2019 14:56:45 > Image after changed
+03/09/2019 14:56:45 > Image to greyscale
+03/09/2019 14:56:53 > Image after changed
+03/09/2019 14:56:53 > Median Filter
+03/09/2019 14:56:54 > Image after changed
+03/09/2019 14:56:54 > Image to greyscale
+03/09/2019 14:56:56 > Swapping before and after
+03/09/2019 14:56:56 > Image after changed
+03/09/2019 14:56:56 > Image before changed
+03/09/2019 14:56:57 > Image after changed
+03/09/2019 14:56:57 > Median Filter
+03/09/2019 14:57:01 > Image after changed
+03/09/2019 14:57:01 > Image to greyscale
+03/09/2019 14:57:02 > Swapping before and after
+03/09/2019 14:57:02 > Image after changed
+03/09/2019 14:57:02 > Image before changed
+03/09/2019 14:57:05 > Image after changed
+03/09/2019 14:57:05 > Image to greyscale
+03/09/2019 14:57:07 > Image after changed
+03/09/2019 14:57:07 > Median Filter
+03/09/2019 14:57:09 > Image after changed
+03/09/2019 14:57:09 > Image to greyscale
+03/09/2019 14:57:27 > Image after changed
+03/09/2019 14:57:27 > Median Filter
+03/09/2019 14:57:35 > Image after changed
+03/09/2019 14:57:35 > Image after changed
+03/09/2019 14:57:35 > Image after changed
+03/09/2019 14:57:35 > Image after changed
+03/09/2019 14:57:35 > Image after changed
+03/09/2019 14:57:35 > Image after changed
+03/09/2019 14:57:35 > Image after changed
+03/09/2019 14:57:35 > Image after changed
+03/09/2019 14:57:35 > Image after changed
+03/09/2019 14:57:35 > Image after changed
+03/09/2019 14:57:35 > Image after changed
+03/09/2019 14:57:35 > Image after changed
+03/09/2019 14:57:35 > Image after changed
+03/09/2019 14:57:35 > Image after changed
+03/09/2019 14:57:35 > Image after changed
+03/09/2019 14:57:36 > --FIN DE LA SESSION
+03/09/2019 14:57:36 > 
+03/09/2019 14:57:36 > 
+03/09/2019 15:04:40 > --NOUVELLE SESSION
+03/09/2019 15:04:41 > Reading Image
+03/09/2019 15:04:41 > Image before changed
+03/09/2019 15:04:44 > Image after changed
+03/09/2019 15:04:44 > Median Filter
+03/09/2019 15:04:46 > --FIN DE LA SESSION
+03/09/2019 15:04:46 > 
+03/09/2019 15:04:46 > 
+03/09/2019 15:26:01 > --NOUVELLE SESSION
+03/09/2019 15:26:03 > Reading Image
+03/09/2019 15:26:03 > Image before changed
+03/09/2019 15:26:06 > Image after changed
+03/09/2019 15:26:06 > Median Filter
+03/09/2019 15:26:08 > Image after changed
+03/09/2019 15:26:08 > Medium Filter
+03/09/2019 15:26:24 > Image after changed
+03/09/2019 15:26:24 > Median Filter
+03/09/2019 15:26:25 > Image after changed
+03/09/2019 15:26:25 > Medium Filter
+03/09/2019 15:26:25 > Image after changed
+03/09/2019 15:26:25 > Median Filter
+03/09/2019 15:26:26 > Image after changed
+03/09/2019 15:26:26 > Medium Filter
+03/09/2019 15:26:27 > Image after changed
+03/09/2019 15:26:27 > Median Filter
+03/09/2019 15:26:27 > Image after changed
+03/09/2019 15:26:28 > Medium Filter
+03/09/2019 15:26:28 > Image after changed
+03/09/2019 15:26:28 > Median Filter
+03/09/2019 15:26:29 > Image after changed
+03/09/2019 15:26:29 > Medium Filter
+03/09/2019 15:26:30 > Image after changed
+03/09/2019 15:26:30 > Median Filter
+03/09/2019 15:26:31 > Image after changed
+03/09/2019 15:26:31 > Image to greyscale
+03/09/2019 15:26:32 > Swapping before and after
+03/09/2019 15:26:32 > Image after changed
+03/09/2019 15:26:32 > Image before changed
+03/09/2019 15:26:34 > Image after changed
+03/09/2019 15:26:34 > Median Filter
+03/09/2019 15:26:34 > Image after changed
+03/09/2019 15:26:34 > Medium Filter
+03/09/2019 15:26:37 > Image after changed
+03/09/2019 15:26:37 > Median Filter
+03/09/2019 15:26:37 > Image after changed
+03/09/2019 15:26:37 > Medium Filter
+03/09/2019 15:26:58 > Image after changed
+03/09/2019 15:26:58 > Median Filter
+03/09/2019 15:26:58 > Image after changed
+03/09/2019 15:26:58 > Medium Filter
+03/09/2019 15:27:00 > Image after changed
+03/09/2019 15:27:00 > Median Filter
+03/09/2019 15:27:00 > Image after changed
+03/09/2019 15:27:00 > Medium Filter
+03/09/2019 15:27:01 > Image after changed
+03/09/2019 15:27:01 > Median Filter
+03/09/2019 15:27:02 > Image after changed
+03/09/2019 15:27:02 > Medium Filter
+03/09/2019 15:27:03 > Image after changed
+03/09/2019 15:27:03 > Medium Filter
+03/09/2019 15:27:04 > Image after changed
+03/09/2019 15:27:04 > Medium Filter
+03/09/2019 15:27:05 > Image after changed
+03/09/2019 15:27:05 > Median Filter
+03/09/2019 15:27:06 > Image after changed
+03/09/2019 15:27:06 > Medium Filter
+03/09/2019 15:27:12 > --FIN DE LA SESSION
+03/09/2019 15:27:12 > 
+03/09/2019 15:27:12 > 
