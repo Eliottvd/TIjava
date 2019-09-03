@@ -2134,3 +2134,72 @@
 03/09/2019 15:27:12 > --FIN DE LA SESSION
 03/09/2019 15:27:12 > 
 03/09/2019 15:27:12 > 
+03/09/2019 15:37:18 > --NOUVELLE SESSION
+03/09/2019 15:37:20 > Reading Image
+03/09/2019 15:37:20 > Image before changed
+03/09/2019 15:37:26 > --FIN DE LA SESSION
+03/09/2019 15:37:26 > 
+03/09/2019 15:37:26 > 
+03/09/2019 15:51:28 > --NOUVELLE SESSION
+03/09/2019 15:51:29 > Reading Image
+03/09/2019 15:51:29 > Image before changed
+03/09/2019 15:51:34 > --FIN DE LA SESSION
+03/09/2019 15:51:34 > 
+03/09/2019 15:51:34 > 
+03/09/2019 15:54:31 > --NOUVELLE SESSION
+03/09/2019 15:54:33 > Reading Image
+03/09/2019 15:54:33 > Image before changed
+03/09/2019 15:54:36 > --FIN DE LA SESSION
+03/09/2019 15:54:36 > 
+03/09/2019 15:54:36 > 
+03/09/2019 15:55:31 > --NOUVELLE SESSION
+03/09/2019 15:55:32 > Reading Image
+03/09/2019 15:55:32 > Image before changed
+03/09/2019 15:55:35 > --FIN DE LA SESSION
+03/09/2019 15:55:35 > 
+03/09/2019 15:55:35 > 
+03/09/2019 15:55:57 > --NOUVELLE SESSION
+03/09/2019 15:55:58 > Reading Image
+03/09/2019 15:55:58 > Image before changed
+03/09/2019 15:56:01 > --FIN DE LA SESSION
+03/09/2019 15:56:01 > 
+03/09/2019 15:56:01 > 
+03/09/2019 16:22:19 > --NOUVELLE SESSION
+03/09/2019 16:22:21 > Reading Image
+03/09/2019 16:22:21 > Image before changed
+03/09/2019 16:22:22 > Image after changed
+03/09/2019 16:22:22 > Medium Filter
+03/09/2019 16:22:24 > Image after changed
+03/09/2019 16:22:24 > Median Filter
+03/09/2019 16:22:25 > Image after changed
+03/09/2019 16:22:26 > Image after changed
+03/09/2019 16:22:26 > Medium Filter
+03/09/2019 16:22:27 > Image after changed
+03/09/2019 16:22:28 > Image after changed
+03/09/2019 16:22:28 > Medium Filter
+03/09/2019 16:22:36 > Image after changed
+03/09/2019 16:22:36 > Medium Filter
+03/09/2019 16:22:37 > Image after changed
+03/09/2019 16:22:37 > Image after changed
+03/09/2019 16:22:37 > Medium Filter
+03/09/2019 16:22:38 > Image after changed
+03/09/2019 16:22:40 > Image after changed
+03/09/2019 16:22:40 > Medium Filter
+03/09/2019 16:22:41 > Image after changed
+03/09/2019 16:22:42 > --FIN DE LA SESSION
+03/09/2019 16:22:42 > 
+03/09/2019 16:22:42 > 
+03/09/2019 16:48:41 > --NOUVELLE SESSION
+03/09/2019 16:48:43 > Reading Image
+03/09/2019 16:48:44 > Image before changed
+03/09/2019 16:48:45 > Image after changed
+03/09/2019 16:48:51 > --FIN DE LA SESSION
+03/09/2019 16:48:51 > 
+03/09/2019 16:48:51 > 
+03/09/2019 16:49:26 > --NOUVELLE SESSION
+03/09/2019 16:49:28 > Reading Image
+03/09/2019 16:49:28 > Image before changed
+03/09/2019 16:49:30 > Image after changed
+03/09/2019 16:49:35 > --FIN DE LA SESSION
+03/09/2019 16:49:35 > 
+03/09/2019 16:49:35 > 

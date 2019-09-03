@@ -377,6 +377,7 @@ public class MainWindow extends javax.swing.JFrame {
 
     private void jBtnGaussianFilterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnGaussianFilterActionPerformed
         // TODO add your handling code here:
+        setImgAfter(_iMod.FiltreGaussien(_imgBefore, 0.3));
     }//GEN-LAST:event_jBtnGaussianFilterActionPerformed
 
     private void jBtnLaplacianFilterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnLaplacianFilterActionPerformed
