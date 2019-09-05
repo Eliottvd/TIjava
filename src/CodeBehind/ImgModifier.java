@@ -313,4 +313,118 @@ public class ImgModifier {
         
         return ImgOut;
     }
+    
+    public BufferedImage FiltreDeKirsh(BufferedImage ImgIn)
+    {
+        BufferedImage ImgOut = copyImage(ImgIn);
+        int p[] = new int[9]; 
+        int res = 0;
+        int x, y;
+
+        for(x = 1; x < ImgIn.getWidth()-1;x++)
+        {
+            for(y = 1; y < ImgIn.getHeight()-1 ; y++)
+            {
+                p[0] = ImgIn.getRGB(x - 1, y - 1);
+                p[1] = ImgIn.getRGB(x, y - 1);
+                p[2] = ImgIn.getRGB(x + 1, y - 1);
+                p[3] = ImgIn.getRGB(x - 1, y);
+                p[4] = ImgIn.getRGB(x , y); 
+                p[5] = ImgIn.getRGB(x + 1, y);
+                p[6] = ImgIn.getRGB(x - 1, y + 1);
+                p[7] = ImgIn.getRGB(x , y + 1);
+                p[8] = ImgIn.getRGB(x + 1, y + 1);
+  
+                for(int k = 0 ; k < p.length ; k++)
+                {
+                    res += p[k]&0xff;
+                }
+                
+                res /= p.length;
+                
+                p[5] = (res<<24) | (res<<16) | (res<<8) | res; 
+                ImgOut.setRGB(x, y, p[5]); 
+            }
+        }
+        
+        return ImgOut;
+    }
+    
+    public BufferedImage FiltreDePrewitt(BufferedImage ImgIn)
+    {
+        BufferedImage ImgOut = copyImage(ImgIn);
+        int p[] = new int[9]; 
+        int res = 0;
+        int x, y;
+
+        for(x = 1; x < ImgIn.getWidth()-1;x++)
+        {
+            for(y = 1; y < ImgIn.getHeight()-1 ; y++)
+            {
+                p[0] = ImgIn.getRGB(x - 1, y - 1);
+                p[1] = ImgIn.getRGB(x, y - 1);
+                p[2] = ImgIn.getRGB(x + 1, y - 1);
+                p[3] = ImgIn.getRGB(x - 1, y);
+                p[4] = ImgIn.getRGB(x , y); 
+                p[5] = ImgIn.getRGB(x + 1, y);
+                p[6] = ImgIn.getRGB(x - 1, y + 1);
+                p[7] = ImgIn.getRGB(x , y + 1);
+                p[8] = ImgIn.getRGB(x + 1, y + 1);
+  
+                for(int k = 0 ; k < p.length ; k++)
+                {
+                    p[k] = p[k]&0xff;
+                }
+                
+                res = -p[0] + p[2] - p[3] + p[5] - p[6] + p[8];
+                res += 128;
+                if(res < 0)
+                    res = 0;
+                
+                p[5] = (res<<24) | (res<<16) | (res<<8) | res; 
+                ImgOut.setRGB(x, y, p[5]); 
+            }
+        }
+        
+        return ImgOut;
+    }
+    
+    public BufferedImage FiltreLaplacien(BufferedImage ImgIn)
+    {
+        BufferedImage ImgOut = copyImage(ImgIn);
+        int p[] = new int[9]; 
+        int res = 0;
+        int x, y;
+
+        for(x = 1; x < ImgIn.getWidth()-1;x++)
+        {
+            for(y = 1; y < ImgIn.getHeight()-1 ; y++)
+            {
+                p[0] = ImgIn.getRGB(x - 1, y - 1);
+                p[1] = ImgIn.getRGB(x, y - 1);
+                p[2] = ImgIn.getRGB(x + 1, y - 1);
+                p[3] = ImgIn.getRGB(x - 1, y);
+                p[4] = ImgIn.getRGB(x , y); 
+                p[5] = ImgIn.getRGB(x + 1, y);
+                p[6] = ImgIn.getRGB(x - 1, y + 1);
+                p[7] = ImgIn.getRGB(x , y + 1);
+                p[8] = ImgIn.getRGB(x + 1, y + 1);
+  
+                for(int k = 0 ; k < p.length ; k++)
+                {
+                    p[k] = p[k]&0xff;
+                }
+                
+                res = p[1] + p[3] - (4*p[4]) + p[5] + p[7];
+                res += 128;
+                if(res < 0)
+                    res = 0;
+                
+                p[4] = (res<<24) | (res<<16) | (res<<8) | res; 
+                ImgOut.setRGB(x, y, p[4]); 
+            }
+        }
+        
+        return ImgOut;
+    }
 }
