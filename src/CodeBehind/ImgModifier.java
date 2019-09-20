@@ -261,10 +261,13 @@ public class ImgModifier {
                     {
                         pos = col+tempSigma+((ligne+tempSigma)*tailleMatrice);
                         p[pos] = ImgIn.getRGB(x+col, y+ligne);
-                        matCoef[pos] = (1/((2*Sigma*Sigma)*Math.PI))*Math.exp(((-x*x)+(y*y))/(2*Sigma*Sigma));
+                        matCoef[pos] = (1/((2*Sigma*Sigma)*Math.PI))*Math.exp(((-col*col)+(ligne*ligne))/(2*Sigma*Sigma));
                         totalCoef += matCoef[pos];
-                    }  
+                        //System.out.print(matCoef[pos] + "   ");
+                    } 
+                    //System.out.println();
                 }
+                //System.out.println();
                 
                 for(col = 0-tempSigma; col <= tempSigma; col++)
                 {
@@ -276,40 +279,10 @@ public class ImgModifier {
                     }  
                 }
                 
-                
                 p[tailleMatrice] = ((int)valeurFin<<24) | ((int)valeurFin<<16) | ((int)valeurFin<<8) | (int)valeurFin; 
                 ImgOut.setRGB(x, y, (int)p[tailleMatrice]);
             }
         }
-        
-        /*int moyenne = 0;
-        int x, y;
-
-        for(x = 1; x < ImgIn.getWidth()-1;x++)
-        {
-            for(y = 1; y < ImgIn.getHeight()-1 ; y++)
-            {
-                p[0] = ImgIn.getRGB(x - 1, y - 1);
-                p[1] = ImgIn.getRGB(x, y - 1);
-                p[2] = ImgIn.getRGB(x + 1, y - 1);
-                p[3] = ImgIn.getRGB(x - 1, y);
-                p[4] = ImgIn.getRGB(x , y); 
-                p[5] = ImgIn.getRGB(x + 1, y);
-                p[6] = ImgIn.getRGB(x - 1, y + 1);
-                p[7] = ImgIn.getRGB(x , y + 1);
-                p[8] = ImgIn.getRGB(x + 1, y + 1);
-  
-                for(int k = 0 ; k < p.length ; k++)
-                {
-                    moyenne += p[k]&0xff;
-                }
-                
-                moyenne /= p.length;
-                
-                p[5] = (moyenne<<24) | (moyenne<<16) | (moyenne<<8) | moyenne; 
-                ImgOut.setRGB(x, y, p[5]); 
-            }
-        }*/
         
         return ImgOut;
     }

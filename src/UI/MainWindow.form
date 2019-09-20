@@ -130,10 +130,12 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jLabelAfter" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabelBefore" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jBtnAfter2Before" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabelBefore" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jBtnAfter2Before" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
               </Group>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
@@ -272,7 +274,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="jBtnGaussianFilter">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Gaussian filter"/>
+        <Property name="text" type="java.lang.String" value="Belgian filter"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnGaussianFilterActionPerformed"/>

@@ -195,7 +195,7 @@ public class MainWindow extends javax.swing.JFrame {
             }
         });
 
-        jBtnGaussianFilter.setText("Gaussian filter");
+        jBtnGaussianFilter.setText("Belgian filter");
         jBtnGaussianFilter.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBtnGaussianFilterActionPerformed(evt);
@@ -331,10 +331,11 @@ public class MainWindow extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabelAfter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabelBefore, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jBtnAfter2Before))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabelBefore, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jBtnAfter2Before)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(18, 18, 18)
@@ -474,7 +475,7 @@ public class MainWindow extends javax.swing.JFrame {
 
     private void jBtnGaussianFilterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnGaussianFilterActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(this, "Not working yet", "Warning", JOptionPane.WARNING_MESSAGE);
+        //JOptionPane.showMessageDialog(this, "Not working yet", "Warning", JOptionPane.WARNING_MESSAGE);
         setImgAfter(_iMod.FiltreGaussien(_imgBefore, 0.3));
     }//GEN-LAST:event_jBtnGaussianFilterActionPerformed
 
