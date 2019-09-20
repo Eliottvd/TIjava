@@ -260,20 +260,17 @@ public class ImgModifier {
                     for(ligne = 0-tempSigma; ligne <= tempSigma; ligne++)
                     {
                         pos = col+tempSigma+((ligne+tempSigma)*tailleMatrice);
-                        p[pos] = ImgIn.getRGB(x+col, y+ligne);
                         matCoef[pos] = (1/((2*Sigma*Sigma)*Math.PI))*Math.exp(((-col*col)+(ligne*ligne))/(2*Sigma*Sigma));
                         totalCoef += matCoef[pos];
-                        //System.out.print(matCoef[pos] + "   ");
                     } 
-                    //System.out.println();
                 }
-                //System.out.println();
                 
                 for(col = 0-tempSigma; col <= tempSigma; col++)
                 {
                     for(ligne = 0-tempSigma; ligne <= tempSigma; ligne++)
                     {
                         pos = col+tempSigma+((ligne+tempSigma)*tailleMatrice);
+                        p[pos] = ImgIn.getRGB(x+col, y+ligne)&0xff; 
                         matReel[pos] = matCoef[pos] / totalCoef;
                         valeurFin += p[pos] * matReel[pos];
                     }  
@@ -328,6 +325,7 @@ public class ImgModifier {
         BufferedImage ImgOut = copyImage(ImgIn);
         int p[] = new int[9]; 
         int res = 0;
+        int res2 = 0;
         int x, y;
 
         for(x = 1; x < ImgIn.getWidth()-1;x++)
@@ -354,8 +352,15 @@ public class ImgModifier {
                 if(res < 0)
                     res = 0;
                 
-                p[5] = (res<<24) | (res<<16) | (res<<8) | res; 
-                ImgOut.setRGB(x, y, p[5]); 
+                res = (res<<24) | (res<<16) | (res<<8) | res; 
+                
+                res2 = -p[0] + p[6] - p[1] + p[7] - p[2] + p[8];
+                res2 += 128;
+                if(res2 < 0)
+                    res2 = 0;
+                
+                res = res | res2;
+                ImgOut.setRGB(x, y, res2); 
             }
         }
         

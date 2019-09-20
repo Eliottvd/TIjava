@@ -89,29 +89,28 @@
                       </Group>
                       <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="jBtnTreshold" max="32767" attributes="0"/>
-                                  <Component id="jBtnLaplacianFilter" alignment="0" pref="0" max="32767" attributes="0"/>
-                                  <Component id="jBtnGaussianFilter" alignment="0" max="32767" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="34" pref="34" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="jBtnKirsh" max="32767" attributes="0"/>
-                                          <Component id="jBtnPrewitt" pref="76" max="32767" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                          <Component id="jBtnSobel" max="32767" attributes="0"/>
-                                          <Component id="jBtnRoberts" max="32767" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                  <Component id="jSliderTreshold" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
-                              </Group>
+                          <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="jBtnTreshold" max="32767" attributes="0"/>
+                              <Component id="jBtnLaplacianFilter" alignment="0" pref="0" max="32767" attributes="0"/>
+                              <Component id="jBtnGaussianFilter" alignment="0" max="32767" attributes="0"/>
                           </Group>
                           <Component id="jBtnMultiTreshold" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="jBtnKirsh" max="32767" attributes="0"/>
+                                  <Component id="jBtnPrewitt" pref="76" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="jBtnSobel" max="32767" attributes="0"/>
+                                  <Component id="jBtnRoberts" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="jSliderTreshold" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
+                          <Component id="jBtnPalette" alignment="0" min="-2" pref="76" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -148,8 +147,6 @@
                       <Component id="jBtnNeg" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="jBtnMediumFilter" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jBtnMedianFilter" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
@@ -172,14 +169,16 @@
                           <Component id="jSliderTreshold" min="-2" max="-2" attributes="0"/>
                           <Component id="jBtnErosion" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jBtnMultiTreshold" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jBtnDilatation" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jBtnPalette" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jBtnMedianFilter" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace pref="18" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -354,6 +353,14 @@
         <Property name="text" type="java.lang.String" value="Dilatation"/>
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jBtnPalette">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Palette"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnPaletteActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

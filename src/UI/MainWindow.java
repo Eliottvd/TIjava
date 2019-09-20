@@ -107,6 +107,7 @@ public class MainWindow extends javax.swing.JFrame {
         jBtnFermeture = new javax.swing.JButton();
         jBtnErosion = new javax.swing.JButton();
         jBtnDilatation = new javax.swing.JButton();
+        jBtnPalette = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenuAffLog = new javax.swing.JMenu();
         jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
@@ -259,6 +260,13 @@ public class MainWindow extends javax.swing.JFrame {
         jBtnDilatation.setText("Dilatation");
         jBtnDilatation.setEnabled(false);
 
+        jBtnPalette.setText("Palette");
+        jBtnPalette.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnPaletteActionPerformed(evt);
+            }
+        });
+
         jMenuAffLog.setText("Option");
         jMenuAffLog.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -302,23 +310,23 @@ public class MainWindow extends javax.swing.JFrame {
                             .addComponent(jBtnNeg, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(25, 25, 25)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(jBtnTreshold, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jBtnLaplacianFilter, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
+                                .addComponent(jBtnGaussianFilter, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(jBtnMultiTreshold))
+                        .addGap(23, 23, 23)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jBtnTreshold, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jBtnLaplacianFilter, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
-                                    .addComponent(jBtnGaussianFilter, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGap(34, 34, 34)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(jBtnKirsh, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(jBtnPrewitt, javax.swing.GroupLayout.DEFAULT_SIZE, 76, Short.MAX_VALUE))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                            .addComponent(jBtnSobel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(jBtnRoberts, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                                    .addComponent(jSliderTreshold, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(jBtnMultiTreshold))
+                                    .addComponent(jBtnKirsh, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jBtnPrewitt, javax.swing.GroupLayout.DEFAULT_SIZE, 76, Short.MAX_VALUE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(jBtnSobel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jBtnRoberts, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(jSliderTreshold, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jBtnPalette, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(38, 38, 38)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jBtnFermeture, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -345,9 +353,7 @@ public class MainWindow extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(jBtnNeg)
                         .addGap(18, 18, 18)
-                        .addComponent(jBtnMediumFilter)
-                        .addGap(18, 18, 18)
-                        .addComponent(jBtnMedianFilter))
+                        .addComponent(jBtnMediumFilter))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -366,11 +372,13 @@ public class MainWindow extends javax.swing.JFrame {
                             .addComponent(jBtnTreshold)
                             .addComponent(jSliderTreshold, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jBtnErosion))
-                        .addGap(18, 18, 18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jBtnMultiTreshold)
-                            .addComponent(jBtnDilatation))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(jBtnDilatation)
+                            .addComponent(jBtnPalette)
+                            .addComponent(jBtnMedianFilter))))
+                .addContainerGap(18, Short.MAX_VALUE))
         );
 
         pack();
@@ -475,7 +483,6 @@ public class MainWindow extends javax.swing.JFrame {
 
     private void jBtnGaussianFilterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnGaussianFilterActionPerformed
         // TODO add your handling code here:
-        //JOptionPane.showMessageDialog(this, "Not working yet", "Warning", JOptionPane.WARNING_MESSAGE);
         setImgAfter(_iMod.FiltreGaussien(_imgBefore, 0.3));
     }//GEN-LAST:event_jBtnGaussianFilterActionPerformed
 
@@ -518,6 +525,11 @@ public class MainWindow extends javax.swing.JFrame {
     private void jBtnErosionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnErosionActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jBtnErosionActionPerformed
+
+    private void jBtnPaletteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnPaletteActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_jBtnPaletteActionPerformed
 
     private void setImgAfter(BufferedImage img)
     {
@@ -580,6 +592,7 @@ public class MainWindow extends javax.swing.JFrame {
     private javax.swing.JButton jBtnMultiTreshold;
     private javax.swing.JButton jBtnNeg;
     private javax.swing.JButton jBtnOuverture;
+    private javax.swing.JButton jBtnPalette;
     private javax.swing.JButton jBtnPrewitt;
     private javax.swing.JButton jBtnRoberts;
     private javax.swing.JButton jBtnSobel;
