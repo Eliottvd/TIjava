@@ -348,19 +348,23 @@ public class ImgModifier {
                 }
                 
                 res = -p[0] + p[2] - p[3] + p[5] - p[6] + p[8];
-                res += 128;
+                res /= 3;
                 if(res < 0)
                     res = 0;
                 
                 res = (res<<24) | (res<<16) | (res<<8) | res; 
                 
                 res2 = -p[0] + p[6] - p[1] + p[7] - p[2] + p[8];
-                res2 += 128;
+                res2 /= 3;
+                
                 if(res2 < 0)
                     res2 = 0;
                 
+                res = (res<<24) | (res<<16) | (res<<8) | res;
+                res2 = (res2<<24) | (res2<<16) | (res2<<8) | res2;
                 res = res | res2;
-                ImgOut.setRGB(x, y, res2); 
+                
+                ImgOut.setRGB(x, y, res); 
             }
         }
         
@@ -400,6 +404,63 @@ public class ImgModifier {
                 
                 p[4] = (res<<24) | (res<<16) | (res<<8) | res; 
                 ImgOut.setRGB(x, y, p[4]); 
+            }
+        }
+        
+        return ImgOut;
+    }
+    
+    public BufferedImage ColorChange(BufferedImage ImgIn, int RGB)
+    {
+        BufferedImage ImgOut = copyImage(ImgIn);
+        int pixelCourant;
+        int x, y;
+        int r, g, b, a;
+        int aModif, rModif, gModif, bModif;
+
+        aModif = (RGB>>24)&0xff;
+        rModif = (RGB>>16)&0xff; 
+        gModif = (RGB>>8)&0xff; 
+        bModif = RGB&0xff;
+        
+        for(x = 1; x < ImgIn.getWidth()-1;x++)
+        {
+            for(y = 1; y < ImgIn.getHeight()-1 ; y++)
+            {
+                pixelCourant = ImgIn.getRGB(x, y);
+               
+                a = (pixelCourant>>24)&0xff;      //Séparer la valeur (int -> 4 bytes)
+                r = (pixelCourant>>16)&0xff; 
+                g = (pixelCourant>>8)&0xff; 
+                b = pixelCourant&0xff; 
+                
+                a += aModif;
+                if(a > 255)
+                    a = 255;
+                if(a < 0)
+                    a = 0;
+                
+                r += rModif;
+                if(r > 255)
+                    r = 255;
+                if(r < 0)
+                    r = 0;
+                
+                g += gModif;
+                if(g > 255)
+                    g = 255;
+                if(g < 0)
+                    g = 0;
+                
+                b += bModif;
+                if(b > 255)
+                    b = 255;
+                if(b < 0)
+                    b = 0;
+                
+                
+                pixelCourant = (a<<24) | (r<<16) | (g<<8) | b; 
+                ImgOut.setRGB(x, y, pixelCourant); 
             }
         }
         

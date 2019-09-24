@@ -8,6 +8,7 @@ package UI;
 import CodeBehind.ImgModifier;
 import CodeBehind.Logs.AfficherLogDialog;
 import CodeBehind.Logs.FichierLog;
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.TrayIcon;
@@ -49,7 +50,7 @@ public class MainWindow extends javax.swing.JFrame {
          
         try
         { 
-            f = new File("C:\\Users\\Eliott\\Desktop\\Lena.jpg"); 
+            f = new File("C:\\Users\\Eliott\\Desktop\\Lena2.jpg"); 
             img = ImageIO.read(f); 
         } 
         catch(IOException e) 
@@ -378,7 +379,7 @@ public class MainWindow extends javax.swing.JFrame {
                             .addComponent(jBtnDilatation)
                             .addComponent(jBtnPalette)
                             .addComponent(jBtnMedianFilter))))
-                .addContainerGap(18, Short.MAX_VALUE))
+                .addContainerGap(40, Short.MAX_VALUE))
         );
 
         pack();
@@ -528,7 +529,10 @@ public class MainWindow extends javax.swing.JFrame {
 
     private void jBtnPaletteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnPaletteActionPerformed
         // TODO add your handling code here:
-        
+        PaletteDialog pd = new PaletteDialog(this, true);
+        Thread tpd = new Thread(pd);
+        tpd.start();
+        pd.setVisible(true);
     }//GEN-LAST:event_jBtnPaletteActionPerformed
 
     private void setImgAfter(BufferedImage img)
@@ -543,6 +547,11 @@ public class MainWindow extends javax.swing.JFrame {
         _imgBefore = img;
         jLabelBefore.setIcon(new ImageIcon(_imgBefore));
         _fLog.addLog("Image before changed");
+    }
+    
+    protected void setColor(Color c)
+    {
+        setImgAfter(_iMod.ColorChange(_imgBefore, c.getRGB()));
     }
     /**
      * @param args the command line arguments

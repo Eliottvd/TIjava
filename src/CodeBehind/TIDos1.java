@@ -15,7 +15,7 @@ import javax.imageio.ImageIO;
  */
 public class TIDos1 {
     // Java program to demonstrate read and write of image 
-    private String _path = "C:\\Users\\Eliott\\Desktop\\Lena.jpg";
+    private String _path = "C:\\Users\\Eliott\\Desktop\\Lena2.jpg";
     
     public static void main(String args[])throws IOException 
     { 
@@ -27,7 +27,7 @@ public class TIDos1 {
         //read image 
         try
         { 
-            f = new File("C:\\Users\\Eliott\\Desktop\\Lena.jpg"); 
+            f = new File("C:\\Users\\Eliott\\Desktop\\Lena2.jpg"); 
             img = ImageIO.read(f); 
         } 
         catch(IOException e) 
@@ -88,7 +88,7 @@ public class TIDos1 {
         graphics.setColor(new Color(255, 255, 255, 100)); 
   
         // Setting watermark text 
-        String watermark = "Wendy hihi <3"; 
+        String watermark = "ALEX = GAY"; 
   
         // Add the watermark text at (width/5, height/3) 
         // location 
