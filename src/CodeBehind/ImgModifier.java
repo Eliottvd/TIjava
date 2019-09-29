@@ -313,7 +313,6 @@ public class ImgModifier {
                 }
                 
                 res /= p.length;
-                
                 p[5] = (res<<24) | (res<<16) | (res<<8) | res; 
                 ImgOut.setRGB(x, y, p[5]); 
             }
@@ -472,11 +471,13 @@ public class ImgModifier {
     public BufferedImage Zoom(BufferedImage ImgIn, String coefString)
     {
         BufferedImage ImgOut = copyImage(ImgIn);
-        if(!(coefString.equals(""))) // Si le champs n'est pas vide
+        if(!(coefString.equals("")))
         {
-            float coefFloat = Float.parseFloat(coefString);       
+            float coefFloat = Float.parseFloat(coefString);
         
-            Image dimg = ImgOut.getScaledInstance((int)(ImgOut.getWidth()*coefFloat), (int)(ImgOut.getHeight()*coefFloat), Image.SCALE_SMOOTH);
+            Image dimg = ImgOut.getScaledInstance((int)(ImgOut.getWidth()*coefFloat), 
+                                                  (int)(ImgOut.getHeight()*coefFloat), 
+                                                   Image.SCALE_SMOOTH);
             
             ImgOut = toBufferedImage(dimg);
         }

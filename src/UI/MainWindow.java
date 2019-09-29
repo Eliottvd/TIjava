@@ -13,6 +13,7 @@ import java.awt.Graphics;
 import java.awt.Rectangle;
 import java.awt.Graphics2D;
 import java.awt.TrayIcon;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -77,6 +78,8 @@ public class MainWindow extends javax.swing.JFrame {
         temp2 = temp.getSubimage(0, 0 , 256, 256);
         setImgBefore(temp2);
         
+
+        
     }
     
     /**
@@ -89,14 +92,13 @@ public class MainWindow extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabelBefore = new javax.swing.JLabel();
         jBtnAfter2Before = new javax.swing.JButton();
         jBtnGreyscale = new javax.swing.JButton();
         jBtnNeg = new javax.swing.JButton();
         jSliderTreshold = new javax.swing.JSlider();
         jBtnTreshold = new javax.swing.JToggleButton();
         javax.swing.JButton jBtnMedianFilter = new javax.swing.JButton();
-        jBtnZoom = new javax.swing.JButton();
+        jBtnZoom1 = new javax.swing.JButton();
         jBtnMediumFilter = new javax.swing.JButton();
         jBtnGaussianFilter = new javax.swing.JButton();
         jBtnLaplacianFilter = new javax.swing.JButton();
@@ -110,11 +112,13 @@ public class MainWindow extends javax.swing.JFrame {
         jBtnErosion = new javax.swing.JButton();
         jBtnDilatation = new javax.swing.JButton();
         jBtnPalette = new javax.swing.JButton();
-        jTextFieldZoom = new javax.swing.JTextField();
-        jBtnDeZoom = new javax.swing.JButton();
+        jTextFieldZoom2 = new javax.swing.JTextField();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jScrollPane1 = new javax.swing.JScrollPane();
         jLabelAfter = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jLabelBefore = new javax.swing.JLabel();
+        jBtnZoom2 = new javax.swing.JButton();
+        jTextFieldZoom1 = new javax.swing.JTextField();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenuAffLog = new javax.swing.JMenu();
         jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
@@ -135,18 +139,6 @@ public class MainWindow extends javax.swing.JFrame {
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
                 formWindowClosing(evt);
-            }
-        });
-
-        jLabelBefore.setText("jLabel1");
-        jLabelBefore.setCursor(new java.awt.Cursor(java.awt.Cursor.CROSSHAIR_CURSOR));
-        jLabelBefore.setPreferredSize(new java.awt.Dimension(256, 256));
-        jLabelBefore.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                jLabelBeforeMousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                jLabelBeforeMouseReleased(evt);
             }
         });
 
@@ -196,10 +188,10 @@ public class MainWindow extends javax.swing.JFrame {
             }
         });
 
-        jBtnZoom.setText("+");
-        jBtnZoom.addActionListener(new java.awt.event.ActionListener() {
+        jBtnZoom1.setText("+");
+        jBtnZoom1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtnZoomActionPerformed(evt);
+                jBtnZoom1ActionPerformed(evt);
             }
         });
 
@@ -281,23 +273,42 @@ public class MainWindow extends javax.swing.JFrame {
             }
         });
 
-        jTextFieldZoom.addActionListener(new java.awt.event.ActionListener() {
+        jTextFieldZoom2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextFieldZoomActionPerformed(evt);
+                jTextFieldZoom2ActionPerformed(evt);
             }
         });
 
-        jBtnDeZoom.setText("-");
-        jBtnDeZoom.addActionListener(new java.awt.event.ActionListener() {
+        jScrollPane2.setPreferredSize(new java.awt.Dimension(256, 256));
+
+        jLabelAfter.setPreferredSize(null);
+        jScrollPane2.setViewportView(jLabelAfter);
+
+        jScrollPane1.setPreferredSize(new java.awt.Dimension(256, 256));
+
+        jLabelBefore.setCursor(new java.awt.Cursor(java.awt.Cursor.CROSSHAIR_CURSOR));
+        jLabelBefore.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jLabelBeforeMousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                jLabelBeforeMouseReleased(evt);
+            }
+        });
+        jScrollPane1.setViewportView(jLabelBefore);
+
+        jBtnZoom2.setText("+");
+        jBtnZoom2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtnDeZoomActionPerformed(evt);
+                jBtnZoom2ActionPerformed(evt);
             }
         });
 
-        jLabelAfter.setPreferredSize(new java.awt.Dimension(256, 256));
-        jScrollPane1.setViewportView(jLabelAfter);
-
-        jScrollPane2.setViewportView(jScrollPane1);
+        jTextFieldZoom1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldZoom1ActionPerformed(evt);
+            }
+        });
 
         jMenuAffLog.setText("Option");
         jMenuAffLog.addActionListener(new java.awt.event.ActionListener() {
@@ -323,21 +334,24 @@ public class MainWindow extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(17, 17, 17)
-                        .addComponent(jLabelBefore, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(48, 48, 48)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jBtnZoom1)
+                            .addComponent(jTextFieldZoom1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
                         .addComponent(jBtnAfter2Before)
                         .addGap(18, 18, 18)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jBtnZoom, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jBtnDeZoom, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jTextFieldZoom))
-                        .addGap(27, 27, 27)
+                            .addComponent(jBtnZoom2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jTextFieldZoom2)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(64, 64, 64)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jBtnMediumFilter, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jBtnMedianFilter, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -368,25 +382,32 @@ public class MainWindow extends javax.swing.JFrame {
                             .addComponent(jBtnOuverture, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jBtnErosion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jBtnDilatation, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(129, Short.MAX_VALUE))
+                .addContainerGap(55, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabelBefore, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jBtnAfter2Before))
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
-                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jBtnZoom)
-                        .addGap(10, 10, 10)
-                        .addComponent(jTextFieldZoom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jBtnDeZoom))
+                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(110, 110, 110)
+                                .addComponent(jBtnAfter2Before))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(52, 52, 52)
+                        .addComponent(jBtnZoom1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jTextFieldZoom1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(53, 53, 53)
+                        .addComponent(jBtnZoom2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jTextFieldZoom2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 19, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jBtnGreyscale)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -414,7 +435,7 @@ public class MainWindow extends javax.swing.JFrame {
                             .addComponent(jBtnDilatation)
                             .addComponent(jBtnPalette)
                             .addComponent(jBtnMedianFilter))))
-                .addContainerGap(40, Short.MAX_VALUE))
+                .addContainerGap(27, Short.MAX_VALUE))
         );
 
         pack();
@@ -498,10 +519,10 @@ public class MainWindow extends javax.swing.JFrame {
         _fLog.addLog("Median Filter");
     }//GEN-LAST:event_jBtnMedianFilterActionPerformed
 
-    private void jBtnZoomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnZoomActionPerformed
-        setImgAfter(_iMod.Zoom(_imgBefore, jTextFieldZoom.getText()));
-        _fLog.addLog("Zoom de coef " + jTextFieldZoom.getText());
-    }//GEN-LAST:event_jBtnZoomActionPerformed
+    private void jBtnZoom1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnZoom1ActionPerformed
+        setImgBefore(_iMod.Zoom(_imgBefore, jTextFieldZoom1.getText()));
+        _fLog.addLog("Zoom de coef " + jTextFieldZoom1.getText());
+    }//GEN-LAST:event_jBtnZoom1ActionPerformed
 
     private void jBtnMediumFilterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnMediumFilterActionPerformed
         // TODO add your handling code here:
@@ -562,13 +583,17 @@ public class MainWindow extends javax.swing.JFrame {
         pd.setVisible(true);
     }//GEN-LAST:event_jBtnPaletteActionPerformed
 
-    private void jTextFieldZoomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldZoomActionPerformed
+    private void jTextFieldZoom2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldZoom2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextFieldZoomActionPerformed
+    }//GEN-LAST:event_jTextFieldZoom2ActionPerformed
 
-    private void jBtnDeZoomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnDeZoomActionPerformed
+    private void jBtnZoom2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnZoom2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jBtnDeZoomActionPerformed
+    }//GEN-LAST:event_jBtnZoom2ActionPerformed
+
+    private void jTextFieldZoom1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldZoom1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldZoom1ActionPerformed
 
     private void jLabelBeforeMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelBeforeMousePressed
         // TODO add your handling code here:
@@ -583,22 +608,22 @@ public class MainWindow extends javax.swing.JFrame {
         
         BufferedImage img = _iMod.copyImage(_imgBefore);
         
-        // on calcule le rectangle selectionné et on affiche l'image correspondante en destination 
         Rectangle rect;
         if(x1 <= x2)
             if(y1 <= y2)
-                rect = new Rectangle(x1, y1, x2-x1, y2-y1); 
+                rect = new Rectangle(x1, y1, x2-x1, y2-y1);
             else
-                rect = new Rectangle(x1, y2, x2-x1, y1-y2); 
+                rect = new Rectangle(x1, y2, x2-x1, y1-y2);
         else
             if(y1 <= y2)
-                rect = new Rectangle(x2, y1, x1-x2, y2-y1); 
+                rect = new Rectangle(x2, y1, x1-x2, y2-y1);
             else
-                rect = new Rectangle(x2, y2, x1-x2, y1-y2); 
-            
-            setImgAfter(img.getSubimage((int)(rect.x), (int)(rect.y), (int)(rect.width), (int)(rect.height)));
+                rect = new Rectangle(x2, y2, x1-x2, y1-y2);
+        
+        setImgAfter(img.getSubimage((int)(rect.x), (int)(rect.y), (int)(rect.width), (int)(rect.height)));
     }//GEN-LAST:event_jLabelBeforeMouseReleased
 
+    
     private void setImgAfter(BufferedImage img)
     {
         _imgAfter = img;
@@ -654,7 +679,6 @@ public class MainWindow extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jBtnAfter2Before;
-    private javax.swing.JButton jBtnDeZoom;
     private javax.swing.JButton jBtnDilatation;
     private javax.swing.JButton jBtnErosion;
     private javax.swing.JButton jBtnFermeture;
@@ -671,7 +695,8 @@ public class MainWindow extends javax.swing.JFrame {
     private javax.swing.JButton jBtnRoberts;
     private javax.swing.JButton jBtnSobel;
     private javax.swing.JToggleButton jBtnTreshold;
-    private javax.swing.JButton jBtnZoom;
+    private javax.swing.JButton jBtnZoom1;
+    private javax.swing.JButton jBtnZoom2;
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
     private javax.swing.JLabel jLabelAfter;
     private javax.swing.JLabel jLabelBefore;
@@ -681,6 +706,8 @@ public class MainWindow extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSlider jSliderTreshold;
-    private javax.swing.JTextField jTextFieldZoom;
+    private javax.swing.JTextField jTextFieldZoom1;
+    private javax.swing.JTextField jTextFieldZoom2;
     // End of variables declaration//GEN-END:variables
+
 }
