@@ -5,11 +5,13 @@
  */
 package CodeBehind;
 
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -424,13 +426,13 @@ public class ImgModifier {
         gModif = (RGB>>8)&0xff; 
         bModif = RGB&0xff;
         
-        for(x = 1; x < ImgIn.getWidth()-1;x++)
+        for(x = 0; x < ImgIn.getWidth();x++)
         {
-            for(y = 1; y < ImgIn.getHeight()-1 ; y++)
+            for(y = 0; y < ImgIn.getHeight() ; y++)
             {
                 pixelCourant = ImgIn.getRGB(x, y);
                
-                a = (pixelCourant>>24)&0xff;      //Séparer la valeur (int -> 4 bytes)
+                a = (pixelCourant>>24)&0xff;      
                 r = (pixelCourant>>16)&0xff; 
                 g = (pixelCourant>>8)&0xff; 
                 b = pixelCourant&0xff; 
@@ -502,4 +504,84 @@ public class ImgModifier {
         // Return the buffered image
         return bimage;
     }
+    
+    
+    public BufferedImage Histogramme(BufferedImage imgIn, int w, int h)
+    {
+        int[] values = new int[256];
+        int highValue = 0;
+        BufferedImage img = copyImage(imgIn);
+        
+        // Get pixel number of same color
+        for (int i = 0; i < img.getWidth(); i++) {
+            for (int j = 0; j < img.getHeight(); j++) {
+                //System.out.println((img.getRGB(i, j) & 0x000000FF));
+                values[img.getRGB(i, j) & 0xFF]++; // Add 1 to that color in values
+            }
+        }
+        
+        // Get color with most pixels
+        for(int i = 0; i < values.length; i++)
+        {           
+            if(values[i] > values[highValue])
+                highValue = i;
+        }
+        //jLblHV.setText(String.valueOf(values[highValue]));
+        
+        BufferedImage histo = new BufferedImage(w, h, BufferedImage.TYPE_INT_ARGB);
+        Graphics2D g2d = histo.createGraphics();
+        
+        g2d.setColor(Color.BLUE);
+        g2d.fillRect(0, 0, histo.getWidth(), histo.getHeight());
+        for(int i = 0; i < values.length; i++)
+        {
+            g2d.setColor(new Color(i, i, i));
+            g2d.drawLine(i, histo.getHeight(), i, histo.getHeight() - (int) ((double)values[i]/values[highValue]*histo.getHeight()));
+        }
+        g2d.dispose();
+        
+        return histo;
+    }
+    
+    private static int get(int self, int n) {
+        return (self >> (n * 8)) & 0xFF;
+    }
+ 
+    private static float lerp(float s, float e, float t) {
+        return s + (e - s) * t;
+    }
+ 
+    private static float blerp(final Float c00, float c10, float c01, float c11, float tx, float ty) {
+        return lerp(lerp(c00, c10, tx), lerp(c01, c11, tx), ty);
+    }
+ 
+    public static BufferedImage scale(BufferedImage self, float scaleX, float scaleY) {
+        int newWidth = (int) (self.getWidth() * scaleX);
+        int newHeight = (int) (self.getHeight() * scaleY);
+        BufferedImage newImage = new BufferedImage(newWidth, newHeight, self.getType());
+        for (int x = 0; x < newWidth; ++x) {
+            for (int y = 0; y < newHeight; ++y) {
+                float gx = ((float) x) / newWidth * (self.getWidth() - 1);
+                float gy = ((float) y) / newHeight * (self.getHeight() - 1);
+                int gxi = (int) gx;
+                int gyi = (int) gy;
+                int rgb = 0;
+                int c00 = self.getRGB(gxi, gyi);
+                int c10 = self.getRGB(gxi + 1, gyi);
+                int c01 = self.getRGB(gxi, gyi + 1);
+                int c11 = self.getRGB(gxi + 1, gyi + 1);
+                for (int i = 0; i <= 2; ++i) {
+                    float b00 = get(c00, i);
+                    float b10 = get(c10, i);
+                    float b01 = get(c01, i);
+                    float b11 = get(c11, i);
+                    int ble = ((int) blerp(b00, b10, b01, b11, gx - gxi, gy - gyi)) << (8 * i);
+                    rgb = rgb | ble;
+                }
+                newImage.setRGB(x, y, rgb);
+            }
+        }
+        return newImage;
+    }
+    
 }

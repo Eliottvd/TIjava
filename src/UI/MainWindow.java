@@ -19,8 +19,10 @@ import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
+import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.plaf.FileChooserUI;
 import jdk.jshell.spi.ExecutionControl;
 
 /**
@@ -40,6 +42,7 @@ public class MainWindow extends javax.swing.JFrame {
     private BufferedImage _imgAfter;
     private ImgModifier _iMod;
     private int x1, y1, x2, y2;
+    private int minValue, maxValue;
     
     public MainWindow() {
         initComponents();
@@ -53,7 +56,7 @@ public class MainWindow extends javax.swing.JFrame {
          
         try
         { 
-            f = new File("C:\\Users\\Eliott\\Desktop\\Lena2.jpg"); 
+            f = new File("C:\\Users\\Eliott\\Desktop\\xxxx.jpg"); 
             img = ImageIO.read(f); 
         } 
         catch(IOException e) 
@@ -97,20 +100,8 @@ public class MainWindow extends javax.swing.JFrame {
         jBtnNeg = new javax.swing.JButton();
         jSliderTreshold = new javax.swing.JSlider();
         jBtnTreshold = new javax.swing.JToggleButton();
-        javax.swing.JButton jBtnMedianFilter = new javax.swing.JButton();
         jBtnZoom1 = new javax.swing.JButton();
-        jBtnMediumFilter = new javax.swing.JButton();
-        jBtnGaussianFilter = new javax.swing.JButton();
-        jBtnLaplacianFilter = new javax.swing.JButton();
         jBtnMultiTreshold = new javax.swing.JButton();
-        jBtnKirsh = new javax.swing.JButton();
-        jBtnSobel = new javax.swing.JButton();
-        jBtnPrewitt = new javax.swing.JButton();
-        jBtnRoberts = new javax.swing.JButton();
-        jBtnOuverture = new javax.swing.JButton();
-        jBtnFermeture = new javax.swing.JButton();
-        jBtnErosion = new javax.swing.JButton();
-        jBtnDilatation = new javax.swing.JButton();
         jBtnPalette = new javax.swing.JButton();
         jTextFieldZoom2 = new javax.swing.JTextField();
         jScrollPane2 = new javax.swing.JScrollPane();
@@ -119,9 +110,32 @@ public class MainWindow extends javax.swing.JFrame {
         jLabelBefore = new javax.swing.JLabel();
         jBtnZoom2 = new javax.swing.JButton();
         jTextFieldZoom1 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        jLblHistoBefore = new javax.swing.JLabel();
+        jLblHV = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLblHistoAfter = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenuAffLog = new javax.swing.JMenu();
+        jMenuItemOpen = new javax.swing.JMenuItem();
         jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
+        jMenuFilltres = new javax.swing.JMenu();
+        jMenuItemMediumF = new javax.swing.JMenuItem();
+        jMenuItemMedian = new javax.swing.JMenuItem();
+        jMenuItemBelgianFilter = new javax.swing.JMenuItem();
+        jMenuItemLaplacian = new javax.swing.JMenuItem();
+        jMenuItemKirsh = new javax.swing.JMenuItem();
+        jMenuItemSobel = new javax.swing.JMenuItem();
+        jMenuItemPrewitt = new javax.swing.JMenuItem();
+        jMenuItemRoberts = new javax.swing.JMenuItem();
+        jMenuMorphologie = new javax.swing.JMenu();
+        jMenuItemOuverture = new javax.swing.JMenuItem();
+        jMenuItemFermeture = new javax.swing.JMenuItem();
+        jMenuItemErosion = new javax.swing.JMenuItem();
+        jMenuItemDilatation = new javax.swing.JMenuItem();
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -181,38 +195,10 @@ public class MainWindow extends javax.swing.JFrame {
             }
         });
 
-        jBtnMedianFilter.setText("Median filter");
-        jBtnMedianFilter.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtnMedianFilterActionPerformed(evt);
-            }
-        });
-
         jBtnZoom1.setText("+");
         jBtnZoom1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBtnZoom1ActionPerformed(evt);
-            }
-        });
-
-        jBtnMediumFilter.setText("Medium filter");
-        jBtnMediumFilter.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtnMediumFilterActionPerformed(evt);
-            }
-        });
-
-        jBtnGaussianFilter.setText("Belgian filter");
-        jBtnGaussianFilter.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtnGaussianFilterActionPerformed(evt);
-            }
-        });
-
-        jBtnLaplacianFilter.setText("Laplacian of Gaussian filter");
-        jBtnLaplacianFilter.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtnLaplacianFilterActionPerformed(evt);
             }
         });
 
@@ -222,49 +208,6 @@ public class MainWindow extends javax.swing.JFrame {
                 jBtnMultiTresholdActionPerformed(evt);
             }
         });
-
-        jBtnKirsh.setText("Kirsh");
-        jBtnKirsh.setEnabled(false);
-        jBtnKirsh.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtnKirshActionPerformed(evt);
-            }
-        });
-
-        jBtnSobel.setText("Sobel");
-        jBtnSobel.setEnabled(false);
-
-        jBtnPrewitt.setText("Prewitt");
-        jBtnPrewitt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtnPrewittActionPerformed(evt);
-            }
-        });
-
-        jBtnRoberts.setText("Roberts");
-        jBtnRoberts.setEnabled(false);
-
-        jBtnOuverture.setText("Ouverture");
-        jBtnOuverture.setEnabled(false);
-        jBtnOuverture.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtnOuvertureActionPerformed(evt);
-            }
-        });
-
-        jBtnFermeture.setText("Fermeture");
-        jBtnFermeture.setEnabled(false);
-
-        jBtnErosion.setText("Erosion");
-        jBtnErosion.setEnabled(false);
-        jBtnErosion.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtnErosionActionPerformed(evt);
-            }
-        });
-
-        jBtnDilatation.setText("Dilatation");
-        jBtnDilatation.setEnabled(false);
 
         jBtnPalette.setText("Palette");
         jBtnPalette.addActionListener(new java.awt.event.ActionListener() {
@@ -310,12 +253,41 @@ public class MainWindow extends javax.swing.JFrame {
             }
         });
 
+        jButton1.setText("Expansion");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        jLblHistoBefore.setBackground(new java.awt.Color(255, 0, 0));
+        jLblHistoBefore.setForeground(new java.awt.Color(127, 127, 127));
+
+        jLabel1.setText("255");
+
+        jLabel2.setText("0");
+
+        jLblHistoAfter.setBackground(new java.awt.Color(255, 0, 0));
+        jLblHistoAfter.setForeground(new java.awt.Color(127, 127, 127));
+
+        jLabel3.setText("255");
+
+        jLabel4.setText("0");
+
         jMenuAffLog.setText("Option");
         jMenuAffLog.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuAffLogActionPerformed(evt);
             }
         });
+
+        jMenuItemOpen.setText("Open");
+        jMenuItemOpen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemOpenActionPerformed(evt);
+            }
+        });
+        jMenuAffLog.add(jMenuItemOpen);
 
         jCheckBoxMenuItem1.setText("Afficher le log");
         jCheckBoxMenuItem1.addActionListener(new java.awt.event.ActionListener() {
@@ -327,6 +299,91 @@ public class MainWindow extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenuAffLog);
 
+        jMenuFilltres.setText("Filtres");
+
+        jMenuItemMediumF.setText("Medium Filter");
+        jMenuItemMediumF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemMediumFActionPerformed(evt);
+            }
+        });
+        jMenuFilltres.add(jMenuItemMediumF);
+
+        jMenuItemMedian.setText("Median Filter");
+        jMenuItemMedian.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemMedianActionPerformed(evt);
+            }
+        });
+        jMenuFilltres.add(jMenuItemMedian);
+
+        jMenuItemBelgianFilter.setText("BelgianFilter");
+        jMenuItemBelgianFilter.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemBelgianFilterActionPerformed(evt);
+            }
+        });
+        jMenuFilltres.add(jMenuItemBelgianFilter);
+
+        jMenuItemLaplacian.setText("Laplacian");
+        jMenuItemLaplacian.setToolTipText("");
+        jMenuItemLaplacian.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemLaplacianActionPerformed(evt);
+            }
+        });
+        jMenuFilltres.add(jMenuItemLaplacian);
+
+        jMenuItemKirsh.setText("Kirsh");
+        jMenuItemKirsh.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemKirshActionPerformed(evt);
+            }
+        });
+        jMenuFilltres.add(jMenuItemKirsh);
+
+        jMenuItemSobel.setText("Sobel");
+        jMenuItemSobel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemSobelActionPerformed(evt);
+            }
+        });
+        jMenuFilltres.add(jMenuItemSobel);
+
+        jMenuItemPrewitt.setText("Prewitt");
+        jMenuItemPrewitt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemPrewittActionPerformed(evt);
+            }
+        });
+        jMenuFilltres.add(jMenuItemPrewitt);
+
+        jMenuItemRoberts.setText("Roberts");
+        jMenuItemRoberts.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemRobertsActionPerformed(evt);
+            }
+        });
+        jMenuFilltres.add(jMenuItemRoberts);
+
+        jMenuBar1.add(jMenuFilltres);
+
+        jMenuMorphologie.setText("Morphologie");
+
+        jMenuItemOuverture.setText("Open");
+        jMenuMorphologie.add(jMenuItemOuverture);
+
+        jMenuItemFermeture.setText("Close");
+        jMenuMorphologie.add(jMenuItemFermeture);
+
+        jMenuItemErosion.setText("Erosion");
+        jMenuMorphologie.add(jMenuItemErosion);
+
+        jMenuItemDilatation.setText("Dilatation");
+        jMenuMorphologie.add(jMenuItemDilatation);
+
+        jMenuBar1.add(jMenuMorphologie);
+
         setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -337,52 +394,59 @@ public class MainWindow extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+                        .addGap(17, 17, 17)
+                        .addComponent(jLblHV, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jBtnGreyscale, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jBtnNeg, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jBtnTreshold, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(42, 42, 42)
+                                .addComponent(jBtnMultiTreshold)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jSliderTreshold, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jBtnPalette, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(159, 159, 159))))
+                    .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jBtnZoom1)
                             .addComponent(jTextFieldZoom1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jBtnAfter2Before)
-                        .addGap(18, 18, 18)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 6, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(241, 241, 241)
+                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(327, 327, 327))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jLblHistoBefore, javax.swing.GroupLayout.DEFAULT_SIZE, 258, Short.MAX_VALUE)
+                                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGap(28, 28, 28)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jBtnAfter2Before)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(jLblHistoAfter, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jBtnZoom2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jTextFieldZoom2)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(64, 64, 64)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jBtnMediumFilter, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jBtnMedianFilter, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jBtnGreyscale, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jBtnNeg, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(25, 25, 25)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jBtnTreshold, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jBtnLaplacianFilter, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
-                                .addComponent(jBtnGaussianFilter))
-                            .addComponent(jBtnMultiTreshold))
-                        .addGap(23, 23, 23)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jBtnKirsh, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jBtnPrewitt, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(jBtnSobel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jBtnRoberts)))
-                            .addComponent(jSliderTreshold, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBtnPalette, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(38, 38, 38)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jBtnFermeture, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jBtnOuverture, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jBtnErosion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jBtnDilatation, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(55, Short.MAX_VALUE))
+                            .addComponent(jTextFieldZoom2))
+                        .addGap(55, 55, 55))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -406,36 +470,41 @@ public class MainWindow extends javax.swing.JFrame {
                         .addComponent(jBtnZoom2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jTextFieldZoom2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 19, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 13, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jBtnGreyscale)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jBtnGreyscale)
+                        .addComponent(jButton1))
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jBtnGaussianFilter)
-                            .addComponent(jBtnKirsh)
-                            .addComponent(jBtnSobel)
-                            .addComponent(jBtnOuverture))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jBtnLaplacianFilter)
-                            .addComponent(jBtnPrewitt)
-                            .addComponent(jBtnRoberts)
-                            .addComponent(jBtnFermeture)
-                            .addComponent(jBtnNeg))
-                        .addGap(18, 18, 18)
+                        .addGap(12, 12, 12)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jSliderTreshold, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jBtnPalette))
+                            .addGroup(layout.createSequentialGroup()
                                 .addComponent(jBtnTreshold)
-                                .addComponent(jBtnMediumFilter))
-                            .addComponent(jSliderTreshold, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jBtnErosion))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jBtnMultiTreshold)
-                            .addComponent(jBtnDilatation)
-                            .addComponent(jBtnPalette)
-                            .addComponent(jBtnMedianFilter))))
-                .addContainerGap(27, Short.MAX_VALUE))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jBtnNeg))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(21, 21, 21)
+                                        .addComponent(jBtnMultiTreshold)))))))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLblHistoBefore, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLblHistoAfter, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel1)
+                        .addComponent(jLabel2))
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel3))
+                .addGap(31, 31, 31)
+                .addComponent(jLblHV)
+                .addContainerGap(14, Short.MAX_VALUE))
         );
 
         pack();
@@ -513,33 +582,10 @@ public class MainWindow extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jBtnTresholdActionPerformed
 
-    private void jBtnMedianFilterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnMedianFilterActionPerformed
-        // TODO add your handling code here:
-        setImgAfter(_iMod.FiltreMedian(_imgBefore));
-        _fLog.addLog("Median Filter");
-    }//GEN-LAST:event_jBtnMedianFilterActionPerformed
-
     private void jBtnZoom1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnZoom1ActionPerformed
         setImgBefore(_iMod.Zoom(_imgBefore, jTextFieldZoom1.getText()));
         _fLog.addLog("Zoom de coef " + jTextFieldZoom1.getText());
     }//GEN-LAST:event_jBtnZoom1ActionPerformed
-
-    private void jBtnMediumFilterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnMediumFilterActionPerformed
-        // TODO add your handling code here:
-        setImgAfter(_iMod.FiltreMoyen(_imgBefore));
-        _fLog.addLog("Medium Filter");
-    }//GEN-LAST:event_jBtnMediumFilterActionPerformed
-
-    private void jBtnGaussianFilterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnGaussianFilterActionPerformed
-        // TODO add your handling code here:
-        setImgAfter(_iMod.FiltreGaussien(_imgBefore, 0.3));
-    }//GEN-LAST:event_jBtnGaussianFilterActionPerformed
-
-    private void jBtnLaplacianFilterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnLaplacianFilterActionPerformed
-        // TODO add your handling code here:
-        //JOptionPane.showMessageDialog(this, "Not implemented yet", "Warning", JOptionPane.WARNING_MESSAGE);
-        setImgAfter(_iMod.FiltreLaplacien(_imgBefore));
-    }//GEN-LAST:event_jBtnLaplacianFilterActionPerformed
 
     private void jBtnMultiTresholdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnMultiTresholdActionPerformed
         // TODO add your handling code here:
@@ -558,23 +604,6 @@ public class MainWindow extends javax.swing.JFrame {
         setImgAfter(_iMod.MultiTreshold(_imgBefore, tab));
     }//GEN-LAST:event_jBtnMultiTresholdActionPerformed
 
-    private void jBtnKirshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnKirshActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jBtnKirshActionPerformed
-
-    private void jBtnPrewittActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnPrewittActionPerformed
-        // TODO add your handling code here:
-        setImgAfter(_iMod.FiltreDePrewitt(_imgBefore));
-    }//GEN-LAST:event_jBtnPrewittActionPerformed
-
-    private void jBtnOuvertureActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnOuvertureActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jBtnOuvertureActionPerformed
-
-    private void jBtnErosionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnErosionActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jBtnErosionActionPerformed
-
     private void jBtnPaletteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnPaletteActionPerformed
         // TODO add your handling code here:
         PaletteDialog pd = new PaletteDialog(this, true);
@@ -589,6 +618,8 @@ public class MainWindow extends javax.swing.JFrame {
 
     private void jBtnZoom2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnZoom2ActionPerformed
         // TODO add your handling code here:
+        setImgAfter(_iMod.Zoom(_imgAfter, jTextFieldZoom2.getText()));
+        _fLog.addLog("Zoom de coef " + jTextFieldZoom2.getText());
     }//GEN-LAST:event_jBtnZoom2ActionPerformed
 
     private void jTextFieldZoom1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldZoom1ActionPerformed
@@ -623,11 +654,76 @@ public class MainWindow extends javax.swing.JFrame {
         setImgAfter(img.getSubimage((int)(rect.x), (int)(rect.y), (int)(rect.width), (int)(rect.height)));
     }//GEN-LAST:event_jLabelBeforeMouseReleased
 
+    private void jMenuItemOpenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemOpenActionPerformed
+        // TODO add your handling code here:
+        BufferedImage  img;
+        JFileChooser fd = new JFileChooser();
+        fd.showOpenDialog(this);
+        try
+        { 
+            _fLog.addLog(fd.getSelectedFile().getAbsolutePath());
+            File f = new File(fd.getSelectedFile().getAbsolutePath()); 
+            img = ImageIO.read(f); 
+            setImgBefore(img);
+        } 
+        catch(IOException e) 
+        { 
+            JOptionPane.showMessageDialog(this, "Fail to open the file", "Error", JOptionPane.ERROR_MESSAGE);
+            dispose();
+        } 
+        
+    }//GEN-LAST:event_jMenuItemOpenActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        setImgBefore(_iMod.scale(_imgBefore, 2, 2));
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jMenuItemKirshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemKirshActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItemKirshActionPerformed
+
+    private void jMenuItemSobelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemSobelActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItemSobelActionPerformed
+
+    private void jMenuItemPrewittActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemPrewittActionPerformed
+        // TODO add your handling code here:
+        setImgAfter(_iMod.FiltreDePrewitt(_imgBefore));
+    }//GEN-LAST:event_jMenuItemPrewittActionPerformed
+
+    private void jMenuItemRobertsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemRobertsActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItemRobertsActionPerformed
+
+    private void jMenuItemBelgianFilterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemBelgianFilterActionPerformed
+        // TODO add your handling code here:
+        setImgAfter(_iMod.FiltreGaussien(_imgBefore, 0.3));
+    }//GEN-LAST:event_jMenuItemBelgianFilterActionPerformed
+
+    private void jMenuItemLaplacianActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemLaplacianActionPerformed
+        // TODO add your handling code here:
+        setImgAfter(_iMod.FiltreLaplacien(_imgBefore));
+    }//GEN-LAST:event_jMenuItemLaplacianActionPerformed
+
+    private void jMenuItemMedianActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemMedianActionPerformed
+        // TODO add your handling code here:
+        setImgAfter(_iMod.FiltreMedian(_imgBefore));
+        _fLog.addLog("Median Filter");
+    }//GEN-LAST:event_jMenuItemMedianActionPerformed
+
+    private void jMenuItemMediumFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemMediumFActionPerformed
+        // TODO add your handling code here:
+        setImgAfter(_iMod.FiltreMoyen(_imgBefore));
+        _fLog.addLog("Medium Filter");
+    }//GEN-LAST:event_jMenuItemMediumFActionPerformed
+
     
     private void setImgAfter(BufferedImage img)
     {
         _imgAfter = img;
         jLabelAfter.setIcon(new ImageIcon(_imgAfter));
+        jLblHistoAfter.setIcon(new ImageIcon(_iMod.Histogramme(_imgAfter, jLblHistoAfter.getWidth(), jLblHistoAfter.getHeight())));
         _fLog.addLog("Image after changed");
     }
     
@@ -635,6 +731,7 @@ public class MainWindow extends javax.swing.JFrame {
     {
         _imgBefore = img;
         jLabelBefore.setIcon(new ImageIcon(_imgBefore));
+        jLblHistoBefore.setIcon(new ImageIcon(_iMod.Histogramme(_imgBefore, jLblHistoBefore.getWidth(), jLblHistoBefore.getHeight())));
         _fLog.addLog("Image before changed");
     }
     
@@ -642,6 +739,13 @@ public class MainWindow extends javax.swing.JFrame {
     {
         setImgAfter(_iMod.ColorChange(_imgBefore, c.getRGB()));
     }
+
+    private void histogramEgalisation()
+    {
+        int dyn = maxValue-minValue;
+        
+    }
+    
     /**
      * @param args the command line arguments
      */
@@ -679,29 +783,41 @@ public class MainWindow extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jBtnAfter2Before;
-    private javax.swing.JButton jBtnDilatation;
-    private javax.swing.JButton jBtnErosion;
-    private javax.swing.JButton jBtnFermeture;
-    private javax.swing.JButton jBtnGaussianFilter;
     private javax.swing.JButton jBtnGreyscale;
-    private javax.swing.JButton jBtnKirsh;
-    private javax.swing.JButton jBtnLaplacianFilter;
-    private javax.swing.JButton jBtnMediumFilter;
     private javax.swing.JButton jBtnMultiTreshold;
     private javax.swing.JButton jBtnNeg;
-    private javax.swing.JButton jBtnOuverture;
     private javax.swing.JButton jBtnPalette;
-    private javax.swing.JButton jBtnPrewitt;
-    private javax.swing.JButton jBtnRoberts;
-    private javax.swing.JButton jBtnSobel;
     private javax.swing.JToggleButton jBtnTreshold;
     private javax.swing.JButton jBtnZoom1;
     private javax.swing.JButton jBtnZoom2;
+    private javax.swing.JButton jButton1;
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabelAfter;
     private javax.swing.JLabel jLabelBefore;
+    private javax.swing.JLabel jLblHV;
+    private javax.swing.JLabel jLblHistoAfter;
+    private javax.swing.JLabel jLblHistoBefore;
     private javax.swing.JMenu jMenuAffLog;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenu jMenuFilltres;
+    private javax.swing.JMenuItem jMenuItemBelgianFilter;
+    private javax.swing.JMenuItem jMenuItemDilatation;
+    private javax.swing.JMenuItem jMenuItemErosion;
+    private javax.swing.JMenuItem jMenuItemFermeture;
+    private javax.swing.JMenuItem jMenuItemKirsh;
+    private javax.swing.JMenuItem jMenuItemLaplacian;
+    private javax.swing.JMenuItem jMenuItemMedian;
+    private javax.swing.JMenuItem jMenuItemMediumF;
+    private javax.swing.JMenuItem jMenuItemOpen;
+    private javax.swing.JMenuItem jMenuItemOuverture;
+    private javax.swing.JMenuItem jMenuItemPrewitt;
+    private javax.swing.JMenuItem jMenuItemRoberts;
+    private javax.swing.JMenuItem jMenuItemSobel;
+    private javax.swing.JMenu jMenuMorphologie;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
