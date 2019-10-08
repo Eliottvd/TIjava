@@ -10,6 +10,7 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
+import java.awt.image.WritableRaster;
 import java.util.ArrayList;
 import javax.swing.ImageIcon;
 
@@ -531,7 +532,7 @@ public class ImgModifier {
         BufferedImage histo = new BufferedImage(w, h, BufferedImage.TYPE_INT_ARGB);
         Graphics2D g2d = histo.createGraphics();
         
-        g2d.setColor(Color.BLUE);
+        g2d.setColor(new Color(255,255,51));
         g2d.fillRect(0, 0, histo.getWidth(), histo.getHeight());
         for(int i = 0; i < values.length; i++)
         {
@@ -555,12 +556,14 @@ public class ImgModifier {
         return lerp(lerp(c00, c10, tx), lerp(c01, c11, tx), ty);
     }
  
-    public static BufferedImage scale(BufferedImage self, float scaleX, float scaleY) {
+    public static BufferedImage Expansion(BufferedImage self, float scaleX, float scaleY) {
         int newWidth = (int) (self.getWidth() * scaleX);
         int newHeight = (int) (self.getHeight() * scaleY);
         BufferedImage newImage = new BufferedImage(newWidth, newHeight, self.getType());
-        for (int x = 0; x < newWidth; ++x) {
-            for (int y = 0; y < newHeight; ++y) {
+        for (int x = 0; x < newWidth; ++x) 
+        {
+            for (int y = 0; y < newHeight; ++y) 
+            {
                 float gx = ((float) x) / newWidth * (self.getWidth() - 1);
                 float gy = ((float) y) / newHeight * (self.getHeight() - 1);
                 int gxi = (int) gx;
@@ -584,4 +587,101 @@ public class ImgModifier {
         return newImage;
     }
     
+     public BufferedImage Erosion(BufferedImage imgIn, int mask[], int maskSize){
+        /**
+         * Dimension of the image img.
+         */
+        BufferedImage imgOut = copyImage(imgIn);
+        int width = imgIn.getWidth();
+        int height = imgIn.getHeight();
+        
+        //buff
+        int buff[];
+        
+        //output of erosion
+        int output[] = new int[width*height];
+        
+        //perform erosion
+        for(int y = 0; y < height; y++){
+            for(int x = 0; x < width; x++){
+                buff = new int[maskSize * maskSize];
+                int i = 0;
+                for(int ty = y - maskSize/2, mr = 0; ty <= y + maskSize/2; ty++, mr++){
+                   for(int tx = x - maskSize/2, mc = 0; tx <= x + maskSize/2; tx++, mc++){
+                       /**
+                        * Sample 3x3 mask [kernel or structuring element]
+                        * [0, 1, 0
+                        *  1, 1, 1
+                        *  0, 1, 0]
+                        * 
+                        * Only those pixels of the image img that are under the mask element 1 are considered.
+                        */
+                       if(ty >= 0 && ty < height && tx >= 0 && tx < width){
+                           //pixel under the mask
+                           
+                           if(mask[mc+mr*maskSize] != 1){
+                               continue;
+                           }
+                           
+                           buff[i] = (imgIn.getRGB(tx, ty)>>16)&0xff ;
+                           i++;
+                       }
+                   }
+                }
+                
+                //sort buff
+                java.util.Arrays.sort(buff);
+                
+                //save lowest value
+                output[x+y*width] = buff[(maskSize*maskSize) - i];
+            }
+        }
+        
+        /**
+         * Save the erosion value in image img.
+         */
+        for(int y = 0; y < height; y++){
+            for(int x = 0; x < width; x++){
+                int v = output[x+y*width];
+                v = (255<<24) | (v<<16) | (v<<8) | v;
+                imgOut.setRGB(x, y, v);
+            }
+        }
+        return imgOut;
+    }
+     
+    public BufferedImage equalize(BufferedImage src){
+        BufferedImage nImg = new BufferedImage(src.getWidth(), src.getHeight(),
+                             BufferedImage.TYPE_BYTE_GRAY);
+        WritableRaster wr = src.getRaster();
+        WritableRaster er = nImg.getRaster();
+        int totpix= wr.getWidth()*wr.getHeight();
+        int[] histogram = new int[256];
+
+        for (int x = 0; x < wr.getWidth(); x++) {
+            for (int y = 0; y < wr.getHeight(); y++) {
+                histogram[wr.getSample(x, y, 0)]++;
+            }
+        }
+
+        int[] chistogram = new int[256];
+        chistogram[0] = histogram[0];
+        for(int i=1;i<256;i++){
+            chistogram[i] = chistogram[i-1] + histogram[i];
+        }
+
+        float[] arr = new float[256];
+        for(int i=0;i<256;i++){
+            arr[i] =  (float)((chistogram[i]*255.0)/(float)totpix);
+        }
+
+        for (int x = 0; x < wr.getWidth(); x++) {
+            for (int y = 0; y < wr.getHeight(); y++) {
+                int nVal = (int) arr[wr.getSample(x, y, 0)];
+                er.setSample(x, y, 0, nVal);
+            }
+        }
+        nImg.setData(er);
+        return nImg;
+    }
 }
