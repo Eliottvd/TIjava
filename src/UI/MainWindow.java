@@ -10,29 +10,14 @@ import CodeBehind.Logs.AfficherLogDialog;
 import CodeBehind.Logs.FichierLog;
 import CodeBehind.QuadTree;
 import java.awt.Color;
-import java.awt.Graphics;
 import java.awt.Rectangle;
-import java.awt.Graphics2D;
-import java.awt.TrayIcon;
-import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.UIManager;
-import javax.swing.UnsupportedLookAndFeelException;
-import javax.swing.plaf.FileChooserUI;
-import jdk.jshell.spi.ExecutionControl;
-import de.javasoft.synthetica.plain.SyntheticaPlainLookAndFeel;
-import java.text.ParseException;
-import javax.swing.filechooser.FileFilter;
-import javax.swing.filechooser.FileNameExtensionFilter;
 
 /**
  *
