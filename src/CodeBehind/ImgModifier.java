@@ -5,14 +5,22 @@
  */
 package CodeBehind;
 
+import UI.MainWindow;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.awt.image.WritableRaster;
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
+import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
+import javax.swing.JFileChooser;
+import javax.swing.JFrame;
+import javax.swing.JProgressBar;
+import javax.swing.filechooser.FileNameExtensionFilter;
 
 /**
  *
@@ -506,6 +514,55 @@ public class ImgModifier {
         return bimage;
     }
     
+    public int SaveImage(BufferedImage ImgIn, JFrame mw)
+    {
+        JFileChooser fileChooser = new JFileChooser();
+        
+        fileChooser.addChoosableFileFilter(new FileNameExtensionFilter("jpg", "jpg"));
+        fileChooser.addChoosableFileFilter(new FileNameExtensionFilter("png", "png"));
+        fileChooser.addChoosableFileFilter(new FileNameExtensionFilter("bmp", "bmp"));
+        
+        fileChooser.setAcceptAllFileFilterUsed(false); // On empêche à l'utilsateur de choisir d'autres types,é vite de devoir check par après
+        fileChooser.setDialogTitle("Specify a file to save");
+        fileChooser.setCurrentDirectory(new File("C:\\Users\\Eliott\\Desktop"));
+        File fileToSave = null;
+
+        int userSelection = fileChooser.showSaveDialog(mw);
+
+        if (userSelection == JFileChooser.APPROVE_OPTION) 
+        {
+            fileToSave = getSelectedFileWithExtension(fileChooser);
+            System.out.println("Save as file: " + fileToSave.getAbsolutePath());
+        }
+        
+
+        BufferedImage bi = copyImage(ImgIn);  // retrieve image
+        //File outputfile = new File("saved.png");
+        try {
+            ImageIO.write(bi, "png", fileToSave);
+        } catch (IOException ex) {
+            System.out.println("Erreur d'écriture");
+            return 0;
+        }
+
+        return 1;
+    }
+    
+    public static File getSelectedFileWithExtension(JFileChooser c) {
+        File file = c.getSelectedFile();
+        if (c.getFileFilter() instanceof FileNameExtensionFilter) {
+            String[] exts = ((FileNameExtensionFilter)c.getFileFilter()).getExtensions();
+            String nameLower = file.getName().toLowerCase();
+            for (String ext : exts) { 
+                if (nameLower.endsWith('.' + ext.toLowerCase())) {
+                    return file;
+                }
+            }
+
+            file = new File(file.toString() + '.' + exts[0]);
+        }
+        return file;
+    }
     
     public BufferedImage Histogramme(BufferedImage imgIn, int w, int h)
     {
@@ -514,6 +571,10 @@ public class ImgModifier {
         BufferedImage img = copyImage(imgIn);
         
         // Get pixel number of same color
+        // On parcourt séquentiellement toute l'image. Le tableau values retiens le nombre de pixels pour chaque nuance de gris.
+        // On a donc un tableau contenant les données de notre futur histogramme. On crée un carré jaune qui sera le fond puis pour on 
+        // parcourt le tableau values et dessinant un ligne verticale proportionnelle au nopbre de pixels pour chaque nuance de gris 
+        
         for (int i = 0; i < img.getWidth(); i++) {
             for (int j = 0; j < img.getHeight(); j++) {
                 //System.out.println((img.getRGB(i, j) & 0x000000FF));
@@ -559,7 +620,9 @@ public class ImgModifier {
     public static BufferedImage Expansion(BufferedImage self, float scaleX, float scaleY) {
         int newWidth = (int) (self.getWidth() * scaleX);
         int newHeight = (int) (self.getHeight() * scaleY);
+
         BufferedImage newImage = new BufferedImage(newWidth, newHeight, self.getType());
+        
         for (int x = 0; x < newWidth; ++x) 
         {
             for (int y = 0; y < newHeight; ++y) 
@@ -573,7 +636,8 @@ public class ImgModifier {
                 int c10 = self.getRGB(gxi + 1, gyi);
                 int c01 = self.getRGB(gxi, gyi + 1);
                 int c11 = self.getRGB(gxi + 1, gyi + 1);
-                for (int i = 0; i <= 2; ++i) {
+                for (int i = 0; i <= 2; ++i) 
+                {
                     float b00 = get(c00, i);
                     float b10 = get(c10, i);
                     float b01 = get(c01, i);
@@ -582,6 +646,7 @@ public class ImgModifier {
                     rgb = rgb | ble;
                 }
                 newImage.setRGB(x, y, rgb);
+                
             }
         }
         return newImage;
@@ -658,24 +723,24 @@ public class ImgModifier {
         int totpix= wr.getWidth()*wr.getHeight();
         int[] histogram = new int[256];
 
-        for (int x = 0; x < wr.getWidth(); x++) {
+        for (int x = 0; x < wr.getWidth(); x++) { //Calcul histogramme
             for (int y = 0; y < wr.getHeight(); y++) {
                 histogram[wr.getSample(x, y, 0)]++;
             }
         }
 
-        int[] chistogram = new int[256];
+        int[] chistogram = new int[256];      
         chistogram[0] = histogram[0];
-        for(int i=1;i<256;i++){
+        for(int i=1;i<256;i++){                     //Calcul histogramme cumulé
             chistogram[i] = chistogram[i-1] + histogram[i];
         }
 
         float[] arr = new float[256];
-        for(int i=0;i<256;i++){
+        for(int i=0;i<256;i++){                     //indice = pixel,  valeur = nouvelle valeur du pixel
             arr[i] =  (float)((chistogram[i]*255.0)/(float)totpix);
         }
 
-        for (int x = 0; x < wr.getWidth(); x++) {
+        for (int x = 0; x < wr.getWidth(); x++) {   // On remplace les pixels de l'image 
             for (int y = 0; y < wr.getHeight(); y++) {
                 int nVal = (int) arr[wr.getSample(x, y, 0)];
                 er.setSample(x, y, 0, nVal);

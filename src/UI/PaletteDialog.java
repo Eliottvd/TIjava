@@ -126,6 +126,7 @@ public class PaletteDialog extends javax.swing.JDialog implements Runnable {
 
     @Override
     public void run() {
+        int i = 0;
         while(!stop)
         {
             mw.setColor(jColorChooser1.getColor());
@@ -137,6 +138,7 @@ public class PaletteDialog extends javax.swing.JDialog implements Runnable {
             {
                 System.out.println(e.getMessage());
             }
+            i++;
         }
         
     }

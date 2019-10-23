@@ -8,6 +8,7 @@ package UI;
 import CodeBehind.ImgModifier;
 import CodeBehind.Logs.AfficherLogDialog;
 import CodeBehind.Logs.FichierLog;
+import CodeBehind.QuadTree;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Rectangle;
@@ -30,6 +31,8 @@ import javax.swing.plaf.FileChooserUI;
 import jdk.jshell.spi.ExecutionControl;
 import de.javasoft.synthetica.plain.SyntheticaPlainLookAndFeel;
 import java.text.ParseException;
+import javax.swing.filechooser.FileFilter;
+import javax.swing.filechooser.FileNameExtensionFilter;
 
 /**
  *
@@ -70,6 +73,7 @@ public class MainWindow extends javax.swing.JFrame {
         }*/
         
         this.setLocationRelativeTo(null);
+        this.setIconImage(new ImageIcon("img\\mathlab.png").getImage());
         jSliderTreshold.setVisible(jCheckBoxMenuItemTH.isSelected());
         _fLog = new FichierLog();
         _iMod = new ImgModifier();
@@ -92,6 +96,11 @@ public class MainWindow extends javax.swing.JFrame {
         setImgBefore(img);
         
 
+        CodeBehind.Image img2 = new CodeBehind.Image("C:\\Users\\Eliott\\Desktop\\einstein1.jpg");
+        QuadTree qt = new QuadTree(img2);
+
+        // takes threshold as parameter
+        qt.divide(5);
         
     }
     
@@ -131,6 +140,7 @@ public class MainWindow extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenuAffLog = new javax.swing.JMenu();
         jMenuItemOpen = new javax.swing.JMenuItem();
+        jMenuItemSave = new javax.swing.JMenuItem();
         jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
         jMenuBase = new javax.swing.JMenu();
         jMenuItemGrayscale = new javax.swing.JMenuItem();
@@ -138,6 +148,7 @@ public class MainWindow extends javax.swing.JFrame {
         jCheckBoxMenuItemTH = new javax.swing.JCheckBoxMenuItem();
         jMenuItemMultiTH = new javax.swing.JMenuItem();
         jMenuItemPalette = new javax.swing.JMenuItem();
+        jMenuItemEgalisation = new javax.swing.JMenuItem();
         jMenuFilltres = new javax.swing.JMenu();
         jMenuItemMediumF = new javax.swing.JMenuItem();
         jMenuItemMedian = new javax.swing.JMenuItem();
@@ -298,7 +309,7 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel8.setText("x :");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 30, -1, 30));
 
-        jMenuAffLog.setText("Option");
+        jMenuAffLog.setText("File");
         jMenuAffLog.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuAffLogActionPerformed(evt);
@@ -312,6 +323,14 @@ public class MainWindow extends javax.swing.JFrame {
             }
         });
         jMenuAffLog.add(jMenuItemOpen);
+
+        jMenuItemSave.setText("Save");
+        jMenuItemSave.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemSaveActionPerformed(evt);
+            }
+        });
+        jMenuAffLog.add(jMenuItemSave);
 
         jCheckBoxMenuItem1.setText("Afficher le log");
         jCheckBoxMenuItem1.addActionListener(new java.awt.event.ActionListener() {
@@ -364,6 +383,14 @@ public class MainWindow extends javax.swing.JFrame {
             }
         });
         jMenuBase.add(jMenuItemPalette);
+
+        jMenuItemEgalisation.setText("Equalisation");
+        jMenuItemEgalisation.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemEgalisationActionPerformed(evt);
+            }
+        });
+        jMenuBase.add(jMenuItemEgalisation);
 
         jMenuBar1.add(jMenuBase);
 
@@ -553,6 +580,7 @@ public class MainWindow extends javax.swing.JFrame {
         // TODO add your handling code here:
         BufferedImage  img;
         JFileChooser fd = new JFileChooser();
+        fd.setCurrentDirectory(new File("C:\\Users\\Eliott\\Desktop"));
         fd.showOpenDialog(this);
         try
         { 
@@ -666,10 +694,20 @@ public class MainWindow extends javax.swing.JFrame {
 
     private void jLblHistoBeforeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLblHistoBeforeMouseClicked
         // TODO add your handling code here:
-        setImgAfter(_iMod.equalize(_imgBefore));
-        _fLog.addLog("Egalisation");
+        
     }//GEN-LAST:event_jLblHistoBeforeMouseClicked
 
+    private void jMenuItemEgalisationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemEgalisationActionPerformed
+        // TODO add your handling code here:
+        setImgAfter(_iMod.equalize(_imgBefore));
+        _fLog.addLog("Egalisation");
+    }//GEN-LAST:event_jMenuItemEgalisationActionPerformed
+
+    private void jMenuItemSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemSaveActionPerformed
+        _iMod.SaveImage(_imgAfter, this);
+    }//GEN-LAST:event_jMenuItemSaveActionPerformed
+
+    
     
     private void setImgAfter(BufferedImage img)
     {
@@ -758,6 +796,7 @@ public class MainWindow extends javax.swing.JFrame {
     private javax.swing.JMenu jMenuFilltres;
     private javax.swing.JMenuItem jMenuItemBelgianFilter;
     private javax.swing.JMenuItem jMenuItemDilatation;
+    private javax.swing.JMenuItem jMenuItemEgalisation;
     private javax.swing.JMenuItem jMenuItemErosion;
     private javax.swing.JMenuItem jMenuItemFermeture;
     private javax.swing.JMenuItem jMenuItemGrayscale;
@@ -772,6 +811,7 @@ public class MainWindow extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItemPalette;
     private javax.swing.JMenuItem jMenuItemPrewitt;
     private javax.swing.JMenuItem jMenuItemRoberts;
+    private javax.swing.JMenuItem jMenuItemSave;
     private javax.swing.JMenuItem jMenuItemSobel;
     private javax.swing.JMenu jMenuMorphologie;
     private javax.swing.JPanel jPanel1;
