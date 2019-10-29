@@ -1,0 +1,49 @@
+29/10/2019 11:39:09 > --NOUVELLE SESSION
+29/10/2019 11:39:10 > Reading Image
+29/10/2019 11:39:16 > C:\Users\Eliott\Desktop\Montre_600x600.jpg
+29/10/2019 11:39:16 > Open new image
+29/10/2019 11:39:20 > Image to greyscale
+29/10/2019 11:39:22 > Negative
+29/10/2019 11:39:23 > CBTreshold = true
+29/10/2019 11:39:27 > CBTreshold = false
+29/10/2019 11:39:30 > MultiTreshold
+29/10/2019 11:39:34 > Palette
+29/10/2019 11:39:36 > Median Filter
+29/10/2019 11:39:38 > Mean Filter
+29/10/2019 11:39:39 > Gaussian Filter
+29/10/2019 11:39:41 > Kirsh Filter
+29/10/2019 11:39:43 > Sobel Filter
+29/10/2019 11:39:44 > Prewitt Filter
+29/10/2019 11:39:46 > Roberts Filter
+29/10/2019 11:39:49 > Open
+29/10/2019 11:39:50 > Close
+29/10/2019 11:39:51 > Erosion
+29/10/2019 11:39:53 > Dilatation
+29/10/2019 11:39:55 > QuadTree Decomposition
+29/10/2019 11:39:58 > --FIN DE LA SESSION
+29/10/2019 11:39:58 > 
+29/10/2019 11:39:58 > 
+29/10/2019 11:40:21 > --NOUVELLE SESSION
+29/10/2019 11:40:22 > Reading Image
+29/10/2019 11:40:25 > Close
+29/10/2019 11:40:33 > C:\Users\Eliott\Desktop\Lena2.jpg
+29/10/2019 11:40:33 > Open new image
+29/10/2019 11:40:34 > QuadTree Decomposition
+29/10/2019 11:40:36 > --FIN DE LA SESSION
+29/10/2019 11:40:36 > 
+29/10/2019 11:40:36 > 
+29/10/2019 11:44:14 > --NOUVELLE SESSION
+29/10/2019 11:44:15 > Reading Image
+29/10/2019 11:44:20 > C:\Users\Eliott\Desktop\61038016_399873817535423_6437940618453843968_n.jpg
+29/10/2019 11:44:20 > Open new image
+29/10/2019 11:44:24 > Mean Filter
+29/10/2019 11:44:35 > Median Filter
+29/10/2019 11:44:38 > Gaussian Filter
+29/10/2019 11:44:42 > Laplacian Filter
+29/10/2019 11:44:45 > Kirsh Filter
+29/10/2019 11:44:48 > Sobel Filter
+29/10/2019 11:44:50 > Prewitt Filter
+29/10/2019 11:44:52 > Roberts Filter
+29/10/2019 11:44:53 > --FIN DE LA SESSION
+29/10/2019 11:44:53 > 
+29/10/2019 11:44:53 > 

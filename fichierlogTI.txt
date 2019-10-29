@@ -54286,3 +54286,344 @@
 16/10/2019 21:01:45 > --NOUVELLE SESSION
 16/10/2019 21:01:46 > Reading Image
 16/10/2019 21:01:46 > Image before changed
+24/10/2019 09:54:31 > --NOUVELLE SESSION
+24/10/2019 09:54:33 > Reading Image
+24/10/2019 09:54:33 > Image before changed
+24/10/2019 09:55:15 > --NOUVELLE SESSION
+24/10/2019 09:55:16 > Reading Image
+24/10/2019 09:55:16 > Image before changed
+24/10/2019 09:55:49 > --NOUVELLE SESSION
+24/10/2019 09:55:51 > Reading Image
+24/10/2019 09:55:51 > Image before changed
+24/10/2019 09:56:02 > C:\Users\Eliott\Desktop\61038016_399873817535423_6437940618453843968_n.jpg
+24/10/2019 09:56:03 > Image before changed
+24/10/2019 09:56:19 > Image after changed
+24/10/2019 09:56:19 > Image after changed
+24/10/2019 09:56:19 > Image after changed
+24/10/2019 09:56:19 > Image after changed
+24/10/2019 09:56:25 > Image after changed
+24/10/2019 09:56:25 > Image after changed
+24/10/2019 09:56:25 > Image after changed
+24/10/2019 09:56:26 > Image after changed
+24/10/2019 09:56:26 > Image after changed
+24/10/2019 09:56:27 > Image after changed
+24/10/2019 09:56:27 > Image after changed
+24/10/2019 09:56:27 > Image after changed
+24/10/2019 09:56:27 > Image after changed
+24/10/2019 09:56:28 > Image after changed
+24/10/2019 09:56:29 > Image after changed
+24/10/2019 09:56:38 > Image after changed
+24/10/2019 09:56:41 > Image after changed
+24/10/2019 09:56:41 > Image after changed
+24/10/2019 09:56:41 > Image after changed
+24/10/2019 09:56:44 > --FIN DE LA SESSION
+24/10/2019 09:56:44 > 
+24/10/2019 09:56:44 > 
+24/10/2019 10:18:13 > --NOUVELLE SESSION
+24/10/2019 10:18:14 > Reading Image
+24/10/2019 10:18:14 > Image before changed
+25/10/2019 22:26:45 > --NOUVELLE SESSION
+25/10/2019 22:26:48 > Reading Image
+25/10/2019 22:26:48 > Image before changed
+25/10/2019 22:26:54 > C:\Users\Eliott\Desktop\Lena.jpg
+25/10/2019 22:26:55 > Image before changed
+25/10/2019 22:26:57 > Image after changed
+25/10/2019 22:26:57 > Medium Filter
+25/10/2019 22:26:59 > Image after changed
+25/10/2019 22:26:59 > Median Filter
+25/10/2019 22:27:01 > Image after changed
+25/10/2019 22:27:03 > Image after changed
+25/10/2019 22:27:09 > Image after changed
+25/10/2019 22:27:12 > --FIN DE LA SESSION
+25/10/2019 22:27:12 > 
+25/10/2019 22:27:12 > 
+25/10/2019 23:32:26 > --NOUVELLE SESSION
+25/10/2019 23:32:28 > Reading Image
+25/10/2019 23:32:29 > Image before changed
+25/10/2019 23:32:30 > --FIN DE LA SESSION
+25/10/2019 23:32:30 > 
+25/10/2019 23:32:30 > 
+25/10/2019 23:37:04 > --NOUVELLE SESSION
+25/10/2019 23:37:06 > Reading Image
+25/10/2019 23:37:06 > Image before changed
+25/10/2019 23:37:13 > Image after changed
+25/10/2019 23:37:13 > Medium Filter
+25/10/2019 23:37:19 > --FIN DE LA SESSION
+25/10/2019 23:37:19 > 
+25/10/2019 23:37:19 > 
+25/10/2019 23:48:21 > --NOUVELLE SESSION
+25/10/2019 23:48:22 > Reading Image
+25/10/2019 23:48:22 > Image before changed
+25/10/2019 23:48:28 > C:\Users\Eliott\Desktop\Lena.jpg
+25/10/2019 23:48:28 > Image before changed
+25/10/2019 23:48:31 > Image after changed
+25/10/2019 23:48:33 > Image after changed
+25/10/2019 23:48:35 > Image after changed
+25/10/2019 23:48:37 > Image after changed
+25/10/2019 23:48:39 > Image after changed
+25/10/2019 23:48:40 > Image after changed
+25/10/2019 23:48:41 > --FIN DE LA SESSION
+25/10/2019 23:48:41 > 
+25/10/2019 23:48:41 > 
+25/10/2019 23:52:42 > --NOUVELLE SESSION
+25/10/2019 23:52:44 > Reading Image
+25/10/2019 23:52:44 > Image before changed
+25/10/2019 23:52:48 > Image after changed
+25/10/2019 23:52:48 > Medium Filter
+25/10/2019 23:52:49 > Image after changed
+25/10/2019 23:52:49 > Median Filter
+25/10/2019 23:52:55 > Image after changed
+25/10/2019 23:52:59 > --FIN DE LA SESSION
+25/10/2019 23:52:59 > 
+25/10/2019 23:52:59 > 
+25/10/2019 23:53:26 > --NOUVELLE SESSION
+25/10/2019 23:53:28 > Reading Image
+25/10/2019 23:53:28 > Image before changed
+25/10/2019 23:53:32 > Image after changed
+25/10/2019 23:53:37 > --FIN DE LA SESSION
+25/10/2019 23:53:37 > 
+25/10/2019 23:53:37 > 
+27/10/2019 22:33:56 > --NOUVELLE SESSION
+27/10/2019 22:33:58 > Reading Image
+27/10/2019 22:33:58 > Image before changed
+27/10/2019 22:34:02 > Image after changed
+27/10/2019 22:34:04 > Image after changed
+27/10/2019 22:34:14 > Image before changed
+27/10/2019 22:34:16 > Image after changed
+27/10/2019 22:34:19 > Image after changed
+27/10/2019 22:34:57 > Image after changed
+27/10/2019 22:35:04 > Image after changed
+27/10/2019 22:35:09 > Image after changed
+27/10/2019 22:35:11 > Image after changed
+27/10/2019 22:35:28 > Image after changed
+27/10/2019 22:35:28 > Medium Filter
+27/10/2019 22:35:30 > Image after changed
+27/10/2019 22:35:34 > Image after changed
+27/10/2019 22:35:35 > Image after changed
+27/10/2019 22:35:44 > --FIN DE LA SESSION
+27/10/2019 22:35:44 > 
+27/10/2019 22:35:44 > 
+27/10/2019 22:35:57 > --NOUVELLE SESSION
+27/10/2019 22:35:59 > Reading Image
+27/10/2019 22:35:59 > Image before changed
+27/10/2019 22:36:07 > C:\Users\Eliott\Desktop\Lena2.jpg
+27/10/2019 22:36:07 > Image before changed
+27/10/2019 22:36:35 > Image before changed
+27/10/2019 22:36:36 > Image before changed
+27/10/2019 22:36:37 > Image before changed
+27/10/2019 22:36:41 > Image after changed
+27/10/2019 22:36:41 > Median Filter
+27/10/2019 22:37:02 > Image after changed
+27/10/2019 22:37:02 > Median Filter
+27/10/2019 22:37:04 > Image after changed
+27/10/2019 22:37:04 > Medium Filter
+27/10/2019 22:37:10 > Image after changed
+27/10/2019 22:37:10 > Median Filter
+27/10/2019 22:37:13 > Image after changed
+27/10/2019 22:37:13 > Median Filter
+27/10/2019 22:37:14 > Image after changed
+27/10/2019 22:37:14 > Medium Filter
+27/10/2019 22:37:18 > Image after changed
+27/10/2019 22:38:06 > Image after changed
+27/10/2019 22:38:19 > C:\Users\Eliott\Desktop\Lena2.jpg
+27/10/2019 22:38:19 > Image before changed
+27/10/2019 22:38:22 > Image after changed
+27/10/2019 22:38:51 > Image after changed
+27/10/2019 22:40:10 > Image after changed
+27/10/2019 22:40:11 > Image after changed
+27/10/2019 22:40:13 > Image after changed
+27/10/2019 22:40:15 > Image after changed
+27/10/2019 22:40:53 > --FIN DE LA SESSION
+27/10/2019 22:40:53 > 
+27/10/2019 22:40:53 > 
+28/10/2019 16:05:40 > --NOUVELLE SESSION
+28/10/2019 16:05:42 > Reading Image
+28/10/2019 16:05:42 > Image before changed
+28/10/2019 16:06:19 > Image after changed
+28/10/2019 16:08:11 > Image after changed
+28/10/2019 16:08:11 > Medium Filter
+28/10/2019 16:08:13 > Image after changed
+28/10/2019 16:08:13 > Median Filter
+28/10/2019 16:08:15 > Image after changed
+28/10/2019 16:08:17 > Image after changed
+28/10/2019 16:08:23 > Image after changed
+28/10/2019 16:08:26 > Image after changed
+28/10/2019 16:11:05 > --NOUVELLE SESSION
+28/10/2019 16:11:07 > Reading Image
+28/10/2019 16:11:07 > Image before changed
+28/10/2019 16:11:10 > Image after changed
+28/10/2019 16:11:16 > --FIN DE LA SESSION
+28/10/2019 16:11:16 > 
+28/10/2019 16:11:16 > 
+28/10/2019 16:11:18 > --FIN DE LA SESSION
+28/10/2019 16:11:18 > 
+28/10/2019 16:11:18 > 
+29/10/2019 10:40:53 > --NOUVELLE SESSION
+29/10/2019 10:40:54 > Reading Image
+29/10/2019 10:40:54 > Image before changed
+29/10/2019 10:41:42 > D:\OneDrive - Enseignement de la Province de Liège\Ecole\BLOC3\Q1\Traitement d'image\Dossier1_java\TIDos1\originalBinaryimage.jpg
+29/10/2019 10:41:54 > Image before changed
+29/10/2019 10:43:27 > --NOUVELLE SESSION
+29/10/2019 10:43:28 > Reading Image
+29/10/2019 10:43:28 > Image before changed
+29/10/2019 10:43:39 > --FIN DE LA SESSION
+29/10/2019 10:43:39 > 
+29/10/2019 10:43:39 > 
+29/10/2019 10:44:53 > --NOUVELLE SESSION
+29/10/2019 10:44:55 > Reading Image
+29/10/2019 10:44:55 > Image before changed
+29/10/2019 10:45:24 > --FIN DE LA SESSION
+29/10/2019 10:45:24 > 
+29/10/2019 10:45:24 > 
+29/10/2019 10:45:48 > --NOUVELLE SESSION
+29/10/2019 10:45:49 > Reading Image
+29/10/2019 10:45:49 > Image before changed
+29/10/2019 10:46:00 > --FIN DE LA SESSION
+29/10/2019 10:46:00 > 
+29/10/2019 10:46:00 > 
+29/10/2019 10:46:18 > --NOUVELLE SESSION
+29/10/2019 10:46:19 > Reading Image
+29/10/2019 10:46:19 > Image before changed
+29/10/2019 10:46:28 > --FIN DE LA SESSION
+29/10/2019 10:46:28 > 
+29/10/2019 10:46:28 > 
+29/10/2019 10:47:45 > --NOUVELLE SESSION
+29/10/2019 10:47:46 > Reading Image
+29/10/2019 10:47:47 > Image before changed
+29/10/2019 10:48:04 > D:\OneDrive - Enseignement de la Province de Liège\Ecole\BLOC3\Q1\Traitement d'image\Dossier1_java\TIDos1\originalBinaryimage.jpg
+29/10/2019 10:48:14 > Image before changed
+29/10/2019 10:48:28 > Image after changed
+29/10/2019 10:49:15 > Image after changed
+29/10/2019 10:49:22 > Image after changed
+29/10/2019 10:49:40 > Image before changed
+29/10/2019 10:50:01 > C:\Users\Eliott\Desktop\Lena2.jpg
+29/10/2019 10:50:02 > Image before changed
+29/10/2019 10:50:03 > Image after changed
+29/10/2019 10:51:08 > --FIN DE LA SESSION
+29/10/2019 10:51:08 > 
+29/10/2019 10:51:08 > 
+29/10/2019 10:51:15 > --NOUVELLE SESSION
+29/10/2019 10:51:16 > Reading Image
+29/10/2019 10:51:16 > Image before changed
+29/10/2019 10:51:20 > C:\Users\Eliott\Desktop\Lena2.jpg
+29/10/2019 10:51:20 > Image before changed
+29/10/2019 10:51:23 > Image after changed
+29/10/2019 10:51:34 > --FIN DE LA SESSION
+29/10/2019 10:51:34 > 
+29/10/2019 10:51:34 > 
+29/10/2019 10:52:08 > --NOUVELLE SESSION
+29/10/2019 10:52:10 > Reading Image
+29/10/2019 10:52:10 > Image before changed
+29/10/2019 10:52:14 > C:\Users\Eliott\Desktop\Lena2.jpg
+29/10/2019 10:52:14 > Image before changed
+29/10/2019 10:52:16 > Image after changed
+29/10/2019 10:52:37 > --FIN DE LA SESSION
+29/10/2019 10:52:37 > 
+29/10/2019 10:52:37 > 
+29/10/2019 10:52:42 > --NOUVELLE SESSION
+29/10/2019 10:52:43 > Reading Image
+29/10/2019 10:52:43 > Image before changed
+29/10/2019 10:54:35 > C:\Users\Eliott\Desktop\Montre_600x600.jpg
+29/10/2019 10:54:35 > Image before changed
+29/10/2019 10:54:42 > Image after changed
+29/10/2019 10:54:42 > Image after changed
+29/10/2019 10:54:42 > Image after changed
+29/10/2019 10:54:42 > Image after changed
+29/10/2019 10:54:42 > Image after changed
+29/10/2019 10:54:42 > Image after changed
+29/10/2019 10:54:42 > Image after changed
+29/10/2019 10:54:42 > Image after changed
+29/10/2019 10:54:42 > Image after changed
+29/10/2019 10:54:42 > Image after changed
+29/10/2019 10:54:42 > Image after changed
+29/10/2019 10:54:42 > Image after changed
+29/10/2019 10:54:43 > Image after changed
+29/10/2019 10:54:43 > Image after changed
+29/10/2019 10:54:43 > Image after changed
+29/10/2019 10:54:43 > Image after changed
+29/10/2019 10:54:43 > Image after changed
+29/10/2019 10:54:43 > Image after changed
+29/10/2019 10:54:43 > Image after changed
+29/10/2019 10:54:43 > Image after changed
+29/10/2019 10:54:43 > Image after changed
+29/10/2019 10:54:43 > Image after changed
+29/10/2019 10:54:43 > Image after changed
+29/10/2019 10:54:43 > Image after changed
+29/10/2019 10:54:43 > Image after changed
+29/10/2019 10:54:43 > Image after changed
+29/10/2019 10:54:43 > Image after changed
+29/10/2019 10:54:44 > Image after changed
+29/10/2019 10:54:44 > Image after changed
+29/10/2019 10:54:44 > Image after changed
+29/10/2019 10:54:44 > Image after changed
+29/10/2019 10:54:44 > Image after changed
+29/10/2019 10:54:44 > Image after changed
+29/10/2019 10:54:44 > Image after changed
+29/10/2019 10:54:44 > Image after changed
+29/10/2019 10:54:44 > Image after changed
+29/10/2019 10:54:44 > Image after changed
+29/10/2019 10:54:44 > Image after changed
+29/10/2019 10:54:44 > Image after changed
+29/10/2019 10:54:45 > Image after changed
+29/10/2019 10:54:45 > Image after changed
+29/10/2019 10:54:45 > Image after changed
+29/10/2019 10:54:45 > Image after changed
+29/10/2019 10:54:47 > Image after changed
+29/10/2019 10:54:47 > Image after changed
+29/10/2019 10:54:47 > Image after changed
+29/10/2019 10:54:47 > Image after changed
+29/10/2019 10:54:47 > Image after changed
+29/10/2019 10:54:47 > Image after changed
+29/10/2019 10:54:47 > Image after changed
+29/10/2019 10:54:50 > Swapping before and after
+29/10/2019 10:54:50 > Image before changed
+29/10/2019 10:54:55 > Image after changed
+29/10/2019 10:56:24 > C:\Users\Eliott\Desktop\Montre_600x600.jpg
+29/10/2019 10:56:25 > Image before changed
+29/10/2019 10:56:28 > Image after changed
+29/10/2019 10:56:48 > --FIN DE LA SESSION
+29/10/2019 10:56:48 > 
+29/10/2019 10:56:48 > 
+29/10/2019 11:00:23 > --NOUVELLE SESSION
+29/10/2019 11:00:24 > Reading Image
+29/10/2019 11:00:24 > Image before changed
+29/10/2019 11:00:29 > C:\Users\Eliott\Desktop\Montre_600x600.jpg
+29/10/2019 11:00:29 > Image before changed
+29/10/2019 11:00:31 > Image after changed
+29/10/2019 11:00:37 > --FIN DE LA SESSION
+29/10/2019 11:00:37 > 
+29/10/2019 11:00:37 > 
+29/10/2019 11:02:49 > --NOUVELLE SESSION
+29/10/2019 11:02:50 > Reading Image
+29/10/2019 11:02:50 > Image before changed
+29/10/2019 11:03:04 > C:\Users\Eliott\Desktop\Lena2.jpg
+29/10/2019 11:03:04 > Image before changed
+29/10/2019 11:03:06 > Image after changed
+29/10/2019 11:03:11 > Image after changed
+29/10/2019 11:03:17 > Image after changed
+29/10/2019 11:03:18 > Image after changed
+29/10/2019 11:03:27 > Image after changed
+29/10/2019 11:03:28 > Image after changed
+29/10/2019 11:03:29 > Image after changed
+29/10/2019 11:03:37 > C:\Users\Eliott\Desktop\Lena2.jpg
+29/10/2019 11:03:37 > Image before changed
+29/10/2019 11:03:42 > Image after changed
+29/10/2019 11:03:51 > Image after changed
+29/10/2019 11:03:53 > Image after changed
+29/10/2019 11:03:54 > Image after changed
+29/10/2019 11:03:56 > Image after changed
+29/10/2019 11:04:04 > Image after changed
+29/10/2019 11:04:05 > Image after changed
+29/10/2019 11:04:06 > Image after changed
+29/10/2019 11:04:09 > Image after changed
+29/10/2019 11:04:14 > C:\Users\Eliott\Desktop\Montre_600x600.jpg
+29/10/2019 11:04:14 > Image before changed
+29/10/2019 11:04:17 > Image after changed
+29/10/2019 11:06:03 > --FIN DE LA SESSION
+29/10/2019 11:06:03 > 
+29/10/2019 11:06:03 > 
+29/10/2019 11:16:41 > --NOUVELLE SESSION
+29/10/2019 11:16:42 > Reading Image
+29/10/2019 11:16:55 > --FIN DE LA SESSION
+29/10/2019 11:16:55 > 
+29/10/2019 11:16:55 > 

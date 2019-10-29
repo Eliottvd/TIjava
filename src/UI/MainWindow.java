@@ -8,7 +8,6 @@ package UI;
 import CodeBehind.ImgModifier;
 import CodeBehind.Logs.AfficherLogDialog;
 import CodeBehind.Logs.FichierLog;
-import CodeBehind.QuadTree;
 import java.awt.Color;
 import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
@@ -40,22 +39,6 @@ public class MainWindow extends javax.swing.JFrame {
     
     public MainWindow() {
         initComponents();
-        /*
-        try {
-            String s = new SyntheticaPlainLookAndFeel();
-            UIManager.setLookAndFeel(s);
-            //UIManager.setLookAndFeel(new SyntheticaPlainLookAndFeel());
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (UnsupportedLookAndFeelException ex) {
-            Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (ParseException ex) {
-            Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex);
-        }*/
         
         this.setLocationRelativeTo(null);
         this.setIconImage(new ImageIcon("img\\mathlab.png").getImage());
@@ -63,8 +46,7 @@ public class MainWindow extends javax.swing.JFrame {
         _fLog = new FichierLog();
         _iMod = new ImgModifier();
         BufferedImage img = null; 
-        File f = null; 
-  
+        File f = null;
          
         try
         { 
@@ -79,14 +61,6 @@ public class MainWindow extends javax.swing.JFrame {
         _fLog.addLog("Reading Image");
         
         setImgBefore(img);
-        
-
-        CodeBehind.Image img2 = new CodeBehind.Image("C:\\Users\\Eliott\\Desktop\\einstein1.jpg");
-        QuadTree qt = new QuadTree(img2);
-
-        // takes threshold as parameter
-        qt.divide(5);
-        
     }
     
     /**
@@ -148,6 +122,8 @@ public class MainWindow extends javax.swing.JFrame {
         jMenuItemFermeture = new javax.swing.JMenuItem();
         jMenuItemErosion = new javax.swing.JMenuItem();
         jMenuItemDilatation = new javax.swing.JMenuItem();
+        jMenu1Option = new javax.swing.JMenu();
+        jMenuItemQuadTree = new javax.swing.JMenuItem();
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -381,7 +357,7 @@ public class MainWindow extends javax.swing.JFrame {
 
         jMenuFilltres.setText("Filtres");
 
-        jMenuItemMediumF.setText("Medium Filter");
+        jMenuItemMediumF.setText("Mean Filter");
         jMenuItemMediumF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItemMediumFActionPerformed(evt);
@@ -451,9 +427,19 @@ public class MainWindow extends javax.swing.JFrame {
         jMenuMorphologie.setText("Morphologie");
 
         jMenuItemOuverture.setText("Open");
+        jMenuItemOuverture.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemOuvertureActionPerformed(evt);
+            }
+        });
         jMenuMorphologie.add(jMenuItemOuverture);
 
         jMenuItemFermeture.setText("Close");
+        jMenuItemFermeture.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemFermetureActionPerformed(evt);
+            }
+        });
         jMenuMorphologie.add(jMenuItemFermeture);
 
         jMenuItemErosion.setText("Erosion");
@@ -465,9 +451,31 @@ public class MainWindow extends javax.swing.JFrame {
         jMenuMorphologie.add(jMenuItemErosion);
 
         jMenuItemDilatation.setText("Dilatation");
+        jMenuItemDilatation.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemDilatationActionPerformed(evt);
+            }
+        });
         jMenuMorphologie.add(jMenuItemDilatation);
 
         jMenuBar1.add(jMenuMorphologie);
+
+        jMenu1Option.setText("Option");
+        jMenu1Option.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenu1OptionActionPerformed(evt);
+            }
+        });
+
+        jMenuItemQuadTree.setText("Quadtree");
+        jMenuItemQuadTree.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemQuadTreeActionPerformed(evt);
+            }
+        });
+        jMenu1Option.add(jMenuItemQuadTree);
+
+        jMenuBar1.add(jMenu1Option);
 
         setJMenuBar(jMenuBar1);
 
@@ -501,7 +509,7 @@ public class MainWindow extends javax.swing.JFrame {
     private void jBtnAfter2BeforeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnAfter2BeforeActionPerformed
         
         try {
-            _fLog.addLog("Swapping before and after");
+            _fLog.addLog("Image before <= image after");
             BufferedImage tmp = _iMod.copyImage(_imgAfter);
             //_imgAfter = _imgBefore;
             _imgBefore = tmp;
@@ -527,6 +535,7 @@ public class MainWindow extends javax.swing.JFrame {
 
     private void jBtnZoom1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnZoom1ActionPerformed
         setImgBefore(_iMod.Expansion(_imgBefore, Float.parseFloat(jTextFieldZoom3.getText()), Float.parseFloat(jTextFieldZoom1.getText())));
+        _fLog.addLog("Expansion");
     }//GEN-LAST:event_jBtnZoom1ActionPerformed
 
     private void jTextFieldZoom1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldZoom1ActionPerformed
@@ -559,6 +568,7 @@ public class MainWindow extends javax.swing.JFrame {
                 rect = new Rectangle(x2, y2, x1-x2, y1-y2);
         
         setImgAfter(img.getSubimage((int)(rect.x), (int)(rect.y), (int)(rect.width), (int)(rect.height)));
+        _fLog.addLog("ROI");
     }//GEN-LAST:event_jLabelBeforeMouseReleased
 
     private void jMenuItemOpenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemOpenActionPerformed
@@ -579,34 +589,44 @@ public class MainWindow extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "Fail to open the file", "Error", JOptionPane.ERROR_MESSAGE);
             dispose();
         } 
+        _fLog.addLog("Open new image");
         
     }//GEN-LAST:event_jMenuItemOpenActionPerformed
 
     private void jMenuItemKirshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemKirshActionPerformed
-        // TODO add your handling code here:
+        // TODO add your handling code here
+        setImgAfter(_iMod.KirschFilter("Auto", _imgBefore));
+        _fLog.addLog("Kirsh Filter");
     }//GEN-LAST:event_jMenuItemKirshActionPerformed
 
     private void jMenuItemSobelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemSobelActionPerformed
         // TODO add your handling code here:
+        setImgAfter(_iMod.FiltreDeSobel(_imgBefore));
+        _fLog.addLog("Sobel Filter");
     }//GEN-LAST:event_jMenuItemSobelActionPerformed
 
     private void jMenuItemPrewittActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemPrewittActionPerformed
         // TODO add your handling code here:
         setImgAfter(_iMod.FiltreDePrewitt(_imgBefore));
+        _fLog.addLog("Prewitt Filter");
     }//GEN-LAST:event_jMenuItemPrewittActionPerformed
 
     private void jMenuItemRobertsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemRobertsActionPerformed
         // TODO add your handling code here:
+        setImgAfter(_iMod.RobertCrossFilter("Auto", _imgBefore));
+        _fLog.addLog("Roberts Filter");
     }//GEN-LAST:event_jMenuItemRobertsActionPerformed
 
     private void jMenuItemBelgianFilterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemBelgianFilterActionPerformed
         // TODO add your handling code here:
-        setImgAfter(_iMod.FiltreGaussien(_imgBefore, 0.3));
+        setImgAfter(_iMod.GaussianFilter(_imgBefore));
+        _fLog.addLog("Gaussian Filter");
     }//GEN-LAST:event_jMenuItemBelgianFilterActionPerformed
 
     private void jMenuItemLaplacianActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemLaplacianActionPerformed
         // TODO add your handling code here:
         setImgAfter(_iMod.FiltreLaplacien(_imgBefore));
+        _fLog.addLog("Laplacian Filter");
     }//GEN-LAST:event_jMenuItemLaplacianActionPerformed
 
     private void jMenuItemMedianActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemMedianActionPerformed
@@ -618,13 +638,14 @@ public class MainWindow extends javax.swing.JFrame {
     private void jMenuItemMediumFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemMediumFActionPerformed
         // TODO add your handling code here:
         setImgAfter(_iMod.FiltreMoyen(_imgBefore));
-        _fLog.addLog("Medium Filter");
+        _fLog.addLog("Mean Filter");
     }//GEN-LAST:event_jMenuItemMediumFActionPerformed
 
     private void jMenuItemErosionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemErosionActionPerformed
         // TODO add your handling code here:
         int mask[] = {1,1,1,1,1,1,1,1,1};
-        setImgAfter(_iMod.Erosion(_imgBefore, mask, 3));
+        setImgAfter(_iMod.Erosion(_imgBefore, 128));
+        _fLog.addLog("Erosion");
     }//GEN-LAST:event_jMenuItemErosionActionPerformed
 
     private void jMenuItemGrayscaleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemGrayscaleActionPerformed
@@ -636,7 +657,7 @@ public class MainWindow extends javax.swing.JFrame {
     private void jMenuItemNegativeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemNegativeActionPerformed
         // TODO add your handling code here:
         setImgAfter(_iMod.Negative(_imgBefore));
-        _fLog.addLog("Image to greyscale");
+        _fLog.addLog("Negative");
     }//GEN-LAST:event_jMenuItemNegativeActionPerformed
 
     private void jMenuItemMultiTHActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemMultiTHActionPerformed
@@ -645,6 +666,7 @@ public class MainWindow extends javax.swing.JFrame {
         MTresholdDialog mtd = new MTresholdDialog(this, true, tab);
         mtd.setVisible(true);
         setImgAfter(_iMod.MultiTreshold(_imgBefore, tab));
+        _fLog.addLog("MultiTreshold");
     }//GEN-LAST:event_jMenuItemMultiTHActionPerformed
 
     private void jTextFieldZoom3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldZoom3ActionPerformed
@@ -654,6 +676,7 @@ public class MainWindow extends javax.swing.JFrame {
     private void jBtnZoom3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnZoom3ActionPerformed
         // TODO add your handling code here:
         setImgAfter(_iMod.Expansion(_imgAfter, Float.parseFloat(jTextFieldZoom5.getText()), Float.parseFloat(jTextFieldZoom4.getText())));
+        _fLog.addLog("Expansion");
     }//GEN-LAST:event_jBtnZoom3ActionPerformed
 
     private void jTextFieldZoom4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldZoom4ActionPerformed
@@ -667,6 +690,7 @@ public class MainWindow extends javax.swing.JFrame {
     private void jCheckBoxMenuItemTHActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBoxMenuItemTHActionPerformed
         // TODO add your handling code here:
         jSliderTreshold.setVisible(jCheckBoxMenuItemTH.isSelected());
+        _fLog.addLog("CBTreshold = " + jCheckBoxMenuItemTH.isSelected());
     }//GEN-LAST:event_jCheckBoxMenuItemTHActionPerformed
 
     private void jMenuItemPaletteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemPaletteActionPerformed
@@ -675,6 +699,7 @@ public class MainWindow extends javax.swing.JFrame {
         Thread tpd = new Thread(pd);
         tpd.start();
         pd.setVisible(true);
+        _fLog.addLog("Palette");
     }//GEN-LAST:event_jMenuItemPaletteActionPerformed
 
     private void jLblHistoBeforeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLblHistoBeforeMouseClicked
@@ -690,7 +715,44 @@ public class MainWindow extends javax.swing.JFrame {
 
     private void jMenuItemSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemSaveActionPerformed
         _iMod.SaveImage(_imgAfter, this);
+        _fLog.addLog("Save");
     }//GEN-LAST:event_jMenuItemSaveActionPerformed
+
+    private void jMenuItemDilatationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemDilatationActionPerformed
+        // TODO add your handling code here:
+        setImgAfter(_iMod.Dilatation(128, _imgBefore));
+        _fLog.addLog("Dilatation");
+    }//GEN-LAST:event_jMenuItemDilatationActionPerformed
+
+    private void jMenuItemOuvertureActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemOuvertureActionPerformed
+        // TODO add your handling code here:
+        setImgAfter(_iMod.Dilatation(128, _iMod.Erosion(_imgBefore, 128)));
+        _fLog.addLog("Open");
+    }//GEN-LAST:event_jMenuItemOuvertureActionPerformed
+
+    private void jMenuItemFermetureActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemFermetureActionPerformed
+        // TODO add your handling code here:
+        setImgAfter(_iMod.Erosion(_iMod.Dilatation(128, _imgBefore), 128));
+        _fLog.addLog("Close");
+    }//GEN-LAST:event_jMenuItemFermetureActionPerformed
+
+    private void jMenu1OptionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu1OptionActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_jMenu1OptionActionPerformed
+
+    private void jMenuItemQuadTreeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemQuadTreeActionPerformed
+        // TODO add your handling code here:
+        if(_imgBefore.getHeight() != _imgBefore.getWidth())
+        {
+            JOptionPane.showMessageDialog(this, "Image must be square !", "Invalid image", JOptionPane.ERROR_MESSAGE);
+        }
+        else
+        {
+            setImgAfter(_iMod.QuadtreeT(_imgBefore));
+            _fLog.addLog("QuadTree Decomposition");
+        }
+    }//GEN-LAST:event_jMenuItemQuadTreeActionPerformed
 
     
     
@@ -699,7 +761,7 @@ public class MainWindow extends javax.swing.JFrame {
         _imgAfter = img;
         jLabelAfter.setIcon(new ImageIcon(_imgAfter));
         jLblHistoAfter.setIcon(new ImageIcon(_iMod.Histogramme(_imgAfter, jLblHistoAfter.getWidth(), jLblHistoAfter.getHeight())));
-        _fLog.addLog("Image after changed");
+        //_fLog.addLog("Image after changed");
     }
     
     private void setImgBefore(BufferedImage img)
@@ -707,7 +769,7 @@ public class MainWindow extends javax.swing.JFrame {
         _imgBefore = img;
         jLabelBefore.setIcon(new ImageIcon(_imgBefore));
         jLblHistoBefore.setIcon(new ImageIcon(_iMod.Histogramme(_imgBefore, jLblHistoBefore.getWidth(), jLblHistoBefore.getHeight())));
-        _fLog.addLog("Image before changed");
+        //_fLog.addLog("Image before changed");
     }
     
     protected void setColor(Color c)
@@ -715,11 +777,6 @@ public class MainWindow extends javax.swing.JFrame {
         setImgAfter(_iMod.ColorChange(_imgBefore, c.getRGB()));
     }
 
-    private void histogramEgalisation()
-    {
-        int dyn = maxValue-minValue;
-        
-    }
     
     /**
      * @param args the command line arguments
@@ -775,6 +832,7 @@ public class MainWindow extends javax.swing.JFrame {
     private javax.swing.JLabel jLblHV;
     private javax.swing.JLabel jLblHistoAfter;
     private javax.swing.JLabel jLblHistoBefore;
+    private javax.swing.JMenu jMenu1Option;
     private javax.swing.JMenu jMenuAffLog;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenu jMenuBase;
@@ -795,6 +853,7 @@ public class MainWindow extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItemOuverture;
     private javax.swing.JMenuItem jMenuItemPalette;
     private javax.swing.JMenuItem jMenuItemPrewitt;
+    private javax.swing.JMenuItem jMenuItemQuadTree;
     private javax.swing.JMenuItem jMenuItemRoberts;
     private javax.swing.JMenuItem jMenuItemSave;
     private javax.swing.JMenuItem jMenuItemSobel;

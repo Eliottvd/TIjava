@@ -115,7 +115,7 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItemMediumF">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Medium Filter"/>
+                <Property name="text" type="java.lang.String" value="Mean Filter"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemMediumFActionPerformed"/>
@@ -189,11 +189,17 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Open"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemOuvertureActionPerformed"/>
+              </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItemFermeture">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Close"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemFermetureActionPerformed"/>
+              </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItemErosion">
               <Properties>
@@ -207,6 +213,27 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Dilatation"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemDilatationActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="jMenu1Option">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Option"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenu1OptionActionPerformed"/>
+          </Events>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemQuadTree">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Quadtree"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemQuadTreeActionPerformed"/>
+              </Events>
             </MenuItem>
           </SubComponents>
         </Menu>

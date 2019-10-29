@@ -213,34 +213,73 @@ public class ImgModifier {
     public BufferedImage FiltreMoyen(BufferedImage ImgIn)
     {
         BufferedImage ImgOut = copyImage(ImgIn);
-        int p[] = new int[9]; 
-        int moyenne = 0;
-        int x, y;
-
-        for(x = 1; x < ImgIn.getWidth()-1;x++)
-        {
-            for(y = 1; y < ImgIn.getHeight()-1 ; y++)
-            {
-                p[0] = ImgIn.getRGB(x - 1, y - 1);
-                p[1] = ImgIn.getRGB(x, y - 1);
-                p[2] = ImgIn.getRGB(x + 1, y - 1);
-                p[3] = ImgIn.getRGB(x - 1, y);
-                p[4] = ImgIn.getRGB(x , y); 
-                p[5] = ImgIn.getRGB(x + 1, y);
-                p[6] = ImgIn.getRGB(x - 1, y + 1);
-                p[7] = ImgIn.getRGB(x , y + 1);
-                p[8] = ImgIn.getRGB(x + 1, y + 1);
+        
+        int[] P=new int[9];
+        int[] R=new int[9];
+        int[] B=new int[9];
+        int[] G=new int[9];
+        
+        int sumR = 0, sumB = 0, sumG = 0, avgR, avgB, avgG;
+        int pixel;
+        
+        int width = ImgOut.getWidth(); 
+        int height = ImgOut.getHeight(); 
   
-                for(int k = 0 ; k < p.length ; k++)
-                {
-                    moyenne += p[k]&0xff;
-                }
+        for (int i = 0; i < width; i++) 
+        { 
+            for (int j = 0; j < height; j++) 
+            { 
+               sumB = 0;
+               sumR = 0;
+               sumG = 0;
                 
-                moyenne /= p.length;
-                
-                p[5] = (moyenne<<24) | (moyenne<<16) | (moyenne<<8) | moyenne; 
-                ImgOut.setRGB(x, y, p[5]); 
-            }
+               try
+               {
+                     P[0]=ImgOut.getRGB(i-1,j-1);
+                     P[1]=ImgOut.getRGB(i-1,j);
+                     P[2]=ImgOut.getRGB(i-1,j+1);
+                     P[3]=ImgOut.getRGB(i,j+1);
+                     P[4]=ImgOut.getRGB(i+1,j+1);
+                     P[5]=ImgOut.getRGB(i+1,j);
+                     P[6]=ImgOut.getRGB(i+1,j-1);
+                     P[7]=ImgOut.getRGB(i,j-1);
+                     P[8]=ImgOut.getRGB(i,j);
+               }
+               catch(IndexOutOfBoundsException e)
+               {
+                     P[0]=0;
+                     P[1]=0;
+                     P[2]=0;
+                     P[3]=0;
+                     P[4]=0;
+                     P[5]=0;
+                     P[6]=0;
+                     P[7]=0;
+                     P[8]=ImgOut.getRGB(i,j);   
+               }
+
+               for(int k=0;k<9;k++)
+               {                   
+                   R[k] = (P[k]>>16)&0xff;
+                   B[k] = (P[k]>>8)&0xff; 
+                   G[k] = P[k]&0xff; 
+               }
+               
+               for(int k=0;k<9;k++)
+               {                   
+                   sumR += R[k];
+                   sumB += B[k];
+                   sumG += G[k];
+               }
+               
+               avgR = sumR/R.length;
+               avgB = sumB/B.length;
+               avgG = sumG/G.length;
+               
+               pixel = (255<<24) | (avgR<<16) | (avgB<<8) | avgG; 
+               
+               ImgOut.setRGB(i, j, pixel); 
+            }   
         }
         
         return ImgOut;
@@ -729,68 +768,170 @@ public class ImgModifier {
         return newImage;
     }
     
-     public BufferedImage Erosion(BufferedImage imgIn, int mask[], int maskSize){
-        /**
-         * Dimension of the image img.
-         */
-        BufferedImage imgOut = copyImage(imgIn);
-        int width = imgIn.getWidth();
-        int height = imgIn.getHeight();
-        
-        //buff
-        int buff[];
-        
-        //output of erosion
-        int output[] = new int[width*height];
-        
-        //perform erosion
-        for(int y = 0; y < height; y++){
-            for(int x = 0; x < width; x++){
-                buff = new int[maskSize * maskSize];
-                int i = 0;
-                for(int ty = y - maskSize/2, mr = 0; ty <= y + maskSize/2; ty++, mr++){
-                   for(int tx = x - maskSize/2, mc = 0; tx <= x + maskSize/2; tx++, mc++){
-                       /**
-                        * Sample 3x3 mask [kernel or structuring element]
-                        * [0, 1, 0
-                        *  1, 1, 1
-                        *  0, 1, 0]
-                        * 
-                        * Only those pixels of the image img that are under the mask element 1 are considered.
-                        */
-                       if(ty >= 0 && ty < height && tx >= 0 && tx < width){
-                           //pixel under the mask
-                           
-                           if(mask[mc+mr*maskSize] != 1){
-                               continue;
-                           }
-                           
-                           buff[i] = (imgIn.getRGB(tx, ty)>>16)&0xff ;
-                           i++;
-                       }
+     public BufferedImage Erosion(BufferedImage imgIn, int val){
+        BufferedImage ImgOut;
+
+        if(imgIn != null)
+        {
+            ImgOut = copyImage(imgIn);
+        }
+
+        ImgOut = this.Treshold(imgIn, val);
+
+        int[] P = new int[9]; // Pixel
+        int[] Avg = new int[9];
+
+        int r, g, b;
+        int max = 0; // de base on part de 0
+        int pixel;
+
+        int width = ImgOut.getWidth(); 
+        int height = ImgOut.getHeight(); 
+
+        for (int i = 0; i < width; i++) 
+        { 
+            for (int j = 0; j < height; j++) 
+            { 
+               max = 0;
+               try
+               {
+                     P[0]=ImgOut.getRGB(i-1,j-1);
+                     P[1]=ImgOut.getRGB(i-1,j);
+                     P[2]=ImgOut.getRGB(i-1,j+1);
+                     P[3]=ImgOut.getRGB(i,j+1);
+                     P[4]=ImgOut.getRGB(i+1,j+1);
+                     P[5]=ImgOut.getRGB(i+1,j);
+                     P[6]=ImgOut.getRGB(i+1,j-1);
+                     P[7]=ImgOut.getRGB(i,j-1);
+                     P[8]=ImgOut.getRGB(i,j);
+               }
+               catch(IndexOutOfBoundsException e)
+               {
+                     P[0]=0;
+                     P[1]=0;
+                     P[2]=0;
+                     P[3]=0;
+                     P[4]=0;
+                     P[5]=0;
+                     P[6]=0;
+                     P[7]=0;
+                     P[8]=ImgOut.getRGB(i,j);   
+               }
+
+               for(int k=0; k<9; k++)
+               {                   
+                   Avg[k] = (P[k]>>16)&0xff; // Les 3 pixels ont la même valeur car on travaille en seuillé
+               }
+
+
+               for(int k = 0; k < 9; k++)
+               {
+                   if(Avg[k] == 255 && k != 4)
+                   {
+                       max = 255;
+                       break;
                    }
-                }
-                
-                //sort buff
-                java.util.Arrays.sort(buff);
-                
-                //save lowest value
-                output[x+y*width] = buff[(maskSize*maskSize) - i];
-            }
+               }
+
+               if(max == 255)
+               {
+                   pixel = (255<<24) | (255<<16) | (255<<8) | 255; 
+               }
+               else
+               {
+                   pixel = (255<<24) | (0<<16) | (0<<8) | 0; 
+               }
+
+                ImgOut.setRGB(i, j, pixel);
+            }   
+        }
+
+
+        return ImgOut;
+    }
+     
+      public BufferedImage Dilatation(int val, BufferedImage ImgIn)
+    {
+        BufferedImage ImgOut;
+        
+        if(ImgIn != null)
+        {
+            ImgOut = copyImage(ImgIn);
         }
         
-        /**
-         * Save the erosion value in image img.
-         */
-        for(int y = 0; y < height; y++){
-            for(int x = 0; x < width; x++){
-                int v = output[x+y*width];
-                v = (255<<24) | (v<<16) | (v<<8) | v;
-                imgOut.setRGB(x, y, v);
-            }
+        ImgOut = Treshold(ImgIn, val);
+        
+        int[] P = new int[9]; // Pixel
+        int[] Avg = new int[9];
+        
+        int r, g, b;
+        int min = 255; // de base on part de 255
+        int pixel;
+        
+        int width = ImgOut.getWidth(); 
+        int height = ImgOut.getHeight(); 
+  
+        for (int i = 0; i < width; i++) 
+        { 
+            for (int j = 0; j < height; j++) 
+            { 
+               min = 255;
+               try
+               {
+                     P[0]=ImgOut.getRGB(i-1,j-1);
+                     P[1]=ImgOut.getRGB(i-1,j);
+                     P[2]=ImgOut.getRGB(i-1,j+1);
+                     P[3]=ImgOut.getRGB(i,j+1);
+                     P[4]=ImgOut.getRGB(i+1,j+1);
+                     P[5]=ImgOut.getRGB(i+1,j);
+                     P[6]=ImgOut.getRGB(i+1,j-1);
+                     P[7]=ImgOut.getRGB(i,j-1);
+                     P[8]=ImgOut.getRGB(i,j);
+               }
+               catch(IndexOutOfBoundsException e)
+               {
+                     P[0]=0;
+                     P[1]=0;
+                     P[2]=0;
+                     P[3]=0;
+                     P[4]=0;
+                     P[5]=0;
+                     P[6]=0;
+                     P[7]=0;
+                     P[8]=ImgOut.getRGB(i,j);   
+               }
+
+               for(int k=0; k<9; k++)
+               {                   
+                   Avg[k] = (P[k]>>16)&0xff; // Les 3 pixels ont la même valeur car on travaille en seuillé
+               }
+
+               
+               for(int k = 0; k < 9; k++)
+               {
+                   if(Avg[k] == 0 && k != 4)
+                   {
+                       min = 0;
+                       break;
+                   }
+               }
+               
+               if(min == 255)
+               {
+                   pixel = (255<<24) | (255<<16) | (255<<8) | 255; 
+               }
+               else
+               {
+                   pixel = (255<<24) | (0<<16) | (0<<8) | 0; 
+               }
+                
+                ImgOut.setRGB(i, j, pixel);
+            }   
         }
-        return imgOut;
+        
+        return ImgOut;
     }
+        
      
     public BufferedImage equalize(BufferedImage src){
         BufferedImage nImg = new BufferedImage(src.getWidth(), src.getHeight(),
@@ -825,5 +966,282 @@ public class ImgModifier {
         }
         nImg.setData(er);
         return nImg;
+    }
+    
+    public BufferedImage FiltreDeSobel(BufferedImage ImgIn)
+    {
+        BufferedImage ImgOut = copyImage(ImgIn);
+        
+        int[] P = new int[9]; // Pixel
+        int[] Avg = new int[9];
+        
+        int r, g, b;
+        
+        
+        int width = ImgOut.getWidth(); 
+        int height = ImgOut.getHeight(); 
+  
+        for (int i = 0; i < width; i++) 
+        { 
+            for (int j = 0; j < height; j++) 
+            { 
+               try
+               {
+                     P[0]=ImgOut.getRGB(i-1,j-1);
+                     P[1]=ImgOut.getRGB(i-1,j);
+                     P[2]=ImgOut.getRGB(i-1,j+1);
+                     P[3]=ImgOut.getRGB(i,j+1);
+                     P[4]=ImgOut.getRGB(i+1,j+1);
+                     P[5]=ImgOut.getRGB(i+1,j);
+                     P[6]=ImgOut.getRGB(i+1,j-1);
+                     P[7]=ImgOut.getRGB(i,j-1);
+                     P[8]=ImgOut.getRGB(i,j);
+               }
+               catch(IndexOutOfBoundsException e)
+               {
+                     P[0]=0;
+                     P[1]=0;
+                     P[2]=0;
+                     P[3]=0;
+                     P[4]=0;
+                     P[5]=0;
+                     P[6]=0;
+                     P[7]=0;
+                     P[8]=ImgOut.getRGB(i,j);   
+               }
+
+               for(int k=0; k<9; k++)
+               {                   
+                   r = (P[k]>>16)&0xff;
+                   b = (P[k]>>8)&0xff; 
+                   g = P[k]&0xff;
+                   
+                   Avg[k] = (r+b+g)/3;
+               }
+
+               
+               int res = -Avg[0] + Avg[2] -2*Avg[3] + 2*Avg[5] - Avg[6] + Avg[8];
+                res /= 4;
+                res = Math.abs(res);
+                
+                int res2 = -Avg[0]  -2*Avg[1] - Avg[2] + Avg[6] + 2*Avg[7] + Avg[8];
+                res2 /= 4;
+                res2 = Math.abs(res2);
+                
+                res = (res<<24) | (res<<16) | (res<<8) | res;
+                res2 = (res2<<24) | (res2<<16) | (res2<<8) | res2;
+                res = res | res2;
+                
+                ImgOut.setRGB(i, j, res); 
+            }   
+        }
+        return ImgOut;
+    }
+    
+    
+    public BufferedImage KirschFilter(String centre, BufferedImage ImgIn)
+    {
+        BufferedImage ImgOut = copyImage(ImgIn);
+        
+        int[] P = new int[9]; // Pixel
+        int[] Avg = new int[9];
+        
+        int r, g, b;
+        
+        int pixel;
+        int max = 0;
+        
+        int width = ImgOut.getWidth(); 
+        int height = ImgOut.getHeight(); 
+  
+        for (int i = 0; i < width; i++) 
+        { 
+            for (int j = 0; j < height; j++) 
+            { 
+               try
+               {
+                     P[0]=ImgOut.getRGB(i-1,j-1);
+                     P[1]=ImgOut.getRGB(i-1,j);
+                     P[2]=ImgOut.getRGB(i-1,j+1);
+                     P[3]=ImgOut.getRGB(i,j+1);
+                     P[4]=ImgOut.getRGB(i+1,j+1);
+                     P[5]=ImgOut.getRGB(i+1,j);
+                     P[6]=ImgOut.getRGB(i+1,j-1);
+                     P[7]=ImgOut.getRGB(i,j-1);
+                     P[8]=ImgOut.getRGB(i,j);
+               }
+               catch(IndexOutOfBoundsException e)
+               {
+                     P[0]=0;
+                     P[1]=0;
+                     P[2]=0;
+                     P[3]=0;
+                     P[4]=0;
+                     P[5]=0;
+                     P[6]=0;
+                     P[7]=0;
+                     P[8]=ImgOut.getRGB(i,j);   
+               }
+
+               for(int k=0; k<9; k++)
+               {                   
+                   r = (P[k]>>16)&0xff;
+                   b = (P[k]>>8)&0xff; 
+                   g = P[k]&0xff;
+                   
+                   Avg[k] = (r+b+g)/3;
+               }
+
+               int[] res = new int[8];
+               // Reste à calculer res pour les HUIT matrices et prendre le résultat le plus grand
+               
+                res[0] = 3*Avg[0] + 3*Avg[1] + 3*Avg[2] + 3*Avg[3] + 3*Avg[5] - 5*Avg[6] - 5*Avg[7] - 5*Avg[8];
+                res[0] = Math.abs(res[0]);
+
+                res[1] = 3*Avg[0] + 3*Avg[1] + 3*Avg[2] - 5*Avg[3] + 3*Avg[5] - 5*Avg[6] - 5*Avg[7] + 3*Avg[8];
+                res[1] = Math.abs(res[1]);
+                
+                res[2] = -5*Avg[0] + 3*Avg[1] + 3*Avg[2] - 5*Avg[3] + 3*Avg[5] - 5*Avg[6] + 3*Avg[7] + 3*Avg[8];
+                res[2] = Math.abs(res[2]);
+                
+                res[3] = -5*Avg[0] - 5*Avg[1] + 3*Avg[2] - 5*Avg[3] + 3*Avg[5] + 3*Avg[6] + 3*Avg[7] + 3*Avg[8];
+                res[3] = Math.abs(res[3]);
+                
+                res[4] = -5*Avg[0] - 5*Avg[1] - 5*Avg[2] + 3*Avg[3] + 3*Avg[5] + 3*Avg[6] + 3*Avg[7] + 3*Avg[8];
+                res[4] = Math.abs(res[4]);
+                
+                res[5] = 3*Avg[0] - 5*Avg[1] - 5*Avg[2] + 3*Avg[3] - 5*Avg[5] + 3*Avg[6] + 3*Avg[7] + 3*Avg[8];
+                res[5] = Math.abs(res[5]);
+                
+                res[6] = 3*Avg[0] + 3*Avg[1] - 5*Avg[2] + 3*Avg[3] - 5*Avg[5] + 3*Avg[6] + 3*Avg[7] - 5*Avg[8];
+                res[6] = Math.abs(res[6]);
+                
+                res[7] = 3*Avg[0] + 3*Avg[1] + 3*Avg[2] + 3*Avg[3] - 5*Avg[5] + 3*Avg[6] - 5*Avg[7] - 5*Avg[8];
+                res[7] = Math.abs(res[7]);
+                
+                switch(centre)
+                {
+                    case "NO" : max = res[0];
+                                break;
+                    case "N" :  max = res[1];
+                                break;
+                    case "NE" : max = res[2];
+                                break;
+                    case "E" :  max = res[4];
+                                break;
+                    case "SE" : max = res[7];
+                                break;
+                    case "S" :  max = res[6];
+                                break;
+                    case "SO" : max = res[5];
+                                break;
+                    case "O" :  max = res[3];
+                                break;
+                    case "Auto" :   max = res[0];
+                                    for(int k = 1; k<8; k++)
+                                    {
+                                        if(res[k] > max)
+                                        {
+                                            max = res[k];
+                                        }
+                                    }
+                                    break;                
+                }
+                      
+                pixel = (max<<24) | (max<<16) | (max<<8) | max;
+
+                ImgOut.setRGB(i, j, pixel); 
+            }   
+        }
+
+        return ImgOut;
+    }
+    
+    
+    public BufferedImage RobertCrossFilter(String centre, BufferedImage ImgIn)
+    {
+        BufferedImage ImgOut = copyImage(ImgIn);
+        
+        
+        int r, g, b;
+        
+        int[] P = new int[4]; // Pixel
+        int[] Avg = new int[4];
+        
+        int width = ImgOut.getWidth(); 
+        int height = ImgOut.getHeight(); 
+  
+        for (int i = 0; i < width; i++) 
+        { 
+            for (int j = 0; j < height; j++) 
+            { 
+               try
+               {
+                    switch(centre)
+                    {
+                        case "NO" : P[0]=ImgOut.getRGB(i, j);
+                                    P[1]=ImgOut.getRGB(i+1, j);
+                                    P[2]=ImgOut.getRGB(i, j+1);
+                                    P[3]=ImgOut.getRGB(i+1, j+1);
+                                    break;
+                        case "NE" : P[0]=ImgOut.getRGB(i-1, j);
+                                    P[1]=ImgOut.getRGB(i, j);
+                                    P[2]=ImgOut.getRGB(i-1, j+1);
+                                    P[3]=ImgOut.getRGB(i, j+1);
+                                    break;
+                        case "SO" : P[0]=ImgOut.getRGB(i, j-1);
+                                    P[1]=ImgOut.getRGB(i+1, j-1);
+                                    P[2]=ImgOut.getRGB(i, j);
+                                    P[3]=ImgOut.getRGB(i+1, j);
+                                    break;
+                        case "SE" : P[0]=ImgOut.getRGB(i-1, j-1);
+                                    P[1]=ImgOut.getRGB(i, j-1);
+                                    P[2]=ImgOut.getRGB(i-1, j);
+                                    P[3]=ImgOut.getRGB(i, j);
+                                    break;
+                    }
+               }
+               catch(IndexOutOfBoundsException e)
+               {
+                     P[0]=0;
+                     P[1]=0;
+                     P[2]=0;
+                     P[3]=0; 
+               }
+
+               for(int k=0; k<4; k++)
+               {                   
+                   r = (P[k]>>16)&0xff;
+                   b = (P[k]>>8)&0xff; 
+                   g = P[k]&0xff;
+                   
+                   Avg[k] = (r+b+g)/3;
+               }
+
+               
+               int res = Avg[0] - Avg[3];
+               res = Math.abs(res);
+                
+               res = (res<<24) | (res<<16) | (res<<8) | res; 
+                
+               int res2 = Avg[1] - Avg[2];
+               res2 = Math.abs(res2);
+                
+               res = (res<<24) | (res<<16) | (res<<8) | res;
+               res2 = (res2<<24) | (res2<<16) | (res2<<8) | res2;
+               //res = res | res2;
+                
+               ImgOut.setRGB(i, j, res); 
+            }   
+        }
+
+        return ImgOut;
+    }
+    
+    
+    public BufferedImage QuadtreeT(BufferedImage ImgIn)
+    {
+        System.out.println("Dans img modifier");
+        return QuadTreeImageRepresent.imageQTreerepresentation(copyImage(ImgIn),4, true);
     }
 }

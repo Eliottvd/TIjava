@@ -14,6 +14,8 @@ import java.io.IOException;
 import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -21,7 +23,27 @@ import java.util.Locale;
  */
 public class FichierLog {
     
-    public final static String nomFichierLog = "fichierlogTI.txt";
+    public static String nomFichierLog = "fichierlogTI.txt";
+    
+    public FichierLog()
+    {
+        Date mtn = new Date();
+        String maDate = DateFormat.getDateInstance(DateFormat.SHORT ,Locale.FRANCE).format(mtn);
+        nomFichierLog = maDate.concat("logTI.txt");
+        nomFichierLog = nomFichierLog.replace('/', '-');
+        java.io.File file = new java.io.File(System.getProperty("user.dir") + System.getProperty("file.separator") +
+                "log" + System.getProperty("file.separator") + nomFichierLog);
+        System.out.println(System.getProperty("user.dir") + System.getProperty("file.separator") +
+                "log" + System.getProperty("file.separator") + nomFichierLog);
+        if(!file.exists())
+        {
+            try {
+                file.createNewFile();
+            } catch (IOException ex) {
+                Logger.getLogger(FichierLog.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    }
     
     public void addLog(String ligneLog)
     {
@@ -29,7 +51,8 @@ public class FichierLog {
             Date mtn = new Date();
             String maDate = DateFormat.getDateTimeInstance(DateFormat.SHORT, DateFormat.MEDIUM,Locale.FRANCE).format(mtn);
             ligneLog = maDate.concat(" > " + ligneLog);
-            FileWriter fw = new FileWriter(System.getProperty("user.dir") + System.getProperty("file.separator") + nomFichierLog, true);
+            FileWriter fw = new FileWriter(System.getProperty("user.dir") + System.getProperty("file.separator") +
+                "log" + System.getProperty("file.separator") + nomFichierLog, true);
             fw.write(ligneLog);
             fw.write(System.getProperty("line.separator"));
             System.out.println("Ecriture d'un log ("+ligneLog+")");
